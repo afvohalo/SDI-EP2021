@@ -27,9 +27,9 @@ foreach ($this->d as $value) {
                                     <tr>
                                         <td><?php echo $value['Tip_doc_nombre'] ?></td>
                                         <td>
-                                            <button data-target="modalDocumentoedit" class="btn modal-trigger" onclick="OneData(<?php echo $value['Tip_doc_id'] ?>)"><i class="material-icons">edit</i></button>
+                                            <button data-target="modalDocumentoedit" class="btn modal-trigger btn-warning" onclick="OneData(<?php echo $value['Tip_doc_id'] ?>)"><i class="material-icons">edit</i></button>
 
-                                            <button onclick="DeleteData(<?php echo $value['Tip_doc_id'] ?>)" class="btn modal-trigger waves-effect red darken-4"><i class="material-icons">delete</i></button>
+                                            <button onclick="DeleteData(<?php echo $value['Tip_doc_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
                                         </td>
                                     </tr>
                                         </div>
@@ -43,7 +43,7 @@ foreach ($this->d as $value) {
                     </div>
 
                     <div class="">
-                        <button data-target="modalDocumento" class="btn modal-trigger waves-effect ">
+                        <button data-target="modalDocumento" class="btn btn-primary">
                             <i class="material-icons left">library_add</i><br>Agregar Nuevo Tipo De Documento</button>
                     </div>
                 </div>
