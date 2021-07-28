@@ -77,7 +77,7 @@ function ReadyChangeJquery(GetData,IdentificatorDiv){
 
 }
 
-
+	//formulario para registrar
 function Validate_Form(x_function_ready,formulario){
 	let count_errors = 0
 
@@ -104,7 +104,7 @@ function Validate_Form(x_function_ready,formulario){
 	}
 	
 }
-
+	//formulario editar 
 function Message_Confirm(x_function_ready){
 
 	$.confirm({
@@ -142,3 +142,8 @@ function Message_Confirm(x_function_ready){
 	});	
 
 }
+
+
+$('#modalDocumento').on('shown.bs.modal', function () {
+  $('#abrir_Modal').trigger('focus')
+})

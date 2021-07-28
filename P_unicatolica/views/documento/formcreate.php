@@ -1,4 +1,4 @@
-<div id="modalDocumento" class="modal">
+<div id="modalDocumento" class="modal" tabindex="-1" role="dialog">
     <div class="modal-content">
         <h4 class="center">Nuevo Tipo Documento</h4>
         <form id="form_documento">
