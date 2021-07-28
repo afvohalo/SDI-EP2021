@@ -1,0 +1,12 @@
+# permite rescribir las peticiones de url 
+RewriteEngine On
+
+#si  el archivo y l carpeta no existen "verificacion"
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}	!-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+# redireccion todas las peticiones al index
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+

@@ -9,7 +9,7 @@ class documentoModel extends Model implements IModel
     }
 
     //CRUD
-    /*
+    
     public function save($data)
     {
 
@@ -25,14 +25,13 @@ class documentoModel extends Model implements IModel
     }
 
     }
-     */
+     
 
     public function getAll()
     {
         try {
             $query = $this->prepare('SELECT * FROM tbltipo_documento');
             $query->execute();
-
             return $query->fetchAll();
         } catch (PDOException $e) {
             $this->showError('getAll', 'documento', $e);

@@ -26,10 +26,12 @@ class Database
                 PDO::ATTR_EMULATE_PREPARES   => false];
 
             $pdo = new PDO($this->conection, $this->user, $this->password, $option);
+            
             return $pdo;
+              
 
             //require_once '../index.php';
-            echo "si conecto a la base de datos";
+            
 
         } catch (PDOExecption $e) {
             print_r('Error de conexion' . $e->getMessage());
