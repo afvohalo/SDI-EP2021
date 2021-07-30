@@ -9,7 +9,7 @@
                             MODULO TIPO DOCUMENTO
                         </h4>
                     </div>
-                    <div class="container table-responsive">                                                
+                    <div class="container table-responsive">
                             <table id="myTable" class="table table-bordered text-center">
                                 <thead>
                                     <tr>
@@ -19,11 +19,11 @@
                                 </thead>
                                 <tbody>
                                 <?php
-                                                                
+
 foreach ($this->d as $value) {
     ?>
                                     <div class="row">
-                                        <div class="col">                                        
+                                        <div class="col">
                                     <tr>
                                         <td><?php echo $value['Tip_doc_nombre'] ?></td>
                                         <td>
@@ -43,7 +43,7 @@ foreach ($this->d as $value) {
                     </div>
 
                     <div class="">
-                        <button id="abrir_Modal" data-target="#modalDocumento" class="btn btn-primary" data-toggle="modal"> 
+                        <button  data-target="#modalDocumento" class="btn btn-primary" data-toggle="modal">
                             <i class="material-icons left">library_add</i><br>Agregar Nuevo Tipo De Documento</button>
                     </div>
                 </div>
@@ -51,3 +51,4 @@ foreach ($this->d as $value) {
         </div>
         </div>
     </div>
+

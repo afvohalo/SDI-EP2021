@@ -48,3 +48,4 @@ function UpdateData(id){
 	})
 },'#form_documento_edit')
 }
+

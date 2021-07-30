@@ -144,6 +144,3 @@ function Message_Confirm(x_function_ready){
 }
 
 
-$('#modalDocumento').on('shown.bs.modal', function () {
-  $('#abrir_Modal').trigger('focus')
-})
