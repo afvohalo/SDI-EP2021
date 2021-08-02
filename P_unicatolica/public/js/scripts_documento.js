@@ -8,6 +8,7 @@ function SaveData() {
 				"Acc":"registrarDocumento",
 				"formularioDocumento":ProcessData(data)
 			}
+				console.log(DatosDocumento);
 			ReadyChangeJquery(DatosDocumento,"#table_data");
 		})
 	},"#form_documento")

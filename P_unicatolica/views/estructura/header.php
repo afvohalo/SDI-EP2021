@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="public/css/default.css">
     <link rel="stylesheet" href="public/css/toastr.min.css">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    
-
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
-    <script src="public/js/jquery-3.5.1.min.js"></script>
-        
-    <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
     <script src="public/js/function_globals.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
-    
+
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="public/css/materialize.min.css">
+
     <link rel="stylesheet" href="public/css/home.css">
     <link rel="icon" type="image/png" href="public/img/LogoSencillo.png" />
 
@@ -32,7 +32,7 @@
 
 
 
-    <title>Sigma</title>
+    <title>ADPCUC</title>
 
 
 </head>
