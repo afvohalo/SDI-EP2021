@@ -19,7 +19,7 @@ function ReadyChangeJquery(GetData,IdentificatorDiv){
 	.done(function(data) {
 		$(IdentificatorDiv).html(data);
 		 //$('select').formSelect();
-		 $('.collapsible').collapsible();        
+		 //$('.collapsible').collapsible();        
 	} )
 	.fail(function(){
 		$(IdentificatorDiv).html("LA CONSULTA NO ARROJO INFORMACION");

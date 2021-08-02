@@ -3,14 +3,14 @@
         <h4 class="center">Nuevo Tipo Documento</h4>
         <form id="form_documento">
             <div class="row">
-                <div class="col s2"></div>
-                <div class="input-field col s8 ">
+                <div class="col s10"></div>
+                <div class="input-field">
                     <input type="text" name="name" required>
                     <label class="active" for="name">
                         Nuevo Tipo Documento
                     </label>
                 </div>
-                <div class="col s2"></div>
+                <div class="col s10"></div>
             </div>
         </form>
         <div class="row">
@@ -19,7 +19,7 @@
                         <button type="submit" class="btn waves-effect" onclick="SaveData(); return false;"><i class="material-icons left">save</i>Guardar</button>
                     </div>
                     <div class="buttoncitos">
-                        <button class="modal-close btn waves-effect buttonsApp"><i class="material-icons left">cancel</i>Cerrar</button>
+                        <button class="btn waves-effect " data-dismiss="modal"><i class="material-icons left">cancel</i>Cerrar</button>
                     </div>
                 </div>
             </div>
