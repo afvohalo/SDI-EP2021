@@ -1,6 +1,12 @@
 
 <?php
 
+if (isset($_POST['Acc'])) {
+    $d=$_GET['url'];
+    echo "<script type='text/javascript'>console.log($d);</script>";
+}else{echo "lol";}
+
+
 require_once 'controllers/errorPage.php';
 
 function IsLoadView($archivoController, $WhatAction, $url = null)
@@ -52,7 +58,7 @@ function IsCleanUrl()
 {
     //verifica url que envia el href en la cabecera
     $url = isset($_GET['url']) ? $_GET['url'] : null;
-    //quieta el caracter "/" si esta de ultimo
+    //quita el caracter "/" si esta de ultimo
     $url = rtrim($url, '/');
     print_r($url);
     //meter en un array los string separados por "/"
