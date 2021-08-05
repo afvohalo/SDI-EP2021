@@ -20,6 +20,7 @@ function OneData(id){
 		'Acc':'oneDocumento',
 		'id':id
 	}
+	console.log(OneIdDocumento);
 	ReadyChangeJquery(OneIdDocumento,"#form_edit")
 }
 
