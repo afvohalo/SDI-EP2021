@@ -15,9 +15,9 @@ class documentoModel extends Model implements IModel
 
     try {
 
-    $query = $this->prepare('INSERT INTO tbltipo_documento(tip_doc_descripcion) VALUES (:tip_doc_descripcion)'); //Preparando la consulta
+    $query = $this->prepare('INSERT INTO tbltipo_documento(Tip_doc_nombre) VALUES (:NuevoTipoDocumento)'); //Preparando la consulta
     $query->execute([
-    'tip_doc_descripcion' => $data['tip_doc_descripcion'],
+    'NuevoTipoDocumento' => $data['NuevoTipoDocumento'],
     ]); // Aca mandamos a ejecutar la consulta pasando por ultimo los values :value
 
     } catch (PDOException $e) {

@@ -47,7 +47,7 @@ class Documento extends Controller
         echo "<p>Guardando datos satisfactoriamente</p>";
 
         $namedocumento = $_POST['formularioDocumento'];
-        $this->model->save(['tip_doc_descripcion' => $namedocumento[0]]);
+        $this->model->save(['NuevoTipoDocumento' => $namedocumento[0]]);
         $this->RefreshDataTable();
 
     }

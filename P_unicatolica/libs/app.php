@@ -2,8 +2,8 @@
 <?php
 
 if (isset($_POST['Acc'])) {
-    $d=$_GET['url'];
-    echo "<script type='text/javascript'>console.log($d);</script>";
+    $d=$_GET['url']." ".$_POST['Acc']." ".$_POST['Ctr'];
+    //echo "<script type='text/javascript'>console.log($d);</script>";
 }else{echo "lol";}
 
 
@@ -28,6 +28,7 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
             $acc = $_POST['Acc'];
             //crear un nuevo controlador y carga el modelo
             $controller = new $ctr;
+            echo "<script type='text/javascript'>console.log($acc);</script>";
             $controller->cargarModel($ctr);
             $controller->{$acc}();
         }
@@ -73,6 +74,7 @@ if (isset($_POST['Acc']) && isset($_POST['Ctr'])) {
     //genera un directorio con el $_post[ctr] y llama la funcion iloadView que esta arriva
     $ctr               = $_POST['Ctr'];
     $archivoController = 'controllers/' . $ctr . '.php';
+    //echo "<script type='text/javascript'>console.log($archivoController);</script>";
     IsLoadView($archivoController, 'LoadObjectAction');
 
 } else if ($exist) {
