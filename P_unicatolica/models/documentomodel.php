@@ -37,13 +37,13 @@ class documentoModel extends Model implements IModel
             $this->showError('getAll', 'documento', $e);
         }
     }
-    /*
+    
     public function delete($id)
     {
 
     try {
 
-    $query = $this->prepare('DELETE FROM tbltipo_documento WHERE tip_doc_id=:id');
+    $query = $this->prepare('DELETE FROM tbltipo_documento WHERE Tip_doc_id=:id');
     $query->execute($id);
 
     } catch (PDOException $e) {
@@ -51,13 +51,13 @@ class documentoModel extends Model implements IModel
     }
 
     }
-     */
-    /*
+     
+    
     public function getId($id)
     {
     try {
 
-    $query = $this->prepare('SELECT * FROM tbltipo_documento WHERE tip_doc_id=:id');
+    $query = $this->prepare('SELECT * FROM tbltipo_documento WHERE Tip_doc_id=:id');
     $query->execute(['id' => $id]);
 
     return $query->fetchAll();
@@ -66,13 +66,12 @@ class documentoModel extends Model implements IModel
     $this->showError('getId', 'documento', $e);
     }
     }
-     */
-    /*
+    
 public function update($id, $name)
 {
 try {
 
-$query = $this->prepare('UPDATE tbltipo_documento SET tip_doc_descripcion=:name WHERE tip_doc_id=:id');
+$query = $this->prepare('UPDATE tbltipo_documento SET Tip_doc_nombre =:name WHERE Tip_doc_id=:id');
 $query->execute([
 'id'   => $id,
 'name' => $name,
@@ -82,5 +81,5 @@ $query->execute([
 $this->showError('update', 'rol', $e);
 }
 }
- */
+ 
 }

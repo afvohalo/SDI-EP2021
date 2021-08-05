@@ -56,11 +56,11 @@ class Documento extends Controller
     {
 
         echo "<p>Guardando datos satisfactoriamente</p>";
-        /*
+        
     $id = $_POST['id'];
     $this->model->delete(['id' => $id]);
     $this->RefreshDataTable();
-     */
+     
 
     }
 
@@ -68,11 +68,11 @@ class Documento extends Controller
     {
 
         echo "<p>Guardando datos satisfactoriamente</p>";
-        /*
+        
         $id  = $_POST['id'];
         $res = $this->model->getId($id);
         $this->setData($res);
-         */
+         
 
         $this->view->render('documento/formedit', $this->getData());
         /* print_r($this->getData()); */
@@ -82,12 +82,12 @@ class Documento extends Controller
     {
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
-        /*
+        
     $idtipodocumento = $_POST['id'];
     $namedocumento   = $_POST['formularioDocumentoEdit'];
     $this->model->update($idtipodocumento, $namedocumento[0]);
     $this->RefreshDataTable();
-     */
+     
     }
 
 }
