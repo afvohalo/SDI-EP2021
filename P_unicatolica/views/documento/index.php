@@ -4,9 +4,9 @@
     <div class="modal-content">
         <h4 class="center">Editar Tipo Documento</h4>
 
-        <div id="form_edit">
+            <div id="form_edit">
 
-        </div>
+            </div>
 
     </div>
 </div>

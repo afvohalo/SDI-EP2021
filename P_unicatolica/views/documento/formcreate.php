@@ -2,15 +2,15 @@
     <div class="modal-content">
         <h4 class="center">Nuevo Tipo Documento</h4>
         <form id="form_documento">
-            <div class="row">
-                <div class="col s10"></div>
+          
+                
                 <div class="input-field">
                     <input type="text" name="name" required>
                     <label class="active" for="name">
                         Nuevo Tipo Documento
                     </label>
                 </div>
-                <div class="col s10"></div>
+                
             </div>
         </form>
         <div class="row">

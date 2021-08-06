@@ -22,7 +22,7 @@ function OneData(id){
 	}
 	console.log(OneIdDocumento);
 	ReadyChangeJquery(OneIdDocumento,"#form_edit")
-}
+}	
 
 
 function DeleteData(id){
