@@ -2,10 +2,9 @@
 <?php
 
 if (isset($_POST['Acc'])) {
-    $d=$_GET['url']." ".$_POST['Acc']." ".$_POST['Ctr'];
+    $d = $_GET['url'] . " " . $_POST['Acc'] . " " . $_POST['Ctr'];
     //echo "<script type='text/javascript'>console.log($d);</script>";
-}else{echo "lol";}
-
+} else {echo "lol";}
 
 require_once 'controllers/errorPage.php';
 
@@ -23,14 +22,23 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
         require_once $archivoController;
 
         if ($WhatAction == 'LoadObjectAction') {
+            $caracterspecial = '_';
 
             $ctr = $_POST['Ctr'];
             $acc = $_POST['Acc'];
             //crear un nuevo controlador y carga el modelo
             $controller = new $ctr;
             //echo "<script type='text/javascript'>console.log($acc);</script>";
-            $controller->cargarModel($ctr);
-            $controller->{$acc}();
+            if (strpos($ctr, $caracterspecial)) {
+                $ctr = rtrim(strtolower($ctr), '_.');
+                $controller->cargarModel($ctr);
+                $controller->{$acc}();
+
+            } else {
+                $controller->cargarModel($ctr);
+                $controller->{$acc}();
+
+            }
         }
 
         if ($WhatAction == 'LoadView') {

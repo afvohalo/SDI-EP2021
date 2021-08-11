@@ -64,7 +64,7 @@
                         <li><a href="movimiento" class="hoverable"><i class="material-icons left">today</i>Historial</a></li>
 
 
-                                                <li><a href="costos" class="hoverable"><i class="material-icons left">book</i>Costos</a></li>
+                                                <li><a href="estado_equipo" class="hoverable"><i class="material-icons left">book</i>Estado equipos</a></li>
 
 
                         <li> <a href="documento" class="hoverable"><i class="material-icons left">description</i>documento</a></li>
