@@ -12,12 +12,12 @@ class estadoequipoModel extends Model implements IModel
 
     public function save($data)
     {
+        var_dump($data);
 
         try {
 
             $query = $this->prepare('INSERT INTO tblestado_equipos(Est_equipos_nombre) VALUES (:NuevoEstadoEquipo)'); //Preparando la consulta
-            $query->execute([
-                'NuevoEstadoEquipo' => $data['NuevoEstadoEquipo'],
+            $query->execute(['NuevoEstadoEquipo' => $data['Nuevoestadoequipo'],
             ]); // Aca mandamos a ejecutar la consulta pasando por ultimo los values :value
 
         } catch (PDOException $e) {
