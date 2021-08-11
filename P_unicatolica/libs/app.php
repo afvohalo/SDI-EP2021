@@ -28,10 +28,10 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
             $acc = $_POST['Acc'];
             //crear un nuevo controlador y carga el modelo
             $controller = new $ctr;
-            //echo "<script type='text/javascript'>console.log($acc);</script>";
             if (strpos($ctr, $caracterspecial)) {
                 $ctr = rtrim(strtolower($ctr), '_.');
                 $controller->cargarModel($ctr);
+
                 $controller->{$acc}();
 
             } else {
@@ -42,11 +42,20 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
         }
 
         if ($WhatAction == 'LoadView') {
+            $caracterspecial = '_';
             //crear un nuevo controlador,carga el modelo y carga el index del controlador
             $clase      = ucwords($url[0]);
             $controller = new $clase;
-            $controller->cargarModel($url[0]);
-            $controller->{'index'}();
+            if (strpos($clase, $caracterspecial) != false) {
+                $clase = strtolower($clase);
+                $clase = preg_replace('([_])', '', $clase);
+                echo $clase;
+                $controller->cargarModel($clase);
+                $controller->{'index'}();
+            } else {
+                $controller->cargarModel($clase);
+                $controller->{'index'}();
+            }
         }
 
         if ($WhatAction == 'LoadIndex') {

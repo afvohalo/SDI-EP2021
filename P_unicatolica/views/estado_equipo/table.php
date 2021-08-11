@@ -25,11 +25,11 @@ foreach ($this->d as $value) {
                                     <div class="row">
                                         <div class="col">
                                     <tr>
-                                        <td><?php echo $value['Tip_doc_nombre'] ?></td>
+                                        <td><?php echo $value['Est_equipos_nombre'] ?></td>
                                         <td>
-                                            <button data-target="#modalEstadoEquipoEdit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Tip_doc_id'] ?>)"><i  class="material-icons">edit</i></button>
+                                            <button data-target="#modalEstadoEquipoEdit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Est_equipos_id'] ?>)"><i  class="material-icons">edit</i></button>
 
-                                            <button onclick="DeleteData(<?php echo $value['Tip_doc_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
+                                            <button onclick="DeleteData(<?php echo $value['Est_equipos_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
                                         </td>
                                     </tr>
                                         </div>
