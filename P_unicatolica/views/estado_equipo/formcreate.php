@@ -2,8 +2,6 @@
     <div class="modal-content">
         <h4 class="center">Nuevo Tipo De estado</h4>
         <form id="form_estadoEquipo">
-
-
                 <div class="input-field">
                     <input type="text" name="name" required>
                     <label class="active" for="name">

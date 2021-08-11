@@ -28,10 +28,12 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
             $acc = $_POST['Acc'];
             //crear un nuevo controlador y carga el modelo
             $controller = new $ctr;
-            if (strpos($ctr, $caracterspecial)) {
-                $ctr = rtrim(strtolower($ctr), '_.');
-                $controller->cargarModel($ctr);
+             //verifica y quita el caracter "_"
+            if (strpos($ctr, $caracterspecial) != false ) {
+                $ctr = (strtolower($ctr));
+                $ctr = preg_replace('([_])', '', $ctr);
 
+                $controller->cargarModel($ctr);
                 $controller->{$acc}();
 
             } else {

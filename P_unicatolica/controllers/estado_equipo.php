@@ -46,7 +46,7 @@ class Estado_equipo extends Controller
 
         echo "<p>Guardando datos satisfactoriamente</p>";
 
-        $namedocumento = $_POST['formularioEstadoEquipo'];
+        $nameEstadoEquipo = $_POST['formularioEstadoEquipo'];
         $this->model->save(['Nuevoestadoequipo' => $nameEstadoEquipo[0]]);
         $this->RefreshDataTable();
 
@@ -72,7 +72,7 @@ class Estado_equipo extends Controller
         $res = $this->model->getId($id);
         $this->setData($res);
 
-        $this->view->render('estado_equipo / formedit', $this->getData());
+        $this->view->render('estado_equipo/formedit', $this->getData());
         /* print_r($this->getData()); */
     }
 

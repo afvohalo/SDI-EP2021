@@ -19,7 +19,7 @@ function ReadyChangeJquery(GetData,IdentificatorDiv){
 	.done(function(data) {
 		$(IdentificatorDiv).html(data);
 		
-		//console.log(data);
+		console.log(data);
 		 //$('select').formSelect();
 		 //$('.collapsible').collapsible();        
 	} )
