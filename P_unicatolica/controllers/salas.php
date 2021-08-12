@@ -45,11 +45,12 @@ class Salas extends Controller
     {
 
         echo "<p>Guardando datos satisfactoriamente</p>";
-
-        $namesalas = $_POST['formularioSalas'];
-        $cantidadsalas = $_POST['formularioSalas'];
-        $vbsalas = $_POST['formularioSalas'];
-        $this->model->save(['NuevoSalas' => $namesalas[0],$cantidadsalas[1],$vbsalas[2]]);
+        //var_dump($_POST['formularioSalas']);
+        $namesalas     = $_POST['formularioSalas'][0];
+        $cantidadsalas = $_POST['formularioSalas'][1];
+        $vbsalas       = $_POST['formularioSalas'][2];
+        $this->model->save(['NombreSalas' => $namesalas,
+            'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas]);
         $this->RefreshDataTable();
 
     }
@@ -58,11 +59,10 @@ class Salas extends Controller
     {
 
         echo "<p>Guardando datos satisfactoriamente</p>";
-        
-    $id = $_POST['id'];
-    $this->model->delete(['id' => $id]);
-    $this->RefreshDataTable();
-     
+
+        $id = $_POST['id'];
+        $this->model->delete(['id' => $id]);
+        $this->RefreshDataTable();
 
     }
 
@@ -70,11 +70,10 @@ class Salas extends Controller
     {
 
         echo "<p>Guardando datos satisfactoriamente</p>";
-        
+
         $id  = $_POST['id'];
         $res = $this->model->getId($id);
         $this->setData($res);
-         
 
         $this->view->render('salas/formedit', $this->getData());
         /* print_r($this->getData()); */
@@ -84,12 +83,12 @@ class Salas extends Controller
     {
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
-        
-    $idsalas = $_POST['id'];
-    $namesalas   = $_POST['formularioSalasEdit'];
-    $this->model->update($idsalas, $namesalas[0]);
-    $this->RefreshDataTable();
-     
+
+        $idsalas   = $_POST['id'];
+        $namesalas = $_POST['formularioSalasEdit'];
+        $this->model->update($idsalas, $namesalas[0]);
+        $this->RefreshDataTable();
+
     }
 
 }
