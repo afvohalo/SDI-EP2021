@@ -1,4 +1,4 @@
-<?php
+Z<?php
 
 class salasModel extends Model implements IModel
 {
@@ -71,7 +71,7 @@ class salasModel extends Model implements IModel
     {
         try {
 
-            $query = $this->prepare('UPDATE tblsalas SET Sal_nombre =:name, Sal_cantidad_equipo =:cantidad, Sal_videobeam = :VB WHERE Sal_id=:id');
+            $query = $this->prepare('UPDATE tblsalas SET Sal_nombre =:name, Sal_cantidad_equipo =:cantidad, Sal_videobeam =:VB WHERE Sal_id=:id');
             $query->execute([
                 'id'       => $id,
                 'name'     => $name,

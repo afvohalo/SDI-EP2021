@@ -13,7 +13,9 @@
                             <table id="myTable" class="table table-bordered text-center">
                                 <thead>
                                     <tr>
-                                        <th>Salas</th>
+                                        <th>Sala</th>
+                                        <th>Cantidad de equipos</th>
+                                        <th>VideoBeam</th>
                                         <th class="notexportar">Acciones</th>
                                     </tr>
                                 </thead>
@@ -26,6 +28,8 @@ foreach ($this->d as $value) {
                                         <div class="col">
                                     <tr>
                                         <td><?php echo $value['Sal_nombre'] ?></td>
+                                        <td><?php echo $value['Sal_cantidad_equipo'] ?></td>
+                                        <td><?php echo $value['Sal_videobeam'] ?></td>
                                         <td>
                                             <button data-target="#modalSalasedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Sal_id'] ?>)"><i  class="material-icons">edit</i></button>
 

@@ -84,9 +84,11 @@ class Salas extends Controller
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
 
-        $idsalas   = $_POST['id'];
-        $namesalas = $_POST['formularioSalasEdit'];
-        $this->model->update($idsalas, $namesalas[0]);
+        $idsalas        = $_POST['id'];
+        $namesalas      = $_POST['formularioSalasEdit'][0];
+        $cantidadsalas  = $_POST['formularioSalasEdit'][1];
+        $vbsalas        = $_POST['formularioSalasEdit'][2];
+        $this->model->update($idsalas, $namesalas, $cantidadsalas, $Vbsalas);
         $this->RefreshDataTable();
 
     }
