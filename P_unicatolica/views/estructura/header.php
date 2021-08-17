@@ -67,7 +67,7 @@
                                                 <li><a href="salas" class="hoverable"><i class="material-icons left">book</i>Salas</a></li>
 
 
-                        <li> <a href="documento" class="hoverable"><i class="material-icons left">description</i>documento</a></li>
+                        <li> <a href="tipomovimiento" class="hoverable"><i class="material-icons left">description</i>Tipo de Movimiento</a></li>
                     </ul>
 
 
