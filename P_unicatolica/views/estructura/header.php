@@ -43,49 +43,46 @@
     <div id="Header">
         <div class="NavLogo">
             <div class="NavNoLogo">
-                <a href="./"><img src="public/img/logoSigmaSena.png" class="responsive-img "></a>
+                <a href="./"><img src="public/img/,.png" class="responsive-img "></a>
             </div>
         </div>
 
-        <div id="NavHeader">
-            <nav>
-                <div class="nav-wrapper">
+        <div >
+            <nav class="navbar navbar-expand-lg navbar-r-dark bg-dark" >
+                <div >
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <ul class="navbar-nav" >
 
 
-                        <li><a href="caso" class="hoverable"><i class="material-icons left">assignment</i>Casos</a></li>
+                        <li><a href="caso" class="nav-link"><i class="material-icons left">assignment</i>Casos</a></li>
 
 
-                        <li><a href="inventario" class="hoverable"><i class="material-icons left">storage</i>Inventario</a></li>
+                        <li><a href="inventario" class="nav-link"><i class="material-icons left">storage</i>Inventario</a></li>
 
 
-                        <li><a href="movimiento" class="hoverable"><i class="material-icons left">today</i>Historial</a></li>
+                        <li><a href="movimiento" class="nav-link"><i class="material-icons left">today</i>Historial</a></li>
 
 
-                                                <li><a href="estado_equipo" class="hoverable"><i class="material-icons left">book</i>Estado equipos</a></li>
+                        <li><a href="estado_equipo" class="nav-link"><i class="material-icons left">book</i>Estado equipos</a></li>
 
 
-                        <li> <a href="documento" class="hoverable"><i class="material-icons left">description</i>documento</a></li>
-                    </ul>
+                        <li> <a href="documento" class="nav-link"><i class="material-icons left">description</i>documento</a></li>
 
+                        <li class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" id="MenuAdmin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Avanzado<i class="material-icons">settings</i></a>
+                            <div class="dropdown-menu" aria-labelledby="MenuAdmin">
 
-                    <ul class="right">
-                    <div style="width: 100px; display: flex; margin-right: 10px;">
-
-                        <li >
-                            <a data-target="MenuAdmin" style="display: block; margin: 0px;" class="sidenav-trigger hoverable" ><i class="material-icons">settings</i></a>
+                            </div>
                         </li>
 
-                        <li style="height: auto;">
+                        <li>
                             <form method="post">
                                 <input type="hidden" name="cerrarSesion">
-                                <button style="background-color: #8b0d32; height: 95%; margin: 0px; border: #8b0d32;   color: #FFFFFF; width: 50px; cursor: pointer;" class="sidenav-trigger hoverable "><i class="material-icons">power_settings_new</i>
-                                </button>
+                                <a class="sidenav-trigger hoverable ">Cerrar Sesion<i class="material-icons">logout</i>
+                                </a>
                             </form>
                         </li>
-                    </div>
                     </ul>
                 </div>
             </nav>
