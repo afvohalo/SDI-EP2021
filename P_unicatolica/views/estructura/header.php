@@ -72,11 +72,11 @@
                         <li class="nav-item dropdown" >
                             <a class="nav-link dropdown-toggle" id="MenuAdmin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Avanzado<i class="material-icons">settings</i></a>
                             <div class="dropdown-menu" aria-labelledby="MenuAdmin">
-
+                                <?php include_once "ajustes_nav.php"?>
                             </div>
                         </li>
 
-                        <li>
+                        <li class="nav-link">
                             <form method="post">
                                 <input type="hidden" name="cerrarSesion">
                                 <a class="sidenav-trigger hoverable ">Cerrar Sesion<i class="material-icons">logout</i>
