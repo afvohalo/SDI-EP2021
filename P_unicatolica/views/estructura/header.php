@@ -33,24 +33,10 @@
 
 
     <title>ADPCUC</title>
-
-
-</head>
-
-<body>
-
-
-    <div id="Header">
-        <div class="NavLogo">
-            <div class="NavNoLogo">
-                <a href="./"><img src="public/img/,.png" class="responsive-img "></a>
-            </div>
         </div>
-
-        <div >
             <nav class="navbar navbar-expand-lg navbar-r-dark bg-dark" >
-                <div >
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+               
+                    
 
                     <ul class="navbar-nav" >
 
@@ -84,10 +70,16 @@
                             </form>
                         </li>
                     </ul>
-                </div>
+
             </nav>
-        </div>
+  
     </div>
+
+</head>
+
+<body>
+
+
     <!-- MENU RESPONSIVE DE HAMBURGUESA DE LAS OPCIONES PRINCIPALES -->
     <!--<ul class="sidenav" id="mobile-demo">
 
