@@ -33,46 +33,47 @@
 
 
     <title>ADPCUC</title>
-        </div>
-            <nav class="navbar navbar-expand-lg navbar-r-dark bg-dark" >
-               
-                    
-
-                    <ul class="navbar-nav" >
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-r-dark bg-dark">
 
 
-                        <li><a href="caso" class="nav-link"><i class="material-icons left">assignment</i>Casos</a></li>
+
+        <ul class="navbar-nav">
+
+            <li><a href="rol" class="nav-link"><i class="material-icons left">assignment</i>Rol</a></li>
+
+            <li><a href="caso" class="nav-link"><i class="material-icons left">assignment</i>Casos</a></li>
 
 
-                        <li><a href="inventario" class="nav-link"><i class="material-icons left">storage</i>Inventario</a></li>
+            <li><a href="inventario" class="nav-link"><i class="material-icons left">storage</i>Inventario</a></li>
 
 
-                        <li><a href="movimiento" class="nav-link"><i class="material-icons left">today</i>Historial</a></li>
+            <li><a href="movimiento" class="nav-link"><i class="material-icons left">today</i>Historial</a></li>
 
 
-                        <li><a href="estado_equipo" class="nav-link"><i class="material-icons left">book</i>Estado equipos</a></li>
+            <li><a href="estado_equipo" class="nav-link"><i class="material-icons left">book</i>Estado equipos</a></li>
 
 
-                        <li> <a href="documento" class="nav-link"><i class="material-icons left">description</i>documento</a></li>
+            <li> <a href="documento" class="nav-link"><i class="material-icons left">description</i>documento</a></li>
 
-                        <li class="nav-item dropdown" >
-                            <a class="nav-link dropdown-toggle" id="MenuAdmin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Avanzado<i class="material-icons">settings</i></a>
-                            <div class="dropdown-menu" aria-labelledby="MenuAdmin">
-                                <?php include_once "ajustes_nav.php"?>
-                            </div>
-                        </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="MenuAdmin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avanzado<i class="material-icons">settings</i></a>
+                <div class="dropdown-menu" aria-labelledby="MenuAdmin">
+                    <?php include_once "ajustes_nav.php" ?>
+                </div>
+            </li>
 
-                        <li class="nav-link">
-                            <form method="post">
-                                <input type="hidden" name="cerrarSesion">
-                                <a class="sidenav-trigger hoverable ">Cerrar Sesion<i class="material-icons">logout</i>
-                                </a>
-                            </form>
-                        </li>
-                    </ul>
+            <li class="nav-link">
+                <form method="post">
+                    <input type="hidden" name="cerrarSesion">
+                    <a class="sidenav-trigger hoverable ">Cerrar Sesion<i class="material-icons">logout</i>
+                    </a>
+                </form>
+            </li>
+        </ul>
 
-            </nav>
-  
+    </nav>
+
     </div>
 
 </head>
