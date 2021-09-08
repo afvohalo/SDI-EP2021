@@ -15,7 +15,7 @@ class rolModel extends Model implements IModel
 
     try {
 
-    $query = $this->prepare('INSERT INTO tblrol(rol_nombre) VALUES (:NuevoRol)'); //Preparando la consulta
+    $query = $this->prepare('INSERT INTO tblrol(Rol_nombre) VALUES (:NuevoRol)'); //Preparando la consulta
     $query->execute([
     'NuevoRol' => $data['NuevoRol'],
     ]); // Aca mandamos a ejecutar la consulta pasando por ultimo los values :value
@@ -30,7 +30,7 @@ class rolModel extends Model implements IModel
     public function getAll()
     {
         try {
-            $query = $this->prepare('SELECT * FROM tbltipo_rol');
+            $query = $this->prepare('SELECT * FROM tblrol');
             $query->execute();
             return $query->fetchAll();
         } catch (PDOException $e) {
@@ -43,7 +43,7 @@ class rolModel extends Model implements IModel
 
     try {
 
-    $query = $this->prepare('DELETE FROM tblrol WHERE rol_id=:id');
+    $query = $this->prepare('DELETE FROM tblrol WHERE Rol_id=:id');
     $query->execute($id);
 
     } catch (PDOException $e) {
@@ -57,7 +57,7 @@ class rolModel extends Model implements IModel
     {
     try {
 
-    $query = $this->prepare('SELECT * FROM tblrol WHERE rol_id=:id');
+    $query = $this->prepare('SELECT * FROM tblrol WHERE Rol_id=:id');
     $query->execute(['id' => $id]);
 
     return $query->fetchAll();
@@ -71,7 +71,7 @@ public function update($id, $name)
 {
 try {
 
-$query = $this->prepare('UPDATE tblrol SET rol_nombre =:name WHERE rol_id=:id');
+$query = $this->prepare('UPDATE tblrol SET Rol_nombre =:name WHERE Rol_id=:id');
 $query->execute([
 'id'   => $id,
 'name' => $name,

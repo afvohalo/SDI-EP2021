@@ -13,7 +13,7 @@
                             <table id="myTable" class="table table-bordered text-center">
                                 <thead>
                                     <tr>
-                                        <th>Tipo Documento</th>
+                                        <th>Rol</th>
                                         <th class="notexportar">Acciones</th>
                                     </tr>
                                 </thead>
@@ -21,6 +21,7 @@
                                 <?php
 
 foreach ($this->d as $value) {
+    print_r($this->d);
     ?>
                                     <div class="row">
                                         <div class="col">
