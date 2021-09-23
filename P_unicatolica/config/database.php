@@ -33,7 +33,7 @@ class Database
             //require_once '../index.php';
             
 
-        } catch (PDOExecption $e) {
+        } catch (PDOException $e) {
             print_r('Error de conexion' . $e->getMessage());
         }
 
