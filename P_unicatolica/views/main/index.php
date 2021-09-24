@@ -1,102 +1,79 @@
 <center>
-        <h6 class="titulo_inicio">SISTEMA CONTROL DE INVENTARIO MELENDEZ</h6>
+    <h6 class="titulo_inicio">SISTEMA CONTROL DE INVENTARIO MELENDEZ</h6>
 </center>
 
-<div class="carru">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="3000" id="slide1">
 
 
+
+<body>
+    
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Free</h4>
                 </div>
-
-                <div class="carousel-item" data-interval="3000" id="slide2">
-
-
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
                 </div>
-
-                <div class="carousel-item" data-interval="3000" id="slide3">
-
-
-                </div>
-
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                </div>
+            </div>
         </div>
 
+
+
+
+        
     </div>
-
-    <div class="card">
-        <div class="card-body">
-            This is some text within a card body.
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-body">
-            This is some text within a card body.
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-body">
-            This is some text within a card body.
-        </div>
-    </div>
+    
+</body>
 
 
 
 
-
-
-</head>
 <style>
-    #slide1 {
-        background: url('public/img/slider1.jpeg');
-        background-position: center;
-        background-size: cover;
-        height: 400px;
+    .navbar {
+        background: #FFCD48;
+        position: sticky;
+        top: 0;
+        z-index: 1;
     }
-
-    #slide2 {
-        background: url('public/img/slider2.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 400px;
-    }
-
-    #slide3 {
-        background: url('public/img/slider3.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 400px;
-    }
-
-    
-        .navbar {
-            background: #FFCD48;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
-
-        #carouselExampleIndicators {
-            z-index: 0;
-        }
-    
 </style>
 <script>
     $('.carousel').carousel({
@@ -104,4 +81,3 @@
 
     });
 </script>
-
