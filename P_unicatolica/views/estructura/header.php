@@ -65,20 +65,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item my-2 ">
+                <li class="nav-item my-2 ml-4">
                     <a class="nav-link text-white" href="inventario">inventario</a>
                 </li>
-                <li class="nav-item my-2 ">
+                <li class="nav-item my-2 ml-4">
                     <a class="nav-link text-white" href="rol">rol</a>
                 </li>
-                <li class="nav-item my-2 ">
+                <li class="nav-item my-2 ml-4">
                     <a class="nav-link text-white" href="caso">caso</a>
                 </li>
-                <li class="nav-item my-2 ">
+                <li class="nav-item my-2 ml-4">
                     <a class="nav-link text-white" href="documento">documento</a>
                 </li>
 
-                <li class="nav-item dropdown my-2 ">
+                <li class="nav-item dropdown my-2 ml-4">
                     <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="bi bi-gear-fill"></i> Otros
                     </a>
@@ -88,7 +88,7 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
-                <li class="nav-item my-2">
+                <li class="nav-item my-2 ml-4">
                     <a class="nav-link text-white" href="documento"><i class="bi bi-x-circle-fill"></i> Cerrar sesion</a>
                 </li>
 
