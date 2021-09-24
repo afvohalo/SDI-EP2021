@@ -57,7 +57,7 @@
     </div>
 
         
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark bt-header-stick active">
+    <nav class="navbar navbar-expand-lg navbar-light bt-header-stick active" style="background-color: #205f9b;">
     <a href="./"><img src="public/img/logowhite.png" style="height: 80px; width: auto; padding: 8px;"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,10 +69,10 @@
                     <a class="nav-link text-white" href="inventario">inventario</a>
                 </li>
                 <li class="nav-item my-2 ml-4">
-                    <a class="nav-link text-white" href="rol">rol</a>
+                    <a class="nav-link text-white" href="rol">Mantenimiento</a>
                 </li>
                 <li class="nav-item my-2 ml-4">
-                    <a class="nav-link text-white" href="caso">caso</a>
+                    <a class="nav-link text-white" href="caso">Solicitudes</a>
                 </li>
                 <li class="nav-item my-2 ml-4">
                     <a class="nav-link text-white" href="documento">documento</a>
@@ -89,7 +89,7 @@
                     </div>
                 </li>
                 <li class="nav-item my-2 ml-4">
-                    <a class="nav-link text-white" href="documento"><i class="bi bi-x-circle-fill"></i> Cerrar sesion</a>
+                    <a class="nav-link text-white" href="documento"><i class="bi bi-x-circle-fill"></i> Salir</a>
                 </li>
 
 
@@ -98,7 +98,7 @@
     </nav>
 
     
-   
+</head>
 
 <body>
 
