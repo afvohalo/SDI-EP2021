@@ -32,7 +32,7 @@ body{
 .container{
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -58,7 +58,19 @@ body{
 
 .nav-link{
   font-size: 18px;
+  
 }
+
+li {
+  
+  transition: .5s;
+}
+
+li:hover {
+  height: auto;
+  background-color: #6a83b8cb;
+  border-radius: 5px;
+} 
 
 html {
     font-size: 14px;
