@@ -1,6 +1,6 @@
-<script src="public/js/scripts_documento.js"></script>
+<script src="public/js/scripts_estado_equipo.js"></script>
 
-<div id="modalDocumentoedit" class="modal">
+<div id="modalEstadoEquipoEdit" class="modal">
     <div class="modal-content">
         <h4 class="center">Editar Tipo Documento</h4>
 

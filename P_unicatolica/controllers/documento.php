@@ -20,7 +20,7 @@ class Documento extends Controller
         $this->view->render('documento/formcreate');
 
         //$this->view->render('estructura/ajustes_nav'); //NAV_AJUSTES
-        //$this->view->render('estructura/footer'); //FOOTER
+        $this->view->render('estructura/footer'); //FOOTER
     }
 
     public function setData($data)
@@ -44,52 +44,50 @@ class Documento extends Controller
     public function registrarDocumento()
     {
 
-         echo "<p>Guardando datos satisfactoriamente</p>";
-         
+        echo "<p>Guardando datos satisfactoriamente</p>";
+
         $namedocumento = $_POST['formularioDocumento'];
-        $this->model->save(['tip_doc_descripcion' => $namedocumento[0]]);
+        $this->model->save(['NuevoTipoDocumento' => $namedocumento[0]]);
         $this->RefreshDataTable();
-    
 
     }
 
     public function deleteDocumento()
     {
 
-         echo "<p>Guardando datos satisfactoriamente</p>"; 
-        /*
-        $id = $_POST['id'];
-        $this->model->delete(['id' => $id]);
-        $this->RefreshDataTable();
-        */
+        echo "<p>Guardando datos satisfactoriamente</p>";
+        
+    $id = $_POST['id'];
+    $this->model->delete(['id' => $id]);
+    $this->RefreshDataTable();
+     
 
     }
 
     public function oneDocumento()
     {
 
-         echo "<p>Guardando datos satisfactoriamente</p>"; 
-        /*
+        echo "<p>Guardando datos satisfactoriamente</p>";
+        
         $id  = $_POST['id'];
         $res = $this->model->getId($id);
         $this->setData($res);
-        */
+         
 
         $this->view->render('documento/formedit', $this->getData());
         /* print_r($this->getData()); */
     }
-    
+
     public function editDocumento()
-    {   
+    {
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
-        /*
-        $idtipodocumento = $_POST['id'];
-        $namedocumento   = $_POST['formularioDocumentoEdit'];
-        $this->model->update($idtipodocumento, $namedocumento[0]);
-        $this->RefreshDataTable();
-        */
+        
+    $idtipodocumento = $_POST['id'];
+    $namedocumento   = $_POST['formularioDocumentoEdit'];
+    $this->model->update($idtipodocumento, $namedocumento[0]);
+    $this->RefreshDataTable();
+     
     }
-    
-      
+
 }

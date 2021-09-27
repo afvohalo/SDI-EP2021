@@ -8,6 +8,7 @@ function SaveData() {
 				"Acc":"registrarDocumento",
 				"formularioDocumento":ProcessData(data)
 			}
+				console.log(DatosDocumento);
 			ReadyChangeJquery(DatosDocumento,"#table_data");
 		})
 	},"#form_documento")
@@ -19,8 +20,9 @@ function OneData(id){
 		'Acc':'oneDocumento',
 		'id':id
 	}
+	console.log(OneIdDocumento);
 	ReadyChangeJquery(OneIdDocumento,"#form_edit")
-}
+}	
 
 
 function DeleteData(id){
@@ -48,3 +50,4 @@ function UpdateData(id){
 	})
 },'#form_documento_edit')
 }
+
