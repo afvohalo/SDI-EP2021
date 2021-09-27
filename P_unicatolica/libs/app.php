@@ -2,10 +2,9 @@
 <?php
 
 if (isset($_POST['Acc'])) {
-    $d=$_GET['url']." ".$_POST['Acc']." ".$_POST['Ctr'];
+    $d = $_GET['url'] . " " . $_POST['Acc'] . " " . $_POST['Ctr'];
     //echo "<script type='text/javascript'>console.log($d);</script>";
-}else{echo "lol";}
-
+} else {/*echo "lol";*/}
 
 require_once 'controllers/errorPage.php';
 
@@ -23,22 +22,42 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
         require_once $archivoController;
 
         if ($WhatAction == 'LoadObjectAction') {
+            $caracterspecial = '_';
 
             $ctr = $_POST['Ctr'];
             $acc = $_POST['Acc'];
             //crear un nuevo controlador y carga el modelo
             $controller = new $ctr;
-            //echo "<script type='text/javascript'>console.log($acc);</script>";
-            $controller->cargarModel($ctr);
-            $controller->{$acc}();
+             //verifica y quita el caracter "_"
+            if (strpos($ctr, $caracterspecial) != false ) {
+                $ctr = (strtolower($ctr));
+                $ctr = preg_replace('([_])', '', $ctr);
+
+                $controller->cargarModel($ctr);
+                $controller->{$acc}();
+
+            } else {
+                $controller->cargarModel($ctr);
+                $controller->{$acc}();
+
+            }
         }
 
         if ($WhatAction == 'LoadView') {
+            $caracterspecial = '_';
             //crear un nuevo controlador,carga el modelo y carga el index del controlador
             $clase      = ucwords($url[0]);
             $controller = new $clase;
-            $controller->cargarModel($url[0]);
-            $controller->{'index'}();
+            if (strpos($clase, $caracterspecial) != false) {
+                $clase = strtolower($clase);
+                $clase = preg_replace('([_])', '', $clase);
+                echo $clase;
+                $controller->cargarModel($clase);
+                $controller->{'index'}();
+            } else {
+                $controller->cargarModel($clase);
+                $controller->{'index'}();
+            }
         }
 
         if ($WhatAction == 'LoadIndex') {
