@@ -56,9 +56,14 @@ body{
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .nav-link{
   font-size: 18px;
-  
 }
 
 li {
@@ -70,7 +75,7 @@ li:hover {
   height: auto;
   background-color: #6a83b8cb;
   border-radius: 5px;
-} 
+}
 
 html {
     font-size: 14px;
@@ -91,6 +96,20 @@ html {
   }
 
   
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
 
 
   
