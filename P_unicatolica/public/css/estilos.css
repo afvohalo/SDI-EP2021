@@ -1,7 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #205f9b /* !important */;
+    background-color: #ffffff /* !important */;
 }
 
 
@@ -60,6 +60,7 @@ body{
   position: sticky;
   top: 0;
   z-index: 1;
+  box-shadow: 0px 10px 5px rgba(187, 187, 187, 0.596);
 }
 
 .nav-link{
@@ -67,7 +68,6 @@ body{
 }
 
 li {
-  
   transition: .5s;
 }
 

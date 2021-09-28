@@ -52,6 +52,7 @@
         position: sticky;
         top: 0;
         z-index: 1;
+        box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
     }
     </style>
 

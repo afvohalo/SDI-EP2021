@@ -4,13 +4,13 @@
 
 
 <body>
-  <div class="container" style="background-color: #6a6a6a; height:300px">
+  <div class="container" style=" height:30%">
+    <img class="d-block w-100" src="public/img/slider2.jpg" alt="">
     
   <center>
 
 <br>
 <h6 class="titulo_inicio">
-<img class="d-block mx-auto mb-4" src="public/img/logo.svg" alt="" width="300" height="100">
     <P>SISTEMA CONTROL DE INVENTARIO MELENDEZ</P>
 </h6><br>
 </center>
@@ -103,15 +103,19 @@
     <link href="form-validation.css" rel="stylesheet">
     </head>
 
-    <body class="bg-light">
+    <body>
 
         <div class="container">
             <div class="py-3 text-center">
                 <img class="d-block mx-auto mb-4" src="public/img/logo.svg" alt="" width="200" height="100">
                 <h2>Checkout form</h2>
-                <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required
-                    form group has a validation state that can be triggered by attempting to submit the form without
-                    completing it.</p>
+                <p class="lead">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731
+
+Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
+Teléfonos: +57 (2) 555 2767 –  +57 (2) 312 0038
+
+Para notificaciones judiciales y administrativas comuníquese a:
+secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
             </div>
 
             <div class="row">
@@ -308,21 +312,30 @@
                     </form>
                 </div>
             </div>
-            <footer class="container my-5 pt-5 text-muted text-center text-small">
-                <p class="mb-12">&copy; 2021-2025 Sistemas Melendez</p>
+            <footer class="bg-dark my-5 pt-5 text-muted text-center text-small">
+            <div class="py-3 text-center">
+                <img class="d-block mx-auto mb-4" src="public/img/logo.svg" alt="" width="300" height="100">
+                <p class="lead">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731 <br>
+            
+            Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
+            Teléfonos: +57 (2) 555 2767 –  +57 (2) 312 0038 <br>
+            
+            Para notificaciones judiciales y administrativas comuníquese a:
+            secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
+            </div>
             </footer>
-
-        </div>
-
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+            
+          </div>
+          
+          
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
 
-        </div>
+</div>
 
 
-    </body>
+</body>
 
 
 
