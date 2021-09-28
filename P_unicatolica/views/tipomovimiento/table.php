@@ -6,16 +6,14 @@
                 <div>
                     <div class="">
                         <h4>
-                            MODULO SALAS
+                            MODULO TIPO DE MOVIMIENTO
                         </h4>
                     </div>
                     <div class="container table-responsive">
                             <table id="myTable" class="table table-bordered text-center">
                                 <thead>
                                     <tr>
-                                        <th>Sala</th>
-                                        <th>Cantidad de equipos</th>
-                                        <th>VideoBeam</th>
+                                        <th>Tipo de Movimiento</th>
                                         <th class="notexportar">Acciones</th>
                                     </tr>
                                 </thead>
@@ -27,13 +25,11 @@ foreach ($this->d as $value) {
                                     <div class="row">
                                         <div class="col">
                                     <tr>
-                                        <td><?php echo $value['Sal_nombre'] ?></td>
-                                        <td><?php echo $value['Sal_cantidad_equipo'] ?></td>
-                                        <td><?php echo $value['Sal_videobeam'] ?></td>
+                                        <td><?php echo $value['Tip_mov_nombre'] ?></td>
                                         <td>
-                                            <button data-target="#modalSalasedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Sal_id'] ?>)"><i  class="material-icons">edit</i></button>
+                                            <button data-target="#modalTipomovimientoedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Tip_mov_id'] ?>)"><i  class="material-icons">edit</i></button>
 
-                                            <button onclick="DeleteData(<?php echo $value['Sal_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
+                                            <button onclick="DeleteData(<?php echo $value['Tip_mov_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
                                         </td>
                                     </tr>
                                         </div>
@@ -47,8 +43,8 @@ foreach ($this->d as $value) {
                     </div>
 
                     <div class="">
-                        <button  data-target="#modalSalas" class="btn btn-primary" data-toggle="modal">
-                            <i class="material-icons left">library_add</i><br>Agregar Nueva Sala</button>
+                        <button  data-target="#modalTipomovimiento" class="btn btn-primary" data-toggle="modal">
+                            <i class="material-icons left">library_add</i><br>Agregar Nuevo Tipo de Movimiento</button>
                     </div>
                 </div>
             </div>
