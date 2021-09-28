@@ -19,10 +19,13 @@
                 </div>
 
                 <div class="input-field">
-                    <input type="text" name="VB" required>
-                    <label class="active" for="VB">
-                        VideoBeam
-                    </label>
+                    <input type="radio" name="VB" value="1">
+                    <label class="active" for="VB"> Si </label>
+
+                    <input type="radio" name="VB" value="0">
+                    <label class="active" for="VB"> No </label>
+
+                    <label for="VB"> VideoBeam en la sala: </label>
                 </div>
 
             </div>
