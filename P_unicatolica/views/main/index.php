@@ -1,25 +1,23 @@
 <body>
-
-    
     <img class="banner d-block w-100" alt="">
-    <div class="py-3 text-center">
-        <h2>SISTEMAS MELENDEZ</h2>
-        <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de
+    <div class="container py-3 text-center">
+        <div>SISTEMAS MELENDEZ Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de
             Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731
-            
+
             Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
             Teléfonos: +57 (2) 555 2767 – +57 (2) 312 0038
-            
-            Para notificaciones judiciales y administrativas comuníquese a:
-                secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
-            </div>
-        <center>
 
-            <br>
-            <h6 class="titulo_inicio">
-                <P>SISTEMA CONTROL DE INVENTARIO MELENDEZ</P>
-            </h6><br>
-        </center>
+            Para notificaciones judiciales y administrativas comuníquese a:
+            secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</div>
+    </div>
+
+    <center>
+
+        <br>
+        <h6 class="titulo_inicio">
+            <P>SISTEMA CONTROL DE INVENTARIO MELENDEZ</P>
+        </h6><br>
+    </center>
     <div class="container">
         <!--
         <div class="card-deck mb-3 text-center">
@@ -64,50 +62,56 @@
             -->
 
 
-        
+
 
 
         <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">INVENTARIO SALAS</strong>
+                        <h3 class="mb-0">Panel principal</h3>
+                        <div class="mb-1 text-muted">Novedades</div>
+                        <p class="card-text mb-auto">Ingrese para acceder al panel principal del inventario de salas, Consulte las cantidades de salas, asigne salas a los usuarios.</p>
+                        <a href="inventariosalas" class="stretched-link">Ingresar</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                        </svg>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">INVENTARIO OFICINA</strong>
+                        <h3 class="mb-0">Panel principal</h3>
+                        <div class="mb-1 text-muted">Novedades</div>
+                        <p class="mb-auto">Ingrese para acceder al panel principal del inventario de salas, Consulte las cantidades de salas, asigne salas a los usuarios.</p>
+                        <a href="#" class="stretched-link">Ingresar</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Post title</h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    
 
 
 
 
-        <!--  SEGUNDA FILA                  -->
+
+
+
+    <!--  SEGUNDA FILA                  -->
 
 
     </div>
@@ -274,18 +278,15 @@
 
                         <div class="d-block my-3">
                             <div class="custom-control custom-radio">
-                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
-                                    checked required>
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
                                 <label class="custom-control-label" for="credit">Credit card</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
-                                    required>
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
                                 <label class="custom-control-label" for="debit">Debit card</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input"
-                                    required>
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
                                 <label class="custom-control-label" for="paypal">PayPal</label>
                             </div>
                         </div>
@@ -344,8 +345,7 @@
         </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
 
         </div>
