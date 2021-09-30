@@ -4,6 +4,19 @@ html, body{
     background-color: #ffffff /* !important */;
 }
 
+.banner{
+  background-image: linear-gradient(
+      rgba(9, 64, 214, 0.5),
+      rgba(76, 126, 233, 0.5)
+    ),
+ url(../img/img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: center;
+  border:none;
+  box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
+}
 
 body{
     width: 100%;
@@ -24,10 +37,11 @@ body{
 }
 
 .titulo_inicio{
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  text-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
+  color: rgb(0, 0, 0);
   
 }
+
 
 .container{
     width: 100%;
@@ -111,6 +125,24 @@ html {
     }
   }
 
+  
+
+  @font-face {
+    font-family: Quicksand-SemiBold;
+    src: url('../fonts/Quicksand-SemiBold.ttf');
+}
+a{  
+	font-family: Quicksand-SemiBold;
+}
+p{  
+	font-family: Quicksand-SemiBold;
+}
+li{  
+	font-family: Quicksand-SemiBold;
+}
+ul{  
+	font-family: Quicksand-SemiBold;
+}
 
   
 

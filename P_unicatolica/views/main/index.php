@@ -1,57 +1,33 @@
-
-
-
-
-
 <body>
-  <div class="container" style=" height:30%">
-    <img class="d-block w-100" src="public/img/slider2.jpg" alt="">
-    
-  <center>
 
-<br>
-<h6 class="titulo_inicio">
-    <P>SISTEMA CONTROL DE INVENTARIO MELENDEZ</P>
-</h6><br>
-</center>
-  </div>
+    
+    <img class="banner d-block w-100" alt="">
+    <div class="py-3 text-center">
+        <h2>SISTEMAS MELENDEZ</h2>
+        <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de
+            Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731
+            
+            Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
+            Teléfonos: +57 (2) 555 2767 – +57 (2) 312 0038
+            
+            Para notificaciones judiciales y administrativas comuníquese a:
+                secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
+            </div>
+        <center>
+
+            <br>
+            <h6 class="titulo_inicio">
+                <P>SISTEMA CONTROL DE INVENTARIO MELENDEZ</P>
+            </h6><br>
+        </center>
     <div class="container">
+        <!--
         <div class="card-deck mb-3 text-center">
+
+
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Salas</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">11 <small class="text-muted">/ <i
-                                class="bi bi-house-fill"></i></small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>122 equipos incluidos</li>
-                        <li>2 GB of storage</li>
-                        <li>Email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary">Seleccionar</button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Equipos</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">122 <small class="text-muted">/ <i
-                                class="bi bi-laptop"></i></small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>20 users included</li>
-                        <li>10 GB of storage</li>
-                        <li>Priority email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary">Seleccionar</button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Tareas Pendientes</h4>
+                    <h4 class="my-0 font-weight-normal">INVENTARIO SALAS</h4>
                 </div>
                 <div class="card-body">
                     <h1 class="card-title pricing-card-title">9 <small class="text-muted">/ <i
@@ -67,7 +43,7 @@
             </div>
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Mantenimientos</h4>
+                    <h4 class="my-0 font-weight-normal">INVENTARIO OFICINA</h4>
                 </div>
                 <div class="card-body">
                     <h1 class="card-title pricing-card-title">29 <small class="text-muted">/ <i
@@ -85,15 +61,53 @@
 
         </div>
 
+            -->
+
+
+        
+
+
+        <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">Post title</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
         <!--  SEGUNDA FILA                  -->
-
-
-
-
-
-
-
-
 
 
     </div>
@@ -108,14 +122,15 @@
         <div class="container">
             <div class="py-3 text-center">
                 <img class="d-block mx-auto mb-4" src="public/img/logo.svg" alt="" width="200" height="100">
-                <h2>Checkout form</h2>
-                <p class="lead">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731
+                <h2>SISTEMAS MELENDEZ</h2>
+                <p class="lead">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de
+                    Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731
 
-Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
-Teléfonos: +57 (2) 555 2767 –  +57 (2) 312 0038
+                    Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
+                    Teléfonos: +57 (2) 555 2767 – +57 (2) 312 0038
 
-Para notificaciones judiciales y administrativas comuníquese a:
-secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
+                    Para notificaciones judiciales y administrativas comuníquese a:
+                    secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
             </div>
 
             <div class="row">
@@ -312,32 +327,28 @@ secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
                     </form>
                 </div>
             </div>
-            <footer class="bg-dark my-5 pt-5 text-muted text-center text-small">
-            <div class="py-3 text-center">
-                <img class="d-block mx-auto mb-4" src="public/img/logo.svg" alt="" width="300" height="100">
-                <p class="lead">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731 <br>
-            
-            Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
-            Teléfonos: +57 (2) 555 2767 –  +57 (2) 312 0038 <br>
-            
-            Para notificaciones judiciales y administrativas comuníquese a:
-            secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
-            </div>
+            <footer class="bg-ligth my-5 pt-5 text-muted text-center text-small">
+                <div class="py-3 text-center">
+                    <img class="d-block mx-auto mb-4" src="public/img/logo.svg" alt="" width="300" height="100">
+                    <p class="lead">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio
+                        de Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731 <br>
+
+                        Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
+                        Teléfonos: +57 (2) 555 2767 – +57 (2) 312 0038 <br>
+
+                        Para notificaciones judiciales y administrativas comuníquese a:
+                        secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
+                </div>
             </footer>
-            
-          </div>
-          
-          
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
 
-</div>
+        </div>
 
 
-</body>
-
-
-
-
-   
+    </body>

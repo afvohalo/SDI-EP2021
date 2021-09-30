@@ -21,7 +21,7 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
 
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="public/css/default.css">
     <link rel="stylesheet" href="public/css/toastr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
@@ -64,7 +64,8 @@
     </div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bt-header-stick active" style="background-color: #205f9b; opacity: .9;">
+    <nav class="navbar navbar-expand-lg navbar-light bt-header-stick active"
+        style="background-color: #205f9b; opacity: .9;">
         <a href="./"><img src="public/img/logowhite.png" style="height: 80px; width: auto; padding: 8px;"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -73,19 +74,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item my-2 ml-4">
-                    <b><a class="nav-link text-white" href="inventario">Inventario</a></b>
+                <li class="my-2 ml-4">
+                    <a class="navbar-brand">
+                        <img src="public/img/avatar.png" width="40" height="40" alt="logo" class="rounded-circle">
+                        <b class="text-white">INSERTE USUARIO</b>
+                        
+                    </a>
                 </li>
                 <li class="nav-item my-2 ml-4">
-                    <b><a class="nav-link text-white" href="rol">Mantenimiento</a></b>
+                    <b><a class="nav-link text-white" href="rol">Dashboard</a></b>
                 </li>
-                <li class="nav-item my-2 ml-4">
-                    <b><a class="nav-link text-white" href="caso">Solicitudes</a></b>
-                </li>
-                <li class="nav-item my-2 ml-4">
-                    <b><a class="nav-link text-white" href="documento">Documento</a></b>
-                </li>
-
                 <li class="nav-item dropdown my-2 ml-4">
                     <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
