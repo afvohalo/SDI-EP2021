@@ -1,4 +1,4 @@
-    <div id="table_data ">
+    <div id="table_data">
     <!-- Todo lo que este dentro de este id, se actualiza, si esta afuera o antes de esto, va a pasar un bucle -->
 
     <div class="container text-center">
@@ -21,7 +21,6 @@
                                 <?php
 
 foreach ($this->d as $value) {
-    print_r($this->d);
     ?>
                                     <div class="row">
                                         <div class="col">

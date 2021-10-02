@@ -1,4 +1,4 @@
-Z<?php
+<?php
 
 class salasModel extends Model implements IModel
 {

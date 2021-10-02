@@ -20,7 +20,7 @@
         <div class="col s2"></div>
 
         <div class="input-field col s8 ">
-            <input type="text" name="VB" value="<?php echo $this->d[0]['Sal_videobeam'] ?>" required>
+            <input type="check" name="VB" value="<?php echo $this->d[0]['Sal_videobeam'] ?>" required>
             <label class="active" for="VB">
                 VideoBeam en la sala:
             </label>

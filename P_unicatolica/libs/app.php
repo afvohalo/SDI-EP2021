@@ -80,7 +80,7 @@ function IsCleanUrl()
     $url = isset($_GET['url']) ? $_GET['url'] : null;
     //quita el caracter "/" si esta de ultimo
     $url = rtrim($url, '/');
-    print_r($url);
+    
     //meter en un array los string separados por "/"
     $url = explode('/', $url);
 
@@ -106,7 +106,6 @@ if (isset($_POST['Acc']) && isset($_POST['Ctr'])) {
     //dirige al main
     $archivoController = 'controllers/main.php';
     IsLoadView($archivoController, 'LoadIndex');
-
 }
 
 ?>
