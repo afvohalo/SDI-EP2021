@@ -3,7 +3,7 @@
     <div class="card-deck mb-3 text-center">
         <div class="card mb-4 shadow-sm">
             <div class="card-header">
-                <h4 class="my-0 font-weight-normal">INVENTARIO SALAS</h4>
+                <h4 class="my-0 font-weight-normal">SALAS</h4>
             </div>
             <div class="card-body">
                 <h1 class="card-title pricing-card-title">9 <small class="text-muted">/ <i class="bi bi-file-earmark-medical-fill"></i></small></h1>
@@ -13,7 +13,7 @@
                     <li>Phone and email support</li>
                     <li>Help center access</li>
                 </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Seleccionar</button>
+                <a type="button" href="salas" class="btn btn-lg btn-block btn-primary">Seleccionar</a>
             </div>
         </div>
         <div class="card mb-4 shadow-sm">
