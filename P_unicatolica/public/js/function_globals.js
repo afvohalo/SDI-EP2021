@@ -18,9 +18,9 @@ function ReadyChangeJquery(GetData,IdentificatorDiv){
 	} )
 	.done(function(data) {
 		$(IdentificatorDiv).html(data);
-		 $('select').formSelect();
-		 $('.collapsible').collapsible();
-		 $('#myTable').DataTable({
+		 //$('select').formSelect();
+		 //$('.collapsible').collapsible();
+		/*$('#myTable').DataTable({
 			destroy: true,
 			dom: 'Bfrtip',
 			fixedColumns: true,
@@ -68,7 +68,7 @@ function ReadyChangeJquery(GetData,IdentificatorDiv){
 				},
 				"infoFiltered": "(filtrado de un total de _MAX_ registros)",
 			}  
-		});
+		});*/
         
 	} )
 	.fail(function(){
@@ -125,7 +125,7 @@ function Message_Confirm(x_function_ready){
 					theme: 'material',
 				});
 				x_function_ready()
-				$('.modal').modal('close');
+				$('.modal').modal('hide');
 
 			},
 			cancel: function () {

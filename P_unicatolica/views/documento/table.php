@@ -2,7 +2,7 @@
     <!-- Todo lo que este dentro de este id, se actualiza, si esta afuera o antes de esto, va a pasar un bucle -->
 
     <div class="container text-center">
-        <div class="col s10 ">
+        <div class="col 10 ">
                 <div>
                     <div class="">
                         <h4>
@@ -42,8 +42,8 @@ foreach ($this->d as $value) {
                         </div>
                     </div>
 
-                    <div class="">
-                        <button  data-target="#modalDocumento" class="btn btn-primary" data-toggle="modal">
+                    <div >
+                        <button id="modal20"  data-target="#modalDocumento" class="btn btn-primary" data-toggle="modal">
                             <i class="material-icons left">library_add</i><br>Agregar Nuevo Tipo De Documento</button>
                     </div>
                 </div>
