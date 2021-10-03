@@ -22,52 +22,6 @@
         </h6><br>
     </center>
     <div class="container">
-        <!--
-        <div class="card-deck mb-3 text-center">
-
-
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">INVENTARIO SALAS</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">9 <small class="text-muted">/ <i
-                                class="bi bi-file-earmark-medical-fill"></i></small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>30 users included</li>
-                        <li>15 GB of storage</li>
-                        <li>Phone and email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary">Seleccionar</button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">INVENTARIO OFICINA</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">29 <small class="text-muted">/ <i
-                                class="bi bi-tools"></i></small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>30 users included</li>
-                        <li>15 GB of storage</li>
-                        <li>Phone and email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary">Seleccionar</button>
-                </div>
-            </div>
-
-
-        </div>
-
-            -->
-
-
-
-
-
         <div class="row mb-2">
             <div class="col-md-6">
                 <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -107,11 +61,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
     <!--  SEGUNDA FILA                  -->

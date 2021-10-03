@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li class="nav-item my-2 ml-2">
-                    <b><a class="nav-link text-white btninicio" href="rol"><i class="bi bi-house-fill"></i> Inicio</a></b>
+                    <b><a class="nav-link text-white btninicio" href="./"><i class="bi bi-house-fill"></i> Inicio</a></b>
                 </li>
                 <li class="nav-item my-2 ml-2">
                     <b><a class="nav-link text-white btninicio" href="salas">Salas</a></b>
