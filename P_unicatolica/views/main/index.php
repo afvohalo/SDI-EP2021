@@ -76,7 +76,7 @@
                         <h3 class="mb-0">Panel principal</h3>
                         <div class="mb-1 text-muted">Novedades</div>
                         <p class="card-text mb-auto">Ingrese para acceder al panel principal del inventario de salas, Consulte las cantidades de salas, asigne salas a los usuarios.</p>
-                        <a href="inventariosalas" class="stretched-link">Ingresar</a>
+                        <a href="menusalas" class="stretched-link">Ingresar</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <svg class="bd-placeholder-img" width="200" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -94,7 +94,7 @@
                         <h3 class="mb-0">Panel principal</h3>
                         <div class="mb-1 text-muted">Novedades</div>
                         <p class="mb-auto">Ingrese para acceder al panel principal del inventario de salas, Consulte las cantidades de salas, asigne salas a los usuarios.</p>
-                        <a href="#" class="stretched-link">Ingresar</a>
+                        <a href="menuoficina" class="stretched-link">Ingresar</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <svg class="bd-placeholder-img" width="200" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
