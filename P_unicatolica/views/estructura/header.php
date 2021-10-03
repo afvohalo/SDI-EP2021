@@ -59,29 +59,29 @@
     </div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bt-header-stick active" style="background-color: #0f3457; opacity: .9;">
-        <a href="./"><img src="public/img/logowhite.png" style="height: 80px; width: auto; padding: 8px;"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bt-header-stick active" style="background-color: #ffffff;">
+        <a href="./"><img src="public/img/logo.svg" style="height: 90px; width: auto; padding: 8px;"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="bi bi-justify" style="color: white;"></i></span>
+            <span><i class="bi bi-justify" style="color: black;"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="my-2 ml-2">
                     <a class="navbar-brand">
                         <img src="public/img/avatar.png" width="40" height="40" alt="logo" class="rounded-circle">
-                        <b class="text-white">INSERTE USUARIO</b>
+                        <b class="text-black">INSERTE USUARIO</b>
 
                     </a>
                 </li>
                 <li class="nav-item my-2 ml-2">
-                    <b><a class="nav-link text-white btninicio" href="./"><i class="bi bi-house-fill"></i> Inicio</a></b>
+                    <b><a class="nav-link text-black btninicio" href="./"><i class="bi bi-house-fill"></i> Inicio</a></b>
                 </li>
                 <li class="nav-item my-2 ml-2">
-                    <b><a class="nav-link text-white btninicio" href="salas">Salas</a></b>
+                    <b><a class="nav-link text-black btninicio" href="salas">Salas</a></b>
                 </li>
                 <li class="nav-item dropdown my-2 ml-2">
-                    <a class="nav-link text-white dropdown-toggle btninicio " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link text-black dropdown-toggle btninicio " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <b><i class="bi bi-gear-fill"></i> Otros</b>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -91,7 +91,7 @@
                     </div>
                 </li>
                 <li class="nav-item my-2 ml-2 btninicio">
-                    <b><a class="nav-link text-white" href="login/index"><i class="bi bi-door-open-fill"></i> Salir</a></b>
+                    <b><a class="nav-link text-black" href="login/index"><i class="bi bi-door-open-fill"></i> Salir</a></b>
                 </li>
 
 
