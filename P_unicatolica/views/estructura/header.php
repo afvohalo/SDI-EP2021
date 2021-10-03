@@ -91,7 +91,7 @@
                     </div>
                 </li>
                 <li class="nav-item my-2 ml-2 btninicio">
-                    <b><a class="nav-link text-white" href="documento"><i class="bi bi-door-open-fill"></i> Salir</a></b>
+                    <b><a class="nav-link text-white" href="login/index"><i class="bi bi-door-open-fill"></i> Salir</a></b>
                 </li>
 
 
