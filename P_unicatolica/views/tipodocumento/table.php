@@ -1,4 +1,4 @@
-    <div id="table_data ">
+    <div id="table_data">
     <!-- Todo lo que este dentro de este id, se actualiza, si esta afuera o antes de esto, va a pasar un bucle -->
 
     <div class="container text-center">
@@ -13,7 +13,7 @@
                             <table id="myTable" class="table table-bordered text-center">
                                 <thead>
                                     <tr>
-                                        <th>Tipo de Documento</th>
+                                        <th>Tipo de documento</th>
                                         <th class="notexportar">Acciones</th>
                                     </tr>
                                 </thead>
@@ -43,8 +43,8 @@ foreach ($this->d as $value) {
                     </div>
 
                     <div class="">
-                        <button  data-target="#modalTipodocumento" class="btn btn-primary" data-toggle="modal">
-                            <i class="material-icons left">library_add</i><br>Agregar Nuevo Tipo de Movimiento</button>
+                        <button  data-target="#modalTipoDocumento" class="btn btn-primary" data-toggle="modal">
+                            <i class="material-icons left">library_add</i><br>Agregar Nuevo Rol</button>
                     </div>
                 </div>
             </div>

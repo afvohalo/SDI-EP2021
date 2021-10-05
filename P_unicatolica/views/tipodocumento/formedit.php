@@ -1,11 +1,10 @@
-  
-<form id="form_tipodocumento_edit">
+ <form id="form_tipodocumento_edit">
     <div class="row">
         <div class="col s2"></div>
-        <div class="input-field col s8 ">
+        <div class="input-field col s8">
             <input type="text" name="name" value="<?php echo $this->d[0]['Tip_doc_nombre'] ?>" required>
             <label class="active" for="name">
-                Ingrese Tipo de Documento
+                Nuevo Tipo Documento
             </label>
         </div>
 

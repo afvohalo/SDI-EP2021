@@ -1,4 +1,4 @@
-<div id="modalTipodocumento" class="modal" tabindex="-1" role="dialog">
+<div id="modalTipoDocumento" class="modal" tabindex="-1" role="dialog">
     <div class="modal-content">
         <h4 class="center">Nuevo Tipo de Documento</h4>
         <form id="form_tipodocumento">
@@ -7,7 +7,7 @@
                 <div class="input-field">
                     <input type="text" name="name" required>
                     <label class="active" for="name">
-                        Ingrese Tipo de Documento
+                        Nuevo Tipo de Documento
                     </label>
                 </div>
                 

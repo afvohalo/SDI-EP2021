@@ -1,6 +1,6 @@
 <?php
 
-class TipoMovimiento extends Controller
+class Tipomovimiento extends Controller
 {
 
     private $data;
@@ -46,7 +46,7 @@ class TipoMovimiento extends Controller
 
         echo "<p>Guardando datos satisfactoriamente</p>";
         //var_dump($_POST['formularioSalas']);
-        $nametipomovimiento = $_POST['formularioTipomovimiento'];
+        $nametipomovimiento = $_POST['formularioTipoMovimiento'];
         $this->model->save(['NuevoTipoMovimiento' => $nametipomovimiento[0]]);
         $this->RefreshDataTable();
 
@@ -63,7 +63,7 @@ class TipoMovimiento extends Controller
 
     }
 
-    public function oneTipoMovimiento()
+    public function oneTipomovimiento()
     {
 
         echo "<p>Guardando datos satisfactoriamente</p>";
@@ -76,13 +76,13 @@ class TipoMovimiento extends Controller
         /* print_r($this->getData()); */
     }
 
-    public function editTipoMovimiento()
+    public function editTipomovimiento()
     {
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
 
         $idtipomovimiento        = $_POST['id'];
-        $nametipomovimiento      = $_POST['formularioTipomovimientoEdit'];
+        $nametipomovimiento      = $_POST['formularioTipoMovimientoEdit'];
         $this->model->update($idtipomovimiento, $nametipomovimiento[0]);
         $this->RefreshDataTable();
 

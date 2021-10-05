@@ -6,7 +6,7 @@ function SaveData() {
 			var DatosTipodocumento ={
 				"Ctr":"Tipodocumento",
 				"Acc":"registrarTipodocumento",
-				"formularioTipodocumento":ProcessData(data)
+				"formularioTipoDocumento":ProcessData(data)
 			}
 				console.log(DatosTipodocumento);
 			ReadyChangeJquery(DatosTipodocumento,"#table_data");
@@ -17,7 +17,7 @@ function SaveData() {
 function OneData(id){
 	var OneIdTipodocumento ={
 		'Ctr':'Tipodocumento',
-		'Acc':'OneTipodocumento',
+		'Acc':'oneTipodocumento',
 		'id':id
 	}
 	console.log(OneIdTipodocumento);

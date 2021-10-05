@@ -76,7 +76,7 @@
                     <b><a class="nav-link text-black btninicio" href="./"><i class="bi bi-house-fill"></i> Inicio</a></b>
                 </li>
                 <li class="nav-item my-2 ml-2">
-                    <b><a class="nav-link text-black btninicio" href="rol">Tdocumento</a></b>
+                    <b><a class="nav-link text-black btninicio" href="tipomovimiento">Tdocumento</a></b>
                 </li>
                 <li class="nav-item dropdown my-2 ml-2">
                     <a class="nav-link text-black dropdown-toggle btninicio " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

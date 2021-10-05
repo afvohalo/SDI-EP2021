@@ -1,4 +1,4 @@
-    <div id="table_data_estadoEquipo ">
+    <div id="table_data_estadoEquipo">
     <!-- Todo lo que este dentro de este id, se actualiza, si esta afuera o antes de esto, va a pasar un bucle -->
 
     <div class="container text-center">
