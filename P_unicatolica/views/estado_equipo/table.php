@@ -6,14 +6,14 @@
                 <div>
                     <div class="">
                         <h4>
-                            MODULO TIPO DOCUMENTO
+                            MODULO ESTADO EQUIPO
                         </h4>
                     </div>
                     <div class="container table-responsive">
                             <table id="myTable" class="table table-bordered text-center">
                                 <thead>
                                     <tr>
-                                        <th>Tipo Documento</th>
+                                        <th>Estado equipo</th>
                                         <th class="notexportar">Acciones</th>
                                     </tr>
                                 </thead>

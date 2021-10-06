@@ -1,5 +1,7 @@
 <div class="container">
-
+    <h4>
+        MODULO INVENTARIO DE SALAS
+    </h4>
     <div class="card-deck mb-3 text-center">
         <div class="card mb-4 shadow-sm">
             <div class="card-header">
@@ -46,7 +48,5 @@
                 <button type="button" class="btn btn-lg btn-block btn-primary">Seleccionar</button>
             </div>
         </div>
-
-
     </div>
 </div>

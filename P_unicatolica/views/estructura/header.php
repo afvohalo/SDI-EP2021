@@ -2,9 +2,9 @@
 <html lang="en" id="root">
 
 <head>
-    <script src="public/js/jquery-3.4.1.slim.js"></script>
     <script src="public/js/bootstrap.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/jquery-3.4.1.slim.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
@@ -75,17 +75,19 @@
                 <li class="nav-item my-2 ml-2">
                     <b><a class="nav-link text-black btninicio" href="./"><i class="bi bi-house-fill"></i> Inicio</a></b>
                 </li>
-                <li class="nav-item my-2 ml-2">
-                    <b><a class="nav-link text-black btninicio" href="tipomovimiento">Tdocumento</a></b>
-                </li>
+                
                 <li class="nav-item dropdown my-2 ml-2">
                     <a class="nav-link text-black dropdown-toggle btninicio " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <b><i class="bi bi-gear-fill"></i> Otros</b>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                            
+                        <a class="dropdown-item" href="estado">Estado</a>
+                        <a class="dropdown-item" href="estado_equipo">Estado equipo</a>
+                        <a class="dropdown-item" href="rol">Rol</a>
+                        <a class="dropdown-item" href="tipodocumento">Tipo de documento</a>
+                        <a class="dropdown-item" href="tipomovimiento">Tipo de movimiento</a>
+                        
                     </div>
                 </li>
                 <li class="nav-item my-2 ml-2 btninicio">
