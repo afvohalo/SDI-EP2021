@@ -51,7 +51,7 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
             if (strpos($clase, $caracterspecial) != false) {
                 $clase = strtolower($clase);
                 $clase = preg_replace('([_])', '', $clase);
-                echo $clase;
+               
                 $controller->cargarModel($clase);
                 $controller->{'index'}();
             } else {

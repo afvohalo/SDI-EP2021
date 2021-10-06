@@ -6,7 +6,7 @@
                 <div>
                     <div class="">
                         <h4>
-                            MODULO ESTADO EQUIPO
+                            MODULO ESTADO INVENTARIO
                         </h4>
                     </div>
                     <div class="container table-responsive">

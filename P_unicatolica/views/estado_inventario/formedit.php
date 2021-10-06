@@ -5,7 +5,7 @@
         <div class="input-field col s8 ">
             <input type="text" name="name" value="<?php echo $this->d[0]['Est_inv_nombre'] ?>" required>
             <label class="active" for="name">
-                Nuevo Estado De Equipo
+                Nuevo Estado Inventario
             </label>
         </div>
 
