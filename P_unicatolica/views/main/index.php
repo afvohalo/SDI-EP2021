@@ -26,8 +26,8 @@
             <div class="col-md-6">
                 <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">INVENTARIO SALAS</strong>
-                        <h3 class="mb-0">Panel principal</h3>
+                        <p class="d-inline-block mb-2 text-primary">INVENTARIO SALAS</p>
+                        <h4 class="mb-0">Panel principal</h4>
                         <div class="mb-1 text-muted">Novedades</div>
                         <p class="card-text mb-auto">Ingrese para acceder al panel principal del inventario de salas, Consulte las cantidades de salas, asigne salas a los usuarios.</p>
                         <a href="menusalas" class="stretched-link">Ingresar</a>
@@ -44,8 +44,8 @@
             <div class="col-md-6">
                 <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">INVENTARIO OFICINA</strong>
-                        <h3 class="mb-0">Panel principal</h3>
+                        <p class="d-inline-block mb-2 text-success">INVENTARIO OFICINA</p>
+                        <h4 class="mb-0">Panel principal</h4>
                         <div class="mb-1 text-muted">Novedades</div>
                         <p class="mb-auto">Ingrese para acceder al panel principal del inventario de salas, Consulte las cantidades de salas, asigne salas a los usuarios.</p>
                         <a href="menuoficina" class="stretched-link">Ingresar</a>

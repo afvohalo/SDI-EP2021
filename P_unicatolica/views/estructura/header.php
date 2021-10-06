@@ -84,6 +84,7 @@
                             
                         <a class="dropdown-item" href="estado">Estado</a>
                         <a class="dropdown-item" href="estado_equipo">Estado equipo</a>
+                        <a class="dropdown-item" href="estado_inventario">Estado inventario</a>
                         <a class="dropdown-item" href="rol">Rol</a>
                         <a class="dropdown-item" href="tipodocumento">Tipo de documento</a>
                         <a class="dropdown-item" href="tipomovimiento">Tipo de movimiento</a>
