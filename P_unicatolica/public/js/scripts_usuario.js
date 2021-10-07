@@ -2,11 +2,11 @@
 function SaveData() {
 	Validate_Form(()=>{
 		Message_Confirm(()=>{
-			var data = new FormData($("#form_salas")[0]);	
+			var data = new FormData($("#form_Usuario")[0]);	
 			var DatosSalas ={
-				"Ctr":"Salas",
-				"Acc":"registrarSalas",
-				"formularioSalas":ProcessData(data)
+				"Ctr":"Usuario",
+				"Acc":"registrarUsuario",
+				"formularioUsuario":ProcessData(data)
 			}
 				console.log(DatosSalas);
 			ReadyChangeJquery(DatosSalas,"#table_data");
@@ -16,8 +16,8 @@ function SaveData() {
 
 function OneData(id){
 	var OneIdSalas ={
-		'Ctr':'Salas',
-		'Acc':'OneSalas',
+		'Ctr':'Usuario',
+		'Acc':'OneUsuario',
 		'id':id
 	}
 	console.log(OneIdSalas);
@@ -28,8 +28,8 @@ function OneData(id){
 function DeleteData(id){
 	Message_Confirm(()=>{
 		var SalasDelete ={
-			"Ctr":"Salas",
-			"Acc":"deleteSalas",
+			"Ctr":"Usuario",
+			"Acc":"deleteUsuario",
 			"id":id,
 		}
 		ReadyChangeJquery(SalasDelete,"#table_data")
@@ -39,15 +39,15 @@ function DeleteData(id){
 function UpdateData(id){
 	Validate_Form(()=>{
 		Message_Confirm(()=>{
-		var data = new FormData($('#form_salas_edit')[0]);
+		var data = new FormData($('#form_usuario_edit')[0]);
 		var DatosSalasEdit ={
-			'Ctr':'Salas',
-			'Acc':'editSalas',
+			'Ctr':'Usuario',
+			'Acc':'editUsuario',
 			'id':id,
-			'formularioSalasEdit':ProcessData(data)
+			'formularioUsuarioEdit':ProcessData(data)
 		}
 		ReadyChangeJquery(DatosSalasEdit,'#table_data')
 	})
-},'#form_salas_edit')
+},'#form_usuario_edit')
 }
 

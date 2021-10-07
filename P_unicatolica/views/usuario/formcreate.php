@@ -1,16 +1,16 @@
-<div id="modalRol" class="modal" tabindex="-1" role="dialog">
+<div id="modalUsuario" class="modal" tabindex="-1" role="dialog">
     <div class="modal-content">
-        <h4 class="center">Nuevo Rol</h4>
-        <form id="form_rol">
-          
-                
+        <h4 class="center">Nuevo Usuario</h4>
+        <form id="form_Usuario">
+
+
                 <div class="input-field">
                     <input type="text" name="name" required>
                     <label class="active" for="name">
-                        Nuevo Rol
+                        Nuevo Usuaurio
                     </label>
                 </div>
-                
+
             </div>
         </form>
         <div class="row">
