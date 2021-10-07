@@ -1,7 +1,7 @@
-<div id="modalSalas" class="modal" tabindex="-1" role="dialog">
+<div id="modalEquipos" class="modal" tabindex="-1" role="dialog">
     <div class="modal-content">
-        <h4 class="center">Nuevo Salas</h4>
-        <form id="form_salas">
+        <h4 class="center">Nuevo equipo</h4>
+        <form id="form_equipos">
           
                 
                 <div class="input-field">
