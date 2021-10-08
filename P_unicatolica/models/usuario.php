@@ -32,6 +32,7 @@ class usuarioModel extends Model implements IModel
     {
         try {
             $query = $this->prepare('SELECT * FROM tblusuario');
+            print_r($query);
             $query->execute();
             return $query->fetchAll();
         } catch (PDOException $e) {

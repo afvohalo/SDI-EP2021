@@ -36,7 +36,6 @@ class Usuario extends Controller
     public function RefreshDataTable()
     {
         $res = $this->model->getAll();
-        //var_export($res);
         $this->setData($res);
         $this->view->render('usuario/table', $this->getData());
     }
