@@ -41,7 +41,7 @@ class Usuario extends Controller
         $this->view->render('usuario/table', $this->getData());
     }
 
-    public function registrarSalas()
+    public function registrarUsuario()
     {
 
         echo "<p>Guardando datos satisfactoriamente</p>";
@@ -55,10 +55,10 @@ class Usuario extends Controller
 
     }
 
-    public function deleteSalas()
+    public function deleteUsuario()
     {
 
-        echo "<p>Guardando datos satisfactoriamente</p>";
+        echo "<p> datos borrados satisfactoriamente</p>";
 
         $id = $_POST['id'];
         $this->model->delete(['id' => $id]);
@@ -66,10 +66,10 @@ class Usuario extends Controller
 
     }
 
-    public function oneSalas()
+    public function oneUsuario()
     {
 
-        echo "<p>Guardando datos satisfactoriamente</p>";
+        echo "<p> datos cargados satisfactoriamente</p>";
 
         $id  = $_POST['id'];
         $res = $this->model->getId($id);
@@ -79,7 +79,7 @@ class Usuario extends Controller
         /* print_r($this->getData()); */
     }
 
-    public function editSalas()
+    public function editUsuario()
     {
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
