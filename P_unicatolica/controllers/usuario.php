@@ -7,7 +7,7 @@ class Salas extends Controller
     public function __construct()
     {
         parent::__construct();
-        $this->view->render('salas/index');
+        $this->view->render('usuario/index');
 
     }
 
@@ -15,9 +15,9 @@ class Salas extends Controller
     {
         $this->view->render('estructura/header'); //HEADER
 
-        $this->view->render('salas/index');
+        $this->view->render('usuario/index');
         $this->RefreshDataTable();
-        $this->view->render('salas/formcreate');
+        $this->view->render('usuario/formcreate');
 
         //$this->view->render('estructura/ajustes_nav'); //NAV_AJUSTES
         $this->view->render('estructura/footer'); //FOOTER
@@ -38,7 +38,7 @@ class Salas extends Controller
         $res = $this->model->getAll();
         //var_export($res);
         $this->setData($res);
-        $this->view->render('salas/table', $this->getData());
+        $this->view->render('usuario/table', $this->getData());
     }
 
     public function registrarSalas()
@@ -46,11 +46,11 @@ class Salas extends Controller
 
         echo "<p>Guardando datos satisfactoriamente</p>";
         //var_dump($_POST['formularioSalas']);
-        $namesalas     = $_POST['formularioSalas'][0];
-        $cantidadsalas = $_POST['formularioSalas'][1];
-        $vbsalas       = $_POST['formularioSalas'][2];
-        $this->model->save(['NombreSalas' => $namesalas,
-            'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas]);
+        $nameusuario     = $_POST['formularioUsuario'][0];
+        //$cantidadsalas = $_POST['formularioSalas'][1];
+        //$vbsalas       = $_POST['formularioSalas'][2];
+        $this->model->save(['NombreSalas' => $nameusuario/*,
+            'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas*/]);
         $this->RefreshDataTable();
 
     }
@@ -75,7 +75,7 @@ class Salas extends Controller
         $res = $this->model->getId($id);
         $this->setData($res);
 
-        $this->view->render('salas/formedit', $this->getData());
+        $this->view->render('usuario/formedit', $this->getData());
         /* print_r($this->getData()); */
     }
 
@@ -84,11 +84,11 @@ class Salas extends Controller
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
 
-        $idsalas        = $_POST['id'];
-        $namesalas      = $_POST['formularioSalasEdit'][0];
-        $cantidadsalas  = $_POST['formularioSalasEdit'][1];
-        $VbSalas        = $_POST['formularioSalasEdit'][2];
-        $this->model->update($idsalas, $namesalas, $cantidadsalas, $VbSalas);
+        $idusuaruo        = $_POST['id'];
+        $nameusuario      = $_POST['formularioUsuarioEdit'][0];
+        //$cantidadsalas  = $_POST['formularioSalasEdit'][1];
+        //$VbSalas        = $_POST['formularioSalasEdit'][2];
+        $this->model->update($idsalas, $nameusuario,/* $cantidadsalas, $VbSalas*/);
         $this->RefreshDataTable();
 
     }
