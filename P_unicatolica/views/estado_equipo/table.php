@@ -44,7 +44,7 @@ foreach ($this->d as $value) {
 
                     <div class="">
                         <button  data-target="#modalEstadoEquipo" class="btn btn-primary" data-toggle="modal">
-                            <i class="material-icons left">library_add</i><br>Agregar Nuevo Estado </button>
+                            <i class="material-icons left">library_add</i><br>Agregar Nuevo Estado De equipo </button>
                     </div>
                 </div>
             </div>

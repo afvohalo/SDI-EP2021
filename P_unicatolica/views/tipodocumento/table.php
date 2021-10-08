@@ -41,11 +41,11 @@ foreach ($this->d as $value) {
                             </table>
                         </div>
                     </div>
-
                     <div class="">
                         <button  data-target="#modalTipoDocumento" class="btn btn-primary" data-toggle="modal">
-                            <i class="material-icons left">library_add</i><br>Agregar Nuevo Rol</button>
+                            <i class="material-icons left">library_add</i><br>Agregar Nuevo Tipo de Documento</button>
                     </div>
+
                 </div>
             </div>
         </div>
