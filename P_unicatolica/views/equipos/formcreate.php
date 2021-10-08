@@ -5,27 +5,57 @@
           
                 
                 <div class="input-field">
-                    <input type="text" name="name" required>
-                    <label class="active" for="name">
-                        Nombre de la sala
+                    <input type="text" name="nombre" required>
+                    <label class="active" for="nombre">
+                        Nombre del equipo
                     </label>
                 </div>
                 
                 <div class="input-field">
-                    <input type="text" name="cantidad" required>
-                    <label class="active" for="cantidad">
-                        Cantidad de equipos en la sala
+                    <input type="text" name="detalles" required>
+                    <label class="active" for="detalles">
+                        Detalles del equipo
                     </label>
                 </div>
 
                 <div class="input-field">
-                    <input type="radio" name="VB" value="1">
-                    <label class="active" for="VB"> Si </label>
+                    <input type="radio" name="teclado" value="1">
+                    <label class="active" for="teclado"> Si </label>
 
-                    <input type="radio" name="VB" value="0">
-                    <label class="active" for="VB"> No </label>
+                    <input type="radio" name="teclado" value="0">
+                    <label class="active" for="teclado"> No </label>
 
-                    <label for="VB"> VideoBeam en la sala: </label>
+                    <label for="telcado"> El equipo tiene teclado?: </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="radio" name="mouse" value="1">
+                    <label class="active" for="mouse"> Si </label>
+
+                    <input type="radio" name="mouse" value="0">
+                    <label class="active" for="mouse"> No </label>
+
+                    <label for="mouse"> El equipo tiene mouse?: </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="radio" name="guaya" value="1">
+                    <label class="active" for="guaya"> Si </label>
+
+                    <input type="radio" name="guaya" value="0">
+                    <label class="active" for="guaya"> No </label>
+
+                    <label for="guaya"> El equipo tiene guaya?: </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="radio" name="candado" value="1">
+                    <label class="active" for="candado"> Si </label>
+
+                    <input type="radio" name="candado" value="0">
+                    <label class="active" for="candado"> No </label>
+
+                    <label for="VB"> El equipo tiene candado?: </label>
                 </div>
 
             </div>

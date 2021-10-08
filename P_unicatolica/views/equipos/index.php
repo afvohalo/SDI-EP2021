@@ -1,8 +1,8 @@
-<script src="public/js/scripts_salas.js"></script>
+<script src="public/js/scripts_equipos.js"></script>
 
-<div id="modalSalasedit" class="modal">
+<div id="modalEquipoedit" class="modal">
     <div class="modal-content">
-        <h4 class="center">Editar Sala</h4>
+        <h4 class="center">Editar Equipo</h4>
 
             <div id="form_edit">
 

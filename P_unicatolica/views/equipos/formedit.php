@@ -3,26 +3,26 @@
     <div class="row">
         <div class="col s2"></div>
         <div class="input-field col s8 ">
-            <input type="text" name="name" value="<?php echo $this->d[0]['Sal_nombre'] ?>" required>
+            <input type="text" name="name" value="<?php echo $this->d[0]['Equ_nombre'] ?>" required>
             <label class="active" for="name">
-                Nombre de la sala
+                Nombre del equipo
             </label>
         </div>
 
         <div class="col s2"></div>
         <div class="input-field col s8 ">
-            <input type="text" name="cantidad" value="<?php echo $this->d[0]['Sal_cantidad_equipo'] ?>" required>
+            <input type="text" name="cantidad" value="<?php echo $this->d[0]['Equ_detalles'] ?>" required>
             <label class="active" for="cantidad">
-                Cantidad de quipos en la sala
+                Detalles del equipo
             </label>
         </div>
 
         <div class="col s2"></div>
 
         <div class="input-field col s8 ">
-            <input type="check" name="VB" value="<?php echo $this->d[0]['Sal_videobeam'] ?>" required>
+            <input type="check" name="VB" value="<?php echo $this->d[0]['Equ_teclado'] ?>" required>
             <label class="active" for="VB">
-                VideoBeam en la sala:
+                El equipo tiene teclado?:
             </label>
         </div>
     </div>
