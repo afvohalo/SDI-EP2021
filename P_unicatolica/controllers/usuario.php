@@ -1,6 +1,6 @@
 <?php
 
-class Salas extends Controller
+class Usuario extends Controller
 {
 
     private $data;
@@ -49,7 +49,7 @@ class Salas extends Controller
         $nameusuario     = $_POST['formularioUsuario'][0];
         //$cantidadsalas = $_POST['formularioSalas'][1];
         //$vbsalas       = $_POST['formularioSalas'][2];
-        $this->model->save(['NombreSalas' => $nameusuario/*,
+        $this->model->save(['NombreUsuario' => $nameusuario/*,
             'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas*/]);
         $this->RefreshDataTable();
 

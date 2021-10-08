@@ -1,6 +1,6 @@
 <?php
 
-class salasModel extends Model implements IModel
+class usuarioModel extends Model implements IModel
 {
 
     public function __construct()
@@ -15,15 +15,15 @@ class salasModel extends Model implements IModel
         var_dump($data);
 
         try {
-            $sql = 'INSERT INTO tblsalas(Sal_nombre,Sal_cantidad_equipo,Sal_videobeam) VALUES
-            ("' . $data['NombreSalas'] . '","' . $data['CantidadSalas'] . '","' . $data['VbSalas'] . '")';
-            echo $sql;
+            $sql = 'INSERT INTO tblusuario(Usu_nombre1) VALUES
+            ("' . $data['NombreUsuario'] . '")';
+            //echo $sql;
             $query = $this->prepare($sql);
             //Preparando la consulta
             $query->execute(); // Aca mandamos a ejecutar la consulta pasando por ultimo los values :value
 
         } catch (PDOException $e) {
-            $this->showError('save', 'salas', $e);
+            $this->showError('save', 'usuario', $e);
         }
 
     }
@@ -31,11 +31,11 @@ class salasModel extends Model implements IModel
     public function getAll()
     {
         try {
-            $query = $this->prepare('SELECT * FROM tblsalas');
+            $query = $this->prepare('SELECT * FROM tblusuario');
             $query->execute();
             return $query->fetchAll();
         } catch (PDOException $e) {
-            $this->showError('getAll', 'salas', $e);
+            $this->showError('getAll', 'usuario', $e);
         }
     }
 
@@ -44,11 +44,11 @@ class salasModel extends Model implements IModel
 
         try {
 
-            $query = $this->prepare('DELETE FROM tblsalas WHERE Sal_id=:id');
+            $query = $this->prepare('DELETE FROM tblusario WHERE Usu_id=:id');
             $query->execute($id);
 
         } catch (PDOException $e) {
-            $this->showError('delete', 'salas', $e);
+            $this->showError('delete', 'usuario', $e);
         }
 
     }
@@ -57,13 +57,13 @@ class salasModel extends Model implements IModel
     {
         try {
 
-            $query = $this->prepare('SELECT * FROM tblsalas WHERE Sal_id=:id');
+            $query = $this->prepare('SELECT * FROM tblusuario WHERE Usu_id=:id');
             $query->execute(['id' => $id]);
 
             return $query->fetchAll();
 
         } catch (PDOException $e) {
-            $this->showError('getId', 'salas', $e);
+            $this->showError('getId', 'usuario', $e);
         }
     }
 
@@ -71,16 +71,14 @@ class salasModel extends Model implements IModel
     {
         try {
 
-            $query = $this->prepare('UPDATE tblsalas SET Sal_nombre =:name, Sal_cantidad_equipo =:cantidad, Sal_videobeam =:VB WHERE Sal_id=:id');
+            $query = $this->prepare('UPDATE tblUsuario SET Usu_nombre1 =:name WHERE Usu_id=:id');
             $query->execute([
                 'id'       => $id,
-                'name'     => $name,
-                'cantidad' => $cantidad,
-                'VB'       => $VB,
-            ]);
+                'name'     => $name
+                 ]);
 
         } catch (PDOException $e) {
-            $this->showError('update', 'salas', $e);
+            $this->showError('update', 'usuario', $e);
         }
     }
 
