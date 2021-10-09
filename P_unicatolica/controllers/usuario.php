@@ -45,11 +45,11 @@ class Usuario extends Controller
 
         echo "<p>Guardando datos satisfactoriamente</p>";
         //var_dump($_POST['formularioSalas']);
-        $nameusuario     = $_POST['formularioUsuario'][0];
+        $nameusuario = $_POST['formularioUsuario'][0];
         //$cantidadsalas = $_POST['formularioSalas'][1];
         //$vbsalas       = $_POST['formularioSalas'][2];
-        $this->model->save(['NombreUsuario' => $nameusuario/*,
-            'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas*/]);
+        $this->model->save(['NombreUsuario' => $nameusuario, /*,
+    'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas*/]);
         $this->RefreshDataTable();
 
     }
@@ -83,11 +83,11 @@ class Usuario extends Controller
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
 
-        $idusuaruo        = $_POST['id'];
-        $nameusuario      = $_POST['formularioUsuarioEdit'][0];
+        $idusuaruo   = $_POST['id'];
+        $nameusuario = $_POST['formularioUsuarioEdit'][0];
         //$cantidadsalas  = $_POST['formularioSalasEdit'][1];
         //$VbSalas        = $_POST['formularioSalasEdit'][2];
-        $this->model->update($idsalas, $nameusuario,/* $cantidadsalas, $VbSalas*/);
+        $this->model->update($idsalas, $nameusuario/* $cantidadsalas, $VbSalas*/);
         $this->RefreshDataTable();
 
     }
