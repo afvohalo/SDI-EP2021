@@ -20,10 +20,13 @@
         <div class="col s2"></div>
 
         <div class="input-field col s8 ">
-            <input type="check" name="VB" value="<?php echo $this->d[0]['Sal_videobeam'] ?>" required>
-            <label class="active" for="VB">
-                VideoBeam en la sala:
-            </label>
+            <input type="radio" name="VB" value="1"<?php echo $this->d[0]['Sal_videobeam'] =="1" ? "checked" : ""; ?>>
+                <label class="active" for="VB"> Si </label>
+
+            <input type="radio" name="VB" value="0" <?php echo $this->d[0]['Sal_videobeam'] =="0" ? "checked" : ""; ?>>
+                <label class="active" for="VB"> No </label>
+            <label for="VB"> VideoBeam en la sala?: </label>
+            
         </div>
     </div>
 
