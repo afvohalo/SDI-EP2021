@@ -23,7 +23,16 @@
                                 <?php
 
 foreach ($this->d as $value) {
-    ?>
+
+    if ($value['Sal_videobeam']==1) {
+            $value['Sal_videobeam'] = "Si";
+    }
+
+    elseif ($value['Sal_videobeam']==0) {
+            $value['Sal_videobeam'] = "No";
+    }
+
+?>
                                     <div class="row">
                                         <div class="col">
                                     <tr>
