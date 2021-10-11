@@ -3,13 +3,87 @@
         <h4 class="center">Nuevo Usuario</h4>
         <form id="form_Usuario">
 
+                <div class="input-field">
+                    <input type="text" name="name1" required>
+                    <label class="active" for="name">
+                        nombre 1
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="name2" required>
+                    <label class="active" for="name">
+                        nombre 2
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="apellido1" required>
+                    <label class="active" for="name">
+                        apellido 1
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="apellido2" required>
+                    <label class="active" for="name">
+                        apellido 2
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="email" name="correo" required>
+                    <label class="active" for="name">
+                        correo
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="password" name="contrasena" required>
+                    <label class="active" for="name">
+                        contraseña
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="number" name="telefono" required>
+                    <label class="active" for="name">
+                        telefono
+                    </label>
+                </div>
+
 
                 <div class="input-field">
                     <input type="text" name="name" required>
                     <label class="active" for="name">
-                        Nuevo Usuaurio
+                        Numero de documento
                     </label>
                 </div>
+
+
+                <div class="input-field">
+                    <input type="text" name="name" required>
+                    <label class="active" for="name">
+                        tipo de documento
+                    </label>
+                </div>
+
+
+                <div class="input-field">
+                    <input type="text" name="name" required>
+                    <label class="active" for="name">
+                        estado
+                    </label>
+                </div>
+
+
+                <div class="input-field">
+                    <input type="text" name="name" required>
+                    <label class="active" for="name">
+                        rol
+                    </label>
+                </div>
+
 
             </div>
         </form>
