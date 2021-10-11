@@ -17,7 +17,7 @@ class usuarioModel extends Model implements IModel
         try {
             $sql = 'INSERT INTO tblusuario(Usu_nombre1) VALUES
             ("' . $data['NombreUsuario'] . '")';
-            //echo $sql;
+            echo $sql;
             $query = $this->prepare($sql);
             //Preparando la consulta
             $query->execute(); // Aca mandamos a ejecutar la consulta pasando por ultimo los values :value
