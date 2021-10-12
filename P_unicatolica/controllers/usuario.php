@@ -45,9 +45,18 @@ class Usuario extends Controller
 
         echo "<p>Guardando datos satisfactoriamente</p>";
         //var_dump($_POST['formularioSalas']);
-        $nameusuario = $_POST['formularioUsuario'][0];
-        //$cantidadsalas = $_POST['formularioSalas'][1];
-        //$vbsalas       = $_POST['formularioSalas'][2];
+        $nombre1    = $_POST['formularioUsuario'][0];
+        $nombre2    = $_POST['formularioSalas'][1];
+        $apellido1  = $_POST['formularioSalas'][2];
+        $apellido2  = $_POST['formularioSalas'][2];
+        $correo  = $_POST['formularioSalas'][2];
+        $contrasena  = $_POST['formularioSalas'][2];
+        $telefono  = $_POST['formularioSalas'][2];
+        $documento  = $_POST['formularioSalas'][2];
+        $idtipodocumento  = $_POST['formularioSalas'][2];
+        $estado  = $_POST['formularioSalas'][2];
+        $rol  = $_POST['formularioSalas'][2];
+
         $this->model->save(['NombreUsuario' => $nameusuario, /*,
     'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas*/]);
         $this->RefreshDataTable();
