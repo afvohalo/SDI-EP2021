@@ -57,8 +57,9 @@ class Usuario extends Controller
         $estado  = $_POST['formularioSalas'][9];
         $rol  = $_POST['formularioSalas'][10];
 
-        $this->model->save(['NombreUsuario' => $nameusuario, /*,
-    'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas*/]);
+        $this->model->save(
+        ['NombreUsuario' => $nameusuario, /*,
+         ''=> $cantidadsalas, 'VbSalas' => $vbsalas*/]);
         $this->RefreshDataTable();
 
     }

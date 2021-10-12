@@ -15,8 +15,23 @@ class usuarioModel extends Model implements IModel
         var_dump($data);
 
         try {
-            $sql = 'INSERT INTO tblusuario(Usu_nombre1) VALUES
-            ("' . $data['NombreUsuario'] . '")';
+            $sql = 'INSERT INTO tblusuario(Usu_nombre1,
+            Usu_nombre2,
+            Usu_apellido1,
+            Usu_apellido2,
+            Usu_correo,
+            Usu_contraseña,
+            Usu_telefono,
+            Usu_documento,
+            Usu_tipodocumento,
+            Usu_estado,
+            Usu_rol
+            ) VALUES
+            (
+            "' . $data['NombreSalas'] . '",
+            "' . $data['CantidadSalas'] . '",
+            "' . $data['VbSalas'] . '"
+            )';
             echo $sql;
             $query = $this->prepare($sql);
             //Preparando la consulta
