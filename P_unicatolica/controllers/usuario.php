@@ -43,19 +43,19 @@ class Usuario extends Controller
     public function registrarUsuario()
     {
 
-        echo "<p>Guardando datos satisfactoriamente</p>";
-        //var_dump($_POST['formularioSalas']);
+        //echo "<p>Guardando datos satisfactoriamente</p>";
+        print_r($_POST['formularioSalas']);
         $nombre1    = $_POST['formularioUsuario'][0];
         $nombre2    = $_POST['formularioSalas'][1];
         $apellido1  = $_POST['formularioSalas'][2];
-        $apellido2  = $_POST['formularioSalas'][2];
-        $correo  = $_POST['formularioSalas'][2];
-        $contrasena  = $_POST['formularioSalas'][2];
-        $telefono  = $_POST['formularioSalas'][2];
-        $documento  = $_POST['formularioSalas'][2];
-        $idtipodocumento  = $_POST['formularioSalas'][2];
-        $estado  = $_POST['formularioSalas'][2];
-        $rol  = $_POST['formularioSalas'][2];
+        $apellido2  = $_POST['formularioSalas'][3];
+        $correo  = $_POST['formularioSalas'][4];
+        $contrasena  = $_POST['formularioSalas'][5];
+        $telefono  = $_POST['formularioSalas'][6];
+        $documento  = $_POST['formularioSalas'][7];
+        $idtipodocumento  = $_POST['formularioSalas'][8];
+        $estado  = $_POST['formularioSalas'][9];
+        $rol  = $_POST['formularioSalas'][10];
 
         $this->model->save(['NombreUsuario' => $nameusuario, /*,
     'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas*/]);
