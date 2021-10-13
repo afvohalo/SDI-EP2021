@@ -25,7 +25,7 @@
                     <input type="radio" name="teclado" value="0">
                     <label class="active" for="teclado"> No </label>
 
-                    <label for="telcado"> El equipo tiene teclado?: </label>
+                    <label for="teclado"> El equipo tiene teclado?: </label>
                 </div>
 
                 <div class="input-field">
@@ -55,7 +55,7 @@
                     <input type="radio" name="candado" value="0">
                     <label class="active" for="candado"> No </label>
 
-                    <label for="VB"> El equipo tiene candado?: </label>
+                    <label for="candado"> El equipo tiene candado?: </label>
                 </div>
 
             </div>
