@@ -67,7 +67,7 @@ class usuarioModel extends Model implements IModel
 
         try {
 
-            $query = $this->prepare('DELETE FROM tblusario WHERE Usu_id=:id');
+            $query = $this->prepare('DELETE FROM tblusuario WHERE Usu_id=:id');
             $query->execute($id);
 
         } catch (PDOException $e) {
@@ -90,7 +90,7 @@ class usuarioModel extends Model implements IModel
         }
     }
 
-    public function update($id, $name, $cantidad, $VB)
+    public function update($data)
     {
         try {
 

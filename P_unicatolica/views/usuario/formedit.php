@@ -4,6 +4,26 @@
         <div class="input-field col s8">
             <input type="text" name="name" value="<?php echo $this->d[0]['Usu_nombre1'] ?>" required>
             <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Usu_nombre2'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Usu_apellido1'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Usu_apellido2'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Usu_correo'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Usu_contraseña'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Usu_telefono'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Usu_documento'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Tbltipo_documento_Tip_doc_id'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['Tblestado_est_id'] ?>" required>
+            <label class="active" for="name">
+            <input type="text" name="name" value="<?php echo $this->d[0]['tblrol_id'] ?>" required>
+            <label class="active" for="name">
                 Nuevo Usuario
             </label>
         </div>
