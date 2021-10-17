@@ -14,15 +14,25 @@
                                 <thead>
                                     <tr>
                                         <th>Nombre1</th>
+                                        <th></th>
                                         <th>NOMBRE2</th>
+                                        <th></th>
                                         <th>APELLIDO1</th>
+                                        <th></th>
                                         <th>APELLIDO2</th>
+                                        <th></th>
                                         <th>CORREO</th>
+                                        <th></th>
                                         <th>CONTRASEÑA</th>
+                                        <th></th>
                                         <th>TELEFONO</th>
+                                        <th></th>
                                         <th>DOCUMENTO</th>
+                                        <th></th>
                                         <th>TIP DOCUEMTNO</th>
+                                        <th></th>
                                         <th>ESTADO USUARIO</th>
+                                        <th></th>
                                         <th>ROL USUARIO</th>
                                         <th class="notexportar">Acciones</th>
                                     </tr>
