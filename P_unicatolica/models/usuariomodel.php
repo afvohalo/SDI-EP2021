@@ -12,7 +12,7 @@ class usuarioModel extends Model implements IModel
 
     public function save($data)
     {
-        var_dump($data);
+        print_r($data);
 
         try {
             $sql = 'INSERT INTO tblusuario(Usu_nombre1,
@@ -23,14 +23,22 @@ class usuarioModel extends Model implements IModel
             Usu_contraseña,
             Usu_telefono,
             Usu_documento,
-            Usu_tipodocumento,
-            Usu_estado,
-            Usu_rol
+            Tbltipo_documento_Tip_doc_id,
+            Tblestado_est_id,
+            Tblrol_id
             ) VALUES
             (
-            "' . $data['NombreSalas'] . '",
-            "' . $data['CantidadSalas'] . '",
-            "' . $data['VbSalas'] . '"
+            "' . $data->nombre1 . '",
+            "' . $data->nombre2 . '",
+            "' . $data->apellido1 . '",
+            "' . $data->apellido2 . '",
+            "' . $data->correo . '",
+            "' . $data->contrasena . '",
+            "' . $data->telefono . '",
+            "' . $data->documento . '",
+            "' . $data->idtipodocumento . '",
+            "' . $data->estado . '",
+            "' . $data->rol . '"
             )';
             echo $sql;
             $query = $this->prepare($sql);

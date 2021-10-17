@@ -44,22 +44,22 @@ class Usuario extends Controller
     {
 
         //echo "<p>Guardando datos satisfactoriamente</p>";
-        print_r($_POST['formularioSalas']);
-        $nombre1    = $_POST['formularioUsuario'][0];
-        $nombre2    = $_POST['formularioSalas'][1];
-        $apellido1  = $_POST['formularioSalas'][2];
-        $apellido2  = $_POST['formularioSalas'][3];
-        $correo  = $_POST['formularioSalas'][4];
-        $contrasena  = $_POST['formularioSalas'][5];
-        $telefono  = $_POST['formularioSalas'][6];
-        $documento  = $_POST['formularioSalas'][7];
-        $idtipodocumento  = $_POST['formularioSalas'][8];
-        $estado  = $_POST['formularioSalas'][9];
-        $rol  = $_POST['formularioSalas'][10];
+        print_r($_POST['formularioUsuario']);
+        $DatosUsuario = (object) [
+            'nombre1'         => ['formularioUsuario'][0],
+            'nombre2'         => $_POST['formularioUsuario'][1],
+            'apellido1'       => $_POST['formularioUsuario'][2],
+            'apellido2'       => $_POST['formularioUsuario'][3],
+            'correo'          => $_POST['formularioUsuario'][4],
+            'contrasena'      => $_POST['formularioUsuario'][5],
+            'telefono'        => $_POST['formularioUsuario'][6],
+            'documento'       => $_POST['formularioUsuario'][7],
+            'idtipodocumento' => $_POST['formularioUsuario'][8],
+            'estado'          => $_POST['formularioUsuario'][9],
+            'rol'             => $_POST['formularioUsuario'][10],
+        ];
 
-        $this->model->save(
-        ['NombreUsuario' => $nameusuario, /*,
-         ''=> $cantidadsalas, 'VbSalas' => $vbsalas*/]);
+        $this->model->save($DatosUsuario);
         $this->RefreshDataTable();
 
     }
