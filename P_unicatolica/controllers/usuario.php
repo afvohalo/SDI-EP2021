@@ -46,7 +46,7 @@ class Usuario extends Controller
         //echo "<p>Guardando datos satisfactoriamente</p>";
         print_r($_POST['formularioUsuario']);
         $DatosUsuario = (object) [
-            'nombre1'         => ['formularioUsuario'][0],
+            'nombre1'         => $_POST['formularioUsuario'][0],
             'nombre2'         => $_POST['formularioUsuario'][1],
             'apellido1'       => $_POST['formularioUsuario'][2],
             'apellido2'       => $_POST['formularioUsuario'][3],
@@ -96,20 +96,20 @@ class Usuario extends Controller
         $idusuario = $_POST['id'];
 
         $DatosEditUsuario = (object) [
-            'nombre1'         => $_POST['formularioUsuario'][0],
-            'nombre2'         => $_POST['formularioUsuario'][1],
-            'apellido1'       => $_POST['formularioUsuario'][2],
-            'apellido2'       => $_POST['formularioUsuario'][3],
-            'correo'          => $_POST['formularioUsuario'][4],
-            'contrasena'      => $_POST['formularioUsuario'][5],
-            'telefono'        => $_POST['formularioUsuario'][6],
-            'documento'       => $_POST['formularioUsuario'][7],
-            'idtipodocumento' => $_POST['formularioUsuario'][8],
-            'estado'          => $_POST['formularioUsuario'][9],
-            'rol'             => $_POST['formularioUsuario'][10],
+            'nombre1'         => $_POST['formularioUsuarioEdit'][0],
+            'nombre2'         => $_POST['formularioUsuarioEdit'][1],
+            'apellido1'       => $_POST['formularioUsuarioEdit'][2],
+            'apellido2'       => $_POST['formularioUsuarioEdit'][3],
+            'correo'          => $_POST['formularioUsuarioEdit'][4],
+            'contrasena'      => $_POST['formularioUsuarioEdit'][5],
+            'telefono'        => $_POST['formularioUsuarioEdit'][6],
+            'documento'       => $_POST['formularioUsuarioEdit'][7],
+            'idtipodocumento' => $_POST['formularioUsuarioEdit'][8],
+            'estado'          => $_POST['formularioUsuarioEdit'][9],
+            'rol'             => $_POST['formularioUsuarioEdit'][10],
         ];
 
-        $this->model->update($idusuariuo, $DatosEditUsuario);
+        $this->model->update($idusuario, $DatosEditUsuario);
         $this->RefreshDataTable();
 
     }

@@ -22,7 +22,7 @@
             <label class="active" for="name">
             <input type="text" name="name" value="<?php echo $this->d[0]['Tblestado_est_id'] ?>" required>
             <label class="active" for="name">
-            <input type="text" name="name" value="<?php echo $this->d[0]['tblrol_id'] ?>" required>
+            <input type="text" name="name" value="<?php echo $this->d[0]['Tblrol_id'] ?>" required>
             <label class="active" for="name">
                 Nuevo Usuario
             </label>

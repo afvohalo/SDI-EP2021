@@ -96,16 +96,16 @@ class usuarioModel extends Model implements IModel
 
             $query = $this->prepare('UPDATE tblUsuario SET
                 Usu_nombre1 = "' . $data->nombre1 . '",
-                Usu_nombre1 = "' . $data->nombre2 . '",
-                Usu_nombre1 = "' . $data->apellido1 . '",
-                Usu_nombre1 = "' . $data->apellido2 . '",
-                Usu_nombre1 = "' . $data->correo . '",
-                Usu_nombre1 = "' . $data->contrasena . '",
-                Usu_nombre1 = "' . $data->telefono . '",
-                Usu_nombre1 = "' . $data->documento . '",
-                Usu_nombre1 = "' . $data->idtipodocumento . '",
-                Usu_nombre1 = "' . $data->estado . '",
-                Usu_nombre1 = "' . $data->rol . '"
+                Usu_nombre2 = "' . $data->nombre2 . '",
+                Usu_apellido1 = "' . $data->apellido1 . '",
+                Usu_apellido2 = "' . $data->apellido2 . '",
+                Usu_correo = "' . $data->correo . '",
+                Usu_contraseña = "' . $data->contrasena . '",
+                Usu_telefono = "' . $data->telefono . '",
+                Usu_documento = "' . $data->documento . '",
+                Tbltipo_documento_Tip_doc_id = "' . $data->idtipodocumento . '",
+                Tblestado_est_id = "' . $data->estado . '",
+                Tblrol_id = "' . $data->rol . '"
 
 
                 WHERE Usu_id= "' . $id . '"');
