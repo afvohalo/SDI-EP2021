@@ -93,11 +93,23 @@ class Usuario extends Controller
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
 
-        $idusuaruo   = $_POST['id'];
-        $nameusuario = $_POST['formularioUsuarioEdit'][0];
-        //$cantidadsalas  = $_POST['formularioSalasEdit'][1];
-        //$VbSalas        = $_POST['formularioSalasEdit'][2];
-        $this->model->update($idsalas, $nameusuario/* $cantidadsalas, $VbSalas*/);
+        $idusuario = $_POST['id'];
+
+        $DatosEditUsuario = (object) [
+            'nombre1'         => $_POST['formularioUsuario'][0],
+            'nombre2'         => $_POST['formularioUsuario'][1],
+            'apellido1'       => $_POST['formularioUsuario'][2],
+            'apellido2'       => $_POST['formularioUsuario'][3],
+            'correo'          => $_POST['formularioUsuario'][4],
+            'contrasena'      => $_POST['formularioUsuario'][5],
+            'telefono'        => $_POST['formularioUsuario'][6],
+            'documento'       => $_POST['formularioUsuario'][7],
+            'idtipodocumento' => $_POST['formularioUsuario'][8],
+            'estado'          => $_POST['formularioUsuario'][9],
+            'rol'             => $_POST['formularioUsuario'][10],
+        ];
+
+        $this->model->update($idusuariuo, $DatosEditUsuario);
         $this->RefreshDataTable();
 
     }

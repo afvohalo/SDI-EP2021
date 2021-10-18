@@ -90,15 +90,26 @@ class usuarioModel extends Model implements IModel
         }
     }
 
-    public function update($data)
+    public function update($id, $data)
     {
         try {
 
-            $query = $this->prepare('UPDATE tblUsuario SET Usu_nombre1 =:name WHERE Usu_id=:id');
-            $query->execute([
-                'id'   => $id,
-                'name' => $name,
-            ]);
+            $query = $this->prepare('UPDATE tblUsuario SET
+                Usu_nombre1 = "' . $data->nombre1 . '",
+                Usu_nombre1 = "' . $data->nombre2 . '",
+                Usu_nombre1 = "' . $data->apellido1 . '",
+                Usu_nombre1 = "' . $data->apellido2 . '",
+                Usu_nombre1 = "' . $data->correo . '",
+                Usu_nombre1 = "' . $data->contrasena . '",
+                Usu_nombre1 = "' . $data->telefono . '",
+                Usu_nombre1 = "' . $data->documento . '",
+                Usu_nombre1 = "' . $data->idtipodocumento . '",
+                Usu_nombre1 = "' . $data->estado . '",
+                Usu_nombre1 = "' . $data->rol . '"
+
+
+                WHERE Usu_id= "' . $id . '"');
+            $query->execute();
 
         } catch (PDOException $e) {
             $this->showError('update', 'usuario', $e);
