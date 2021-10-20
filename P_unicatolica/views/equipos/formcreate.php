@@ -58,6 +58,20 @@
                     <label for="candado"> El equipo tiene candado?: </label>
                 </div>
 
+                <div class="input-field">
+                        <select name="THerramienta">
+                            <option value="">Seleccione...</option>
+
+                            <?php foreach ($this->d->select_tipoherramienta as $value) {
+                            ?> <option value="<?php echo $value['tip_her_id']; ?>"><?php echo $value['tip_her_nombre']; ?></option>
+
+                            <?php } ?>
+                        </select>
+                        <label for="TMaterial">
+                            Tipo de Herramienta
+                        </label>
+                    </div>
+
             </div>
         </form>
         <div class="row">
