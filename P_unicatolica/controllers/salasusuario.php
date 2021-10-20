@@ -77,7 +77,7 @@ class Salasusuario extends Controller
         $res = $this->model->getId($id);
         $this->setData($res);
 
-        $this->view->render('usuario/formedit', $this->getData());
+        $this->view->render('salasusuario/formedit', $this->getData());
         /* print_r($this->getData()); */
     }
 

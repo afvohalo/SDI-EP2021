@@ -6,7 +6,7 @@
                 <div>
                     <div class="">
                         <h4>
-                            MODULO Salas Usuario
+                            MODULO Usuario
                         </h4>
                     </div>
                     <div class="container table-responsive">
@@ -16,7 +16,6 @@
                                         <th>usuario</th>
 
                                         <th>Sala</th>
-
 
                                         <th class="notexportar">Acciones</th>
                                     </tr>
@@ -31,7 +30,7 @@ foreach ($this->d as $value) {
                                     <tr>
                                         <td><?php echo $value['Tblusuarios_Usu_id'] ?></td>
                                         <td><?php echo $value['Tblsalas_Sal_id'] ?></td>
-
+                                        <td>
                                             <button data-target="#modalSalasUsuarioedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Sal_usu_id'] ?>)"><i  class="material-icons">edit</i></button>
 
 

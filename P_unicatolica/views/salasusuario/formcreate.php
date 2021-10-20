@@ -1,28 +1,22 @@
-<div id="modalSalasUsuario" class="modal" tabindex="-1" role="dialog">
+<div id="modalSalasUsuarioedit" class="modal" tabindex="-1" role="dialog">
     <div class="modal-content">
-        <h4 class="center">Nuevo Usuario</h4>
+        <h4 class="center">Nuevo Salas Usuario</h4>
         <form id="form_salasUsuario">
 
                 <div class="input-field">
                     <input type="text" name="name1" required>
                     <label class="active" for="name">
-                        nombre 1
+                        Usuario
                     </label>
                 </div>
 
                 <div class="input-field">
                     <input type="text" name="name2" required>
                     <label class="active" for="name">
-                        nombre 2
+                        Sala
                     </label>
                 </div>
 
-                <div class="input-field">
-                    <input type="text" name="apellido1" required>
-                    <label class="active" for="name">
-                        apellido 1
-                    </label>
-                </div>
 
             </div>
         </form>

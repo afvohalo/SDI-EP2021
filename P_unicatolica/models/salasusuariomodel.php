@@ -1,6 +1,6 @@
 <?php
 
-class usuarioModel extends Model implements IModel
+class salasusuarioModel extends Model implements IModel
 {
 
     public function __construct()
@@ -54,11 +54,11 @@ class usuarioModel extends Model implements IModel
     public function getAll()
     {
         try {
-            $query = $this->prepare('SELECT * FROM tblusuario');
+            $query = $this->prepare('SELECT * FROM tblsalas_usuarios');
             $query->execute();
             return $query->fetchAll();
         } catch (PDOException $e) {
-            $this->showError('getAll', 'usuario', $e);
+            $this->showError('getAll', 'salasusuario', $e);
         }
     }
 
@@ -71,7 +71,7 @@ class usuarioModel extends Model implements IModel
             $query->execute($id);
 
         } catch (PDOException $e) {
-            $this->showError('delete', 'usuario', $e);
+            $this->showError('delete', 'salasusuario', $e);
         }
 
     }
@@ -80,13 +80,13 @@ class usuarioModel extends Model implements IModel
     {
         try {
 
-            $query = $this->prepare('SELECT * FROM tblusuario WHERE Usu_id=:id');
+            $query = $this->prepare('SELECT * FROM tblsalas_usuarios WHERE Sal_usu_id=:id');
             $query->execute(['id' => $id]);
 
             return $query->fetchAll();
 
         } catch (PDOException $e) {
-            $this->showError('getId', 'usuario', $e);
+            $this->showError('getId', 'salasusuario', $e);
         }
     }
 
@@ -112,7 +112,7 @@ class usuarioModel extends Model implements IModel
             $query->execute();
 
         } catch (PDOException $e) {
-            $this->showError('update', 'usuario', $e);
+            $this->showError('update', 'salasusuario', $e);
         }
     }
 

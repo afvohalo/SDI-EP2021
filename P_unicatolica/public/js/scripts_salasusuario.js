@@ -16,7 +16,7 @@ function SaveData() {
 function OneData(id){
 	var OneIdSalasUsuario ={
 		'Ctr':'Salasusuario',
-		'Acc':'OneSalasUsuario',
+		'Acc':'oneSalasUsuario',
 		'id':id
 	}
 	console.log(OneIdSalasUsuario);

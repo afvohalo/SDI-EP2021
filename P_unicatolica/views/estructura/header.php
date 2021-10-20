@@ -87,6 +87,7 @@
                         <a class="dropdown-item" href="rol">Rol</a>
                         <a class="dropdown-item" href="tipodocumento">Tipo de documento</a>
                         <a class="dropdown-item" href="tipomovimiento">Tipo de movimiento</a>
+                        <a class="dropdown-item" href="salasusuario">salasusuario</a>
 
                     </div>
                 </li>
