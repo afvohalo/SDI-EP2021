@@ -15,7 +15,7 @@ function SaveData() {
 
 function OneData(id){
 	var OneIdSalasUsuario ={
-		'Ctr':'SalasUsuario',
+		'Ctr':'Salasusuario',
 		'Acc':'OneSalasUsuario',
 		'id':id
 	}
@@ -27,7 +27,7 @@ function OneData(id){
 function DeleteData(id){
 	Message_Confirm(()=>{
 		var SalasUsuarioDelete ={
-			"Ctr":"SalasUsuario",
+			"Ctr":"Salasusuario",
 			"Acc":"deleteSalasUsuario",
 			"id":id,
 		}
@@ -40,7 +40,7 @@ function UpdateData(id){
 		Message_Confirm(()=>{
 		var data = new FormData($('#form_salasUsuario_edit')[0]);
 		var DatosSalasUsuarioEdit ={
-			'Ctr':'SalasUsuario',
+			'Ctr':'Salasusuario',
 			'Acc':'editSalasUsuario',
 			'id':id,
 			'formularioSalasUsuarioEdit':ProcessData(data)

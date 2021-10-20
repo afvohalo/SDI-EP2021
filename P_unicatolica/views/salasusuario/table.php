@@ -6,34 +6,18 @@
                 <div>
                     <div class="">
                         <h4>
-                            MODULO Usuario
+                            MODULO Salas Usuario
                         </h4>
                     </div>
                     <div class="container table-responsive">
                             <table id="myTable" class="table table-bordered text-center">
                                 <thead>
                                     <tr>
-                                        <th>Nombre1</th>
+                                        <th>usuario</th>
 
-                                        <th>NOMBRE2</th>
+                                        <th>Sala</th>
 
-                                        <th>APELLIDO1</th>
 
-                                        <th>APELLIDO2</th>
-
-                                        <th>CORREO</th>
-
-                                        <th>CONTRASEÑA</th>
-
-                                        <th>TELEFONO</th>
-
-                                        <th>DOCUMENTO</th>
-
-                                        <th>TIP DOCUEMTNO</th>
-
-                                        <th>ESTADO USUARIO</th>
-
-                                        <th>ROL USUARIO</th>
                                         <th class="notexportar">Acciones</th>
                                     </tr>
                                 </thead>
@@ -45,22 +29,13 @@ foreach ($this->d as $value) {
                                     <div class="row">
                                         <div class="col">
                                     <tr>
-                                        <td><?php echo $value['Usu_nombre1'] ?></td>
-                                        <td><?php echo $value['Usu_nombre2'] ?></td>
-                                        <td><?php echo $value['Usu_apellido1'] ?></td>
-                                        <td><?php echo $value['Usu_apellido2'] ?></td>
-                                        <td><?php echo $value['Usu_correo'] ?></td>
-                                        <td><?php echo $value['Usu_contraseña'] ?></td>
-                                        <td><?php echo $value['Usu_telefono'] ?></td>
-                                        <td><?php echo $value['Usu_documento'] ?></td>
-                                        <td><?php echo $value['Tbltipo_documento_Tip_doc_id'] ?></td>
-                                        <td><?php echo $value['Tblestado_est_id'] ?></td>
-                                        <td><?php echo $value['Tblrol_id'] ?></td>
-                                        <td>
-                                            <button data-target="#modalUsuarioedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Usu_id'] ?>)"><i  class="material-icons">edit</i></button>
+                                        <td><?php echo $value['Tblusuarios_Usu_id'] ?></td>
+                                        <td><?php echo $value['Tblsalas_Sal_id'] ?></td>
+
+                                            <button data-target="#modalSalasUsuarioedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Sal_usu_id'] ?>)"><i  class="material-icons">edit</i></button>
 
 
-                                            <button onclick="DeleteData(<?php echo $value['Usu_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
+                                            <button onclick="DeleteData(<?php echo $value['Sal_usu_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
                                         </td>
                                     </tr>
                                         </div>

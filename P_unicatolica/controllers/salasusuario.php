@@ -1,13 +1,13 @@
 <?php
 
-class Usuario extends Controller
+class Salasusuario extends Controller
 {
 
     private $data;
     public function __construct()
     {
         parent::__construct();
-        $this->view->render('usuario/index');
+        $this->view->render('salasusuario/index');
 
     }
 
@@ -15,9 +15,9 @@ class Usuario extends Controller
     {
         $this->view->render('estructura/header'); //HEADER
 
-        $this->view->render('usuario/index');
+        $this->view->render('salasusuario/index');
         $this->RefreshDataTable();
-        $this->view->render('usuario/formcreate');
+        $this->view->render('salasusuario/formcreate');
 
         //$this->view->render('estructura/ajustes_nav'); //NAV_AJUSTES
         $this->view->render('estructura/footer'); //FOOTER
@@ -37,26 +37,19 @@ class Usuario extends Controller
     {
         $res = $this->model->getAll();
         $this->setData($res);
-        $this->view->render('usuario/table', $this->getData());
+        $this->view->render('salasusuario/table', $this->getData());
     }
 
-    public function registrarUsuario()
+    public function registrarSalasUsuario()
     {
 
         //echo "<p>Guardando datos satisfactoriamente</p>";
         print_r($_POST['formularioUsuario']);
         $DatosUsuario = (object) [
-            'nombre1'         => $_POST['formularioUsuario'][0],
-            'nombre2'         => $_POST['formularioUsuario'][1],
-            'apellido1'       => $_POST['formularioUsuario'][2],
-            'apellido2'       => $_POST['formularioUsuario'][3],
-            'correo'          => $_POST['formularioUsuario'][4],
-            'contrasena'      => $_POST['formularioUsuario'][5],
-            'telefono'        => $_POST['formularioUsuario'][6],
-            'documento'       => $_POST['formularioUsuario'][7],
-            'idtipodocumento' => $_POST['formularioUsuario'][8],
-            'estado'          => $_POST['formularioUsuario'][9],
-            'rol'             => $_POST['formularioUsuario'][10],
+            'nombre1'   => $_POST['formularioUsuario'][0],
+            'nombre2'   => $_POST['formularioUsuario'][1],
+            'apellido1' => $_POST['formularioUsuario'][2],
+
         ];
 
         $this->model->save($DatosUsuario);
@@ -64,7 +57,7 @@ class Usuario extends Controller
 
     }
 
-    public function deleteUsuario()
+    public function deleteSalasUsuario()
     {
 
         echo "<p> datos borrados satisfactoriamente</p>";
@@ -75,7 +68,7 @@ class Usuario extends Controller
 
     }
 
-    public function oneUsuario()
+    public function oneSalasUsuario()
     {
 
         echo "<p> datos cargados satisfactoriamente</p>";
@@ -88,7 +81,7 @@ class Usuario extends Controller
         /* print_r($this->getData()); */
     }
 
-    public function editUsuario()
+    public function editSalasUsuario()
     {
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
