@@ -15,31 +15,7 @@ class salasusuarioModel extends Model implements IModel
         print_r($data);
 
         try {
-            $sql = 'INSERT INTO tblusuario(Usu_nombre1,
-            Usu_nombre2,
-            Usu_apellido1,
-            Usu_apellido2,
-            Usu_correo,
-            Usu_contraseña,
-            Usu_telefono,
-            Usu_documento,
-            Tbltipo_documento_Tip_doc_id,
-            Tblestado_est_id,
-            Tblrol_id
-            ) VALUES
-            (
-            "' . $data->nombre1 . '",
-            "' . $data->nombre2 . '",
-            "' . $data->apellido1 . '",
-            "' . $data->apellido2 . '",
-            "' . $data->correo . '",
-            "' . $data->contrasena . '",
-            "' . $data->telefono . '",
-            "' . $data->documento . '",
-            "' . $data->idtipodocumento . '",
-            "' . $data->estado . '",
-            "' . $data->rol . '"
-            )';
+            $sql = 'INSERT INTO tblusuario(Tblusuarios_Usu_id,Tblsalas_Sal_id) VALUES("' . $data->usuario . '","' . $data->sala . '")';
             echo $sql;
             $query = $this->prepare($sql);
             //Preparando la consulta
@@ -67,7 +43,7 @@ class salasusuarioModel extends Model implements IModel
 
         try {
 
-            $query = $this->prepare('DELETE FROM tblusuario WHERE Usu_id=:id');
+            $query = $this->prepare('DELETE FROM tblsalas_usuarios WHERE Sal_usu_id=:id');
             $query->execute($id);
 
         } catch (PDOException $e) {
@@ -94,21 +70,10 @@ class salasusuarioModel extends Model implements IModel
     {
         try {
 
-            $query = $this->prepare('UPDATE tblUsuario SET
-                Usu_nombre1 = "' . $data->nombre1 . '",
-                Usu_nombre2 = "' . $data->nombre2 . '",
-                Usu_apellido1 = "' . $data->apellido1 . '",
-                Usu_apellido2 = "' . $data->apellido2 . '",
-                Usu_correo = "' . $data->correo . '",
-                Usu_contraseña = "' . $data->contrasena . '",
-                Usu_telefono = "' . $data->telefono . '",
-                Usu_documento = "' . $data->documento . '",
-                Tbltipo_documento_Tip_doc_id = "' . $data->idtipodocumento . '",
-                Tblestado_est_id = "' . $data->estado . '",
-                Tblrol_id = "' . $data->rol . '"
-
-
-                WHERE Usu_id= "' . $id . '"');
+            $query = $this->prepare('UPDATE tblsalas_usuarios SET
+                Tblusuarios_Usu_id = "' . $data->usuario . '",
+                Tblsalas_Sal_id = "' . $data->sala . '"
+                WHERE Sal_usu_id= "' . $id . '"');
             $query->execute();
 
         } catch (PDOException $e) {

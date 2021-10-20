@@ -44,15 +44,14 @@ class Salasusuario extends Controller
     {
 
         //echo "<p>Guardando datos satisfactoriamente</p>";
-        print_r($_POST['formularioUsuario']);
-        $DatosUsuario = (object) [
-            'nombre1'   => $_POST['formularioUsuario'][0],
-            'nombre2'   => $_POST['formularioUsuario'][1],
-            'apellido1' => $_POST['formularioUsuario'][2],
+        print_r($_POST['formularioSalasUsuario']);
+        $DatosSalaUsuario = (object) [
+            'usuario' => $_POST['formularioSalasUsuario'][0],
+            'sala'    => $_POST['formularioSalasUsuario'][1],
 
         ];
 
-        $this->model->save($DatosUsuario);
+        $this->model->save($DatosSalaUsuario);
         $this->RefreshDataTable();
 
     }
@@ -86,23 +85,15 @@ class Salasusuario extends Controller
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
 
-        $idusuario = $_POST['id'];
+        $idSalaUsuario = $_POST['id'];
 
-        $DatosEditUsuario = (object) [
-            'nombre1'         => $_POST['formularioUsuarioEdit'][0],
-            'nombre2'         => $_POST['formularioUsuarioEdit'][1],
-            'apellido1'       => $_POST['formularioUsuarioEdit'][2],
-            'apellido2'       => $_POST['formularioUsuarioEdit'][3],
-            'correo'          => $_POST['formularioUsuarioEdit'][4],
-            'contrasena'      => $_POST['formularioUsuarioEdit'][5],
-            'telefono'        => $_POST['formularioUsuarioEdit'][6],
-            'documento'       => $_POST['formularioUsuarioEdit'][7],
-            'idtipodocumento' => $_POST['formularioUsuarioEdit'][8],
-            'estado'          => $_POST['formularioUsuarioEdit'][9],
-            'rol'             => $_POST['formularioUsuarioEdit'][10],
+        $DatosEditSalaUsuario = (object) [
+            'usuario' => $_POST['formularioSalasUsuarioEdit'][0],
+            'sala'    => $_POST['formularioSalasUsuarioEdit'][1],
+
         ];
 
-        $this->model->update($idusuario, $DatosEditUsuario);
+        $this->model->update($idSalaUsuario, $DatosEditUsuario);
         $this->RefreshDataTable();
 
     }

@@ -4,9 +4,12 @@
         <div class="input-field col s8">
             <input type="text" name="name" value="<?php echo $this->d[0]['Tblusuarios_Usu_id'] ?>" required>
             <label class="active" for="name">
+            <label class="active" for="name">
+                usuario
+            </label>
             <input type="text" name="name" value="<?php echo $this->d[0]['Tblsalas_Sal_id'] ?>" required>
             <label class="active" for="name">
-                Nuevo Usuario
+                sala
             </label>
         </div>
 
