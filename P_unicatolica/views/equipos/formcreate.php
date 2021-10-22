@@ -5,72 +5,86 @@
           
                 
                 <div class="input-field">
-                    <input type="text" name="nombre" required>
-                    <label class="active" for="nombre">
+                    <input type="text" name="nombreequipos">
+                    <label class="active" for="nombreequipos">
                         Nombre del equipo
                     </label>
                 </div>
                 
                 <div class="input-field">
-                    <input type="text" name="detalles" required>
-                    <label class="active" for="detalles">
+                    <input type="text" name="detalleequipos">
+                    <label class="active" for="detallesequipos">
                         Detalles del equipo
                     </label>
                 </div>
 
                 <div class="input-field">
-                    <input type="radio" name="teclado" value="1">
-                    <label class="active" for="teclado"> Si </label>
+                    <input type="radio" name="tecladoequipos" value="1">
+                    <label class="active" for="tecladoequipos"> Si </label>
 
-                    <input type="radio" name="teclado" value="0">
-                    <label class="active" for="teclado"> No </label>
+                    <input type="radio" name="tecladoequipos" value="0">
+                    <label class="active" for="tecladoequipos"> No </label>
 
-                    <label for="teclado"> El equipo tiene teclado?: </label>
+                    <label for="tecladoequipos"> El equipo tiene teclado?: </label>
                 </div>
 
                 <div class="input-field">
-                    <input type="radio" name="mouse" value="1">
-                    <label class="active" for="mouse"> Si </label>
+                    <input type="radio" name="mouseequipos" value="1">
+                    <label class="active" for="mouseequipos"> Si </label>
 
-                    <input type="radio" name="mouse" value="0">
-                    <label class="active" for="mouse"> No </label>
+                    <input type="radio" name="mouseequipos" value="0">
+                    <label class="active" for="mouseequipos"> No </label>
 
-                    <label for="mouse"> El equipo tiene mouse?: </label>
+                    <label for="mouseequipos"> El equipo tiene mouse?: </label>
                 </div>
 
                 <div class="input-field">
-                    <input type="radio" name="guaya" value="1">
-                    <label class="active" for="guaya"> Si </label>
+                    <input type="radio" name="guayaequipos" value="1">
+                    <label class="active" for="guayaequipos"> Si </label>
 
-                    <input type="radio" name="guaya" value="0">
-                    <label class="active" for="guaya"> No </label>
+                    <input type="radio" name="guayaequipos" value="0">
+                    <label class="active" for="guayaequipos"> No </label>
 
-                    <label for="guaya"> El equipo tiene guaya?: </label>
+                    <label for="guayaequipos"> El equipo tiene guaya?: </label>
                 </div>
 
                 <div class="input-field">
-                    <input type="radio" name="candado" value="1">
-                    <label class="active" for="candado"> Si </label>
+                    <input type="radio" name="candadoequipos" value="1">
+                    <label class="active" for="candadoequipos"> Si </label>
 
-                    <input type="radio" name="candado" value="0">
-                    <label class="active" for="candado"> No </label>
+                    <input type="radio" name="candadoequipos" value="0">
+                    <label class="active" for="candadoequipos"> No </label>
 
-                    <label for="candado"> El equipo tiene candado?: </label>
+                    <label for="candadoequipos"> El equipo tiene candado?: </label>
                 </div>
 
                 <div class="input-field">
-                        <select name="THerramienta">
+                        <select name="estadoequipos">
                             <option value="">Seleccione...</option>
 
-                            <?php foreach ($this->d->select_tipoherramienta as $value) {
-                            ?> <option value="<?php echo $value['tip_her_id']; ?>"><?php echo $value['tip_her_nombre']; ?></option>
+                            <?php foreach ($this->d->select_estadoequipos as $value) {
+                            ?> <option value="<?php echo $value['Est_equipos_id']; ?>"><?php echo $value['Est_equipos_nombre']; ?></option>
 
                             <?php } ?>
                         </select>
-                        <label for="TMaterial">
-                            Tipo de Herramienta
+                        <label for="estadoequipos">
+                            Estado del equipo
                         </label>
-                    </div>
+                </div>
+
+                <div class="input-field">
+                        <select name="salaequipos">
+                            <option value="">Seleccione...</option>
+
+                            <?php foreach ($this->d->select_salaequipos as $value) {
+                            ?> <option value="<?php echo $value['Sal_id']; ?>"><?php echo $value['Sal_nombre']; ?></option>
+
+                            <?php } ?>
+                        </select>
+                        <label for="salaequipos">
+                            Sala del equipo
+                        </label>
+                </div>
 
             </div>
         </form>

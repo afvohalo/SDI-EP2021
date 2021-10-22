@@ -17,6 +17,7 @@ class Equipos extends Controller
 
         $this->view->render('equipos/index');
         $this->RefreshDataTable();
+        $this->renderViewFormEquipos();
         $this->view->render('equipos/formcreate');
 
         //$this->view->render('estructura/ajustes_nav'); //NAV_AJUSTES
@@ -39,6 +40,19 @@ class Equipos extends Controller
         //var_export($res);
         $this->setData($res);
         $this->view->render('equipos/table', $this->getData());
+    }
+
+    public function renderViewFormEquipos()
+    {
+        $SelectEstadoEquipos = $this->model->consultaDatos('tblestado_equipos');
+        $SelectSalaEquipos   = $this->model->consultaDatos('tblsalas');
+
+        $Data = (object) [
+            'select_estadoequipos' => $SelectEstadoEquipos,
+            'select_salaequipos'   => $SelectSalaEquipos,
+        ];
+        //$this->ShowConsole($res);
+        $this->view->render('equipos/formcreate',  $Data);
     }
 
     public function registrarequipos()

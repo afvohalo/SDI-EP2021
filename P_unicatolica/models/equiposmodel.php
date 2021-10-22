@@ -91,4 +91,15 @@ class equiposModel extends Model implements IModel
         }
     }
 
+    public function consultaDatos($table){
+            try {
+                $query = $this->prepare('SELECT * FROM '.$table);
+                $query->execute(); 
+
+                return $query->fetchAll();
+            } catch (PDOException $e) {
+                $this->showError('consultaDatos','tblequipos',$e);
+            }
+        }
+
 }
