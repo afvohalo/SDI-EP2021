@@ -76,7 +76,7 @@ class usuarioModel extends Model implements IModel
     public function consultaDatosTipo($table)
     {
         try {
-            $query = $this->prepare("SELECT * FROM " . $table . " WHERE tbltipo_estado_tip_est_id = 1");
+            $query = $this->prepare("SELECT * FROM " . $table . " WHERE Tblestado_est_id = 1");
             $query->execute();
 
             return $query->fetchAll();

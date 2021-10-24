@@ -62,22 +62,6 @@
 
 
 
-
-                <div class="input-field">
-                    <input type="text" name="name" required>
-                    <label class="active" for="name">
-                        estado
-                    </label>
-                </div>
-
-
-                <div class="input-field">
-                    <input type="text" name="name" required>
-                    <label class="active" for="name">
-                        rol
-                    </label>
-                </div>
-
                 <div class="input-field">
                         <select name="TDocumento">
                             <option value="" disabled selected>Seleccione...</option>
@@ -90,6 +74,33 @@ foreach ($this->d->selectTipo as $value) {
                     </select>
                     <label for="TDocumento">Tipo Documento</label>
                 </div>
+
+                <div class="input-field">
+                        <select name="TDocumento">
+                            <option value="" disabled selected>Seleccione...</option>
+                            <?php
+
+foreach ($this->d->selectEestado as $value) {
+    ?>
+                                <option value="<?php echo $value['Est_id']; ?>"><?php echo $value['Est_nombre']; ?></option>
+                        <?php }?>
+                    </select>
+                    <label for="TDocumento">Estado</label>
+                </div>
+
+                <div class="input-field">
+                        <select name="TDocumento">
+                            <option value="" disabled selected>Seleccione...</option>
+                            <?php
+
+foreach ($this->d->selectRol as $value) {
+    ?>
+                                <option value="<?php echo $value['Rol_id']; ?>"><?php echo $value['Rol_nombre']; ?></option>
+                        <?php }?>
+                    </select>
+                    <label for="TDocumento">Rol</label>
+                </div>
+
 
 
             </div>
