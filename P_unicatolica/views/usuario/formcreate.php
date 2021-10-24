@@ -61,12 +61,6 @@
                 </div>
 
 
-                <div class="input-field">
-                    <input type="text" name="name" required>
-                    <label class="active" for="name">
-                        tipo de documento
-                    </label>
-                </div>
 
 
                 <div class="input-field">
@@ -82,6 +76,19 @@
                     <label class="active" for="name">
                         rol
                     </label>
+                </div>
+
+                <div class="input-field">
+                        <select name="TDocumento">
+                            <option value="" disabled selected>Seleccione...</option>
+                            <?php
+
+foreach ($this->d->selectTipo as $value) {
+    ?>
+                                <option value="<?php echo $value['tip_doc_id']; ?>"><?php echo $value['Tip_doc_nombre']; ?></option>
+                        <?php }?>
+                    </select>
+                    <label for="TDocumento">Tipo Documento</label>
                 </div>
 
 

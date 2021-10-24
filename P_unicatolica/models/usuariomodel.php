@@ -62,6 +62,29 @@ class usuarioModel extends Model implements IModel
         }
     }
 
+    public function consultaDatos($table)
+    {
+        try {
+            $query = $this->prepare('SELECT * FROM ' . $table);
+            $query->execute();
+
+            return $query->fetchAll();
+        } catch (PDOException $e) {
+            $this->showError('consultaDatos', 'usuario', $e);
+        }
+    }
+    public function consultaDatosTipo($table)
+    {
+        try {
+            $query = $this->prepare("SELECT * FROM " . $table . " WHERE tbltipo_estado_tip_est_id = 1");
+            $query->execute();
+
+            return $query->fetchAll();
+        } catch (PDOException $e) {
+            $this->showError('consultaDatos', 'usuario', $e);
+        }
+    }
+
     public function delete($id)
     {
 

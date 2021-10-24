@@ -7,7 +7,7 @@ class Usuario extends Controller
     public function __construct()
     {
         parent::__construct();
-        $this->view->render('usuario/index');
+        //$this->view->render('usuario/index');
 
     }
 
@@ -17,8 +17,8 @@ class Usuario extends Controller
 
         $this->view->render('usuario/index');
         $this->RefreshDataTable();
-        $this->view->render('usuario/formcreate');
-
+        $this->Render_FormUsuario();
+        //$this->view->render('usuario/formcreate');
         //$this->view->render('estructura/ajustes_nav'); //NAV_AJUSTES
         $this->view->render('estructura/footer'); //FOOTER
     }
@@ -38,6 +38,21 @@ class Usuario extends Controller
         $res = $this->model->getAll();
         $this->setData($res);
         $this->view->render('usuario/table', $this->getData());
+    }
+
+    public function Render_FormUsuario()
+    {
+        //esta funcion carga los select formcreate-usuario
+        $R1 = $this->model->consultaDatos("tbltipo_documento");
+        $R2 = $this->model->consultaDatosTipo("tblestado");
+        $R3 = $this->model->consultaDatos("tblrol");
+
+        $Data = (object) [
+            'selectTipo'    => $R1,
+            'selectEestado' => $R2,
+            'selectRol'     => $R3,
+        ];
+        $this->view->render('usuario/formcreate', $Data);
     }
 
     public function registrarUsuario()
