@@ -18,7 +18,7 @@ function ReadyChangeJquery(GetData,IdentificatorDiv){
 	} )
 	.done(function(data) {
 		$(IdentificatorDiv).html(data);
-		 //$('select').formSelect();
+		$('select').formSelect();
 		 //$('.collapsible').collapsible();
 		/*$('#myTable').DataTable({
 			destroy: true,
