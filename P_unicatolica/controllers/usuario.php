@@ -44,13 +44,13 @@ class Usuario extends Controller
     {
         //esta funcion carga los select formcreate-usuario
         $R1 = $this->model->consultaDatos("tbltipo_documento");
-        $R2 = $this->model->consultaDatosTipo("tblestado");
+        $R2 = $this->model->consultaDatos("tblestado");
         $R3 = $this->model->consultaDatos("tblrol");
 
         $Data = (object) [
-            'selectTipo'    => $R1,
-            'selectEestado' => $R2,
-            'selectRol'     => $R3,
+            'selectTipo'   => $R1,
+            'selectEstado' => $R2,
+            'selectRol'    => $R3,
         ];
         $this->view->render('usuario/formcreate', $Data);
     }

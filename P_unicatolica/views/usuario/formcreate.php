@@ -4,14 +4,14 @@
         <form id="form_Usuario">
 
                 <div class="input-field">
-                    <input type="text" name="name1" required>
+                    <input type="text" name="nombre1" required>
                     <label class="active" for="name">
                         nombre 1
                     </label>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" name="name2" required>
+                    <input type="text" name="nombre2" required>
                     <label class="active" for="name">
                         nombre 2
                     </label>
@@ -54,7 +54,7 @@
 
 
                 <div class="input-field">
-                    <input type="text" name="name" required>
+                    <input type="text" name="documento" required>
                     <label class="active" for="name">
                         Numero de documento
                     </label>
@@ -63,33 +63,33 @@
 
 
                 <div class="input-field">
-                        <select name="TDocumento">
+                        <select name="documento">
                             <option value="" disabled selected>Seleccione...</option>
                             <?php
 
 foreach ($this->d->selectTipo as $value) {
     ?>
-                                <option value="<?php echo $value['tip_doc_id']; ?>"><?php echo $value['Tip_doc_nombre']; ?></option>
+                                <option value="<?php echo $value['Tip_doc_id']; ?>"><?php echo $value['Tip_doc_nombre']; ?></option>
                         <?php }?>
                     </select>
-                    <label for="TDocumento">Tipo Documento</label>
+                    <label for="documento">Tipo Documento</label>
                 </div>
 
                 <div class="input-field">
-                        <select name="TDocumento">
+                        <select name="estado">
                             <option value="" disabled selected>Seleccione...</option>
                             <?php
 
-foreach ($this->d->selectEestado as $value) {
+foreach ($this->d->selectEstado as $value) {
     ?>
                                 <option value="<?php echo $value['Est_id']; ?>"><?php echo $value['Est_nombre']; ?></option>
                         <?php }?>
                     </select>
-                    <label for="TDocumento">Estado</label>
+                    <label for="estasdo">Estado</label>
                 </div>
 
                 <div class="input-field">
-                        <select name="TDocumento">
+                        <select name="rol">
                             <option value="" disabled selected>Seleccione...</option>
                             <?php
 
@@ -98,8 +98,9 @@ foreach ($this->d->selectRol as $value) {
                                 <option value="<?php echo $value['Rol_id']; ?>"><?php echo $value['Rol_nombre']; ?></option>
                         <?php }?>
                     </select>
-                    <label for="TDocumento">Rol</label>
+                    <label for="rol">Rol</label>
                 </div>
+
 
 
 
