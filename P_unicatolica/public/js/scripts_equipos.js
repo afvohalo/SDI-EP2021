@@ -1,5 +1,6 @@
 
 function SaveData() {
+	console.log($("#form_equipos"));
 	let prueba = new FormData($("#form_equipos")[0]);
 	console.log(ProcessData(prueba));
 	Validate_Form(()=>{

@@ -83,10 +83,11 @@ function Validate_Form(x_function_ready,formulario){
 
 	$(`${formulario} input`).each(function(index, item){
 		var $input = $(item);
-		console.log(item.value.length);
+
+		//console.log(item.value.length);
 		if (item.value.length === 0) {
-			/* console.log(item); */
-		  /* $input.closest('div').addClass('has-error'); */
+			//console.log(item); 
+		  $input.closest('div').addClass('has-error'); 
 		  if (item.type !== 'hidden' && item.required) {
 			toastr.error('Error',`Campo vacio ${item.name} `)
 			count_errors=count_errors+1;
@@ -94,6 +95,7 @@ function Validate_Form(x_function_ready,formulario){
 		}
 	});
 	$(`${formulario} select`).each(function(index, item){
+		console.log(item.value.length);
 		if (item.value.length === 0 ) {
 			toastr.error('Error',`Campo vacio ${item.name} `)
 			count_errors=count_errors+1;
