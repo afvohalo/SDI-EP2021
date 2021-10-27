@@ -1,7 +1,7 @@
 
 function SaveData() {
-	let prueba = $("#form_equipos");
-	console.log(prueba);
+	let prueba = new FormData($("#form_equipos")[0]);
+	console.log(ProcessData(prueba));
 	Validate_Form(()=>{
 		Message_Confirm(()=>{
 			var data = new FormData($("#form_equipos")[0]);	
