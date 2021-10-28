@@ -98,7 +98,7 @@ function Validate_Form(x_function_ready,formulario){
 		console.log(item.name);
 		console.log(item.length);
 		console.log(item.value.length);
-		if (item.value.length === 0 ) {
+		if ((item.value.length === 0 && (item.name.length === 0))) {
 			toastr.error('Error',`Campo vacio ${item.name} `)
 			count_errors=count_errors+1;
 		}
