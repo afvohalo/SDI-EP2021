@@ -6,7 +6,7 @@ function SaveData() {
 			var DatosTipomovimiento ={
 				"Ctr":"Tipomovimiento",
 				"Acc":"registrarTipomovimiento",
-				"formularioTipomovimiento":ProcessData(data)
+				"formularioTipoMovimiento":ProcessData(data)
 			}
 				console.log(DatosTipomovimiento);
 			ReadyChangeJquery(DatosTipomovimiento,"#table_data");
@@ -17,7 +17,7 @@ function SaveData() {
 function OneData(id){
 	var OneIdTipomovimiento ={
 		'Ctr':'Tipomovimiento',
-		'Acc':'OneTipomovimiento',
+		'Acc':'oneTipomovimiento',
 		'id':id
 	}
 	console.log(OneIdTipomovimiento);
@@ -44,7 +44,7 @@ function UpdateData(id){
 			'Ctr':'Tipomovimiento',
 			'Acc':'editTipomovimiento',
 			'id':id,
-			'formularioTipomovimientoEdit':ProcessData(data)
+			'formularioTipoMovimientoEdit':ProcessData(data)
 		}
 		ReadyChangeJquery(DatosTipomovimientoEdit,'#table_data')
 	})

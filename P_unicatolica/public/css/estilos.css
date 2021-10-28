@@ -58,7 +58,7 @@ body{
 .container{
     width: 100%;
     max-width: 1200px;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -99,7 +99,7 @@ body{
 
 .btninicio:hover {
   height: auto;
-  background-color: #4f70b6cb;
+  background-color: #dee2ebcb;
   border-radius: 5px;
 }
 
