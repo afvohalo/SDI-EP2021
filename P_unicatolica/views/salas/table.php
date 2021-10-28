@@ -12,7 +12,7 @@
                     <div class="container table-responsive">
                             <table id="myTable" class="table table-bordered text-center">
                                 <thead>
-                                    <tr>
+                                    <tr class="bg-info">
                                         <th>Sala</th>
                                         <th>Cantidad de equipos</th>
                                         <th>VideoBeam</th>
@@ -41,7 +41,8 @@ foreach ($this->d as $value) {
                                         <td><?php echo $value['Sal_videobeam'] ?></td>
                                         <td>
                                             <button data-target="#modalSalasedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Sal_id'] ?>)"><i  class="material-icons">edit</i></button>
-
+                                            
+                                            
                                             <button onclick="DeleteData(<?php echo $value['Sal_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
                                         </td>
                                     </tr>

@@ -26,8 +26,8 @@
             <div class="col-md-6">
                 <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">INVENTARIO SALAS</strong>
-                        <h3 class="mb-0">Panel principal</h3>
+                        <p class="d-inline-block mb-2 text-primary">INVENTARIO SALAS</p>
+                        <h4 class="mb-0">Panel principal</h4>
                         <div class="mb-1 text-muted">Novedades</div>
                         <p class="card-text mb-auto">Ingrese para acceder al panel principal del inventario de salas, Consulte las cantidades de salas, asigne salas a los usuarios.</p>
                         <a href="menusalas" class="stretched-link">Ingresar</a>
@@ -44,8 +44,8 @@
             <div class="col-md-6">
                 <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">INVENTARIO OFICINA</strong>
-                        <h3 class="mb-0">Panel principal</h3>
+                        <p class="d-inline-block mb-2 text-success">INVENTARIO OFICINA</p>
+                        <h4 class="mb-0">Panel principal</h4>
                         <div class="mb-1 text-muted">Novedades</div>
                         <p class="mb-auto">Ingrese para acceder al panel principal del inventario de salas, Consulte las cantidades de salas, asigne salas a los usuarios.</p>
                         <a href="menuoficina" class="stretched-link">Ingresar</a>
@@ -78,7 +78,7 @@
         <div class="container">
             <div class="py-3 text-center">
                 <img class="d-block mx-auto mb-4" src="public/img/logo.svg" alt="" width="200" height="100">
-                <h2>SISTEMAS MELENDEZ</h2>
+                <h3>SISTEMAS MELENDEZ</h3>
                 <p class="lead">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de
                     Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731
 
@@ -280,27 +280,8 @@
                     </form>
                 </div>
             </div>
-            <footer class="bg-ligth my-5 pt-5 text-muted text-center text-small">
-                <div class="py-3 text-center">
-                    <img class="d-block mx-auto mb-4" src="public/img/logo.svg" alt="" width="300" height="100">
-                    <p class="lead">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio
-                        de Educación Nacional – Resolución No. 944 de 1996 MEN – SNIES 2731 <br>
-
-                        Sede Principal Cra. 122 No. 12-459 Pance, Cali – Colombia
-                        Teléfonos: +57 (2) 555 2767 – +57 (2) 312 0038 <br>
-
-                        Para notificaciones judiciales y administrativas comuníquese a:
-                        secretariageneral@unicatolica.edu.co y juridico@unicatolica.edu.co</p>
-                </div>
-            </footer>
-
         </div>
-
-
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
-
         </div>
-
-
     </body>

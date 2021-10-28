@@ -75,20 +75,20 @@
                 <li class="nav-item my-2 ml-2">
                     <b><a class="nav-link text-black btninicio" href="./"><i class="bi bi-house-fill"></i> Inicio</a></b>
                 </li>
-
+                
                 <li class="nav-item dropdown my-2 ml-2">
                     <a class="nav-link text-black dropdown-toggle btninicio " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <b><i class="bi bi-gear-fill"></i> Otros</b>
+                        <b><i class="bi bi-gear-fill"></i> Panel de control</b>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="usuario">Usuario</a>
-                        <a class="dropdown-item" href="estado">Estado</a>
-                        <a class="dropdown-item" href="estado_equipo">Estado equipo</a>
-                        <a class="dropdown-item" href="rol">Rol</a>
-                        <a class="dropdown-item" href="tipodocumento">Tipo de documento</a>
-                        <a class="dropdown-item" href="tipomovimiento">Tipo de movimiento</a>
-                        <a class="dropdown-item" href="salasusuario">salasusuario</a>
-
+                            
+                        <a class="dropdown-item" href="estado"><i class="bi bi-bookmark-check-fill"></i> Estado</a>
+                        <a class="dropdown-item" href="estado_equipo"><i class="bi bi-display"></i> Estado equipo</a>
+                        <a class="dropdown-item" href="estado_inventario"><i class="bi bi-card-checklist"></i> Estado inventario</a>
+                        <a class="dropdown-item" href="rol"><i class="bi bi-person-lines-fill"></i> Rol</a>
+                        <a class="dropdown-item" href="tipodocumento"><i class="bi bi-credit-card-2-front-fill"></i> Tipo de documento</a>
+                        <a class="dropdown-item" href="tipomovimiento"><i class="bi bi-arrow-left-right"></i> Tipo de movimiento</a>
+                        
                     </div>
                 </li>
                 <li class="nav-item my-2 ml-2 btninicio">

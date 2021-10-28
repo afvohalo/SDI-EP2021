@@ -2,8 +2,6 @@
     <div class="modal-content">
         <h4 class="center">Nuevo Estado</h4>
         <form id="form_estado">
-          
-                
                 <div class="input-field">
                     <input type="text" name="name" required>
                     <label class="active" for="name">

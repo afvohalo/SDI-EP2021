@@ -35,10 +35,9 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
 
                 $controller->cargarModel($ctr);
                 $controller->{$acc}();
-                
-            } else {    
+
+            } else {
                 $controller->cargarModel($ctr);
-                
                 $controller->{$acc}();
 
             }
@@ -48,12 +47,11 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
             $caracterspecial = '_';
             //crear un nuevo controlador,carga el modelo y carga el index del controlador
             $clase      = ucwords($url[0]);
-
             $controller = new $clase;
             if (strpos($clase, $caracterspecial) != false) {
                 $clase = strtolower($clase);
                 $clase = preg_replace('([_])', '', $clase);
-                
+               
                 $controller->cargarModel($clase);
                 $controller->{'index'}();
             } else {
@@ -102,7 +100,6 @@ if (isset($_POST['Acc']) && isset($_POST['Ctr'])) {
     //genera un directoria con la url y llama la  funcion lsloadview que esta arriba
     $url               = IsCleanUrl();
     $archivoController = 'controllers/' . $url[0] . '.php';
-    echo($archivoController);
     IsLoadView($archivoController, 'LoadView', $url);
 
 } else {

@@ -1,4 +1,4 @@
-    <div id="table_data">
+    <div id="table_data_estadoInventario">
         <!-- Todo lo que este dentro de este id, se actualiza, si esta afuera o antes de esto, va a pasar un bucle -->
 
         <div class="container text-center">
@@ -6,14 +6,14 @@
                 <div>
                     <div class="">
                         <h4>
-                            MODULO ROL
+                            MODULO ESTADO INVENTARIO
                         </h4>
                     </div>
                     <div class="container table-responsive">
                         <table id="myTable" class="table table-bordered text-center">
                             <thead>
                                 <tr class="bg-info">
-                                    <th>Rol</th>
+                                    <th>Estado inventario</th>
                                     <th class="notexportar">Acciones</th>
                                 </tr>
                             </thead>
@@ -25,11 +25,11 @@
                                     <div class="row">
                                         <div class="col">
                                             <tr>
-                                                <td><?php echo $value['Rol_nombre'] ?></td>
+                                                <td><?php echo $value['Est_inv_nombre'] ?></td>
                                                 <td>
-                                                    <button data-target="#modalRoledit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Rol_id'] ?>)"><i class="material-icons">edit</i></button>
+                                                    <button data-target="#modalEstadoInventarioEdit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Est_inv_id'] ?>)"><i class="material-icons">edit</i></button>
 
-                                                    <button onclick="DeleteData(<?php echo $value['Rol_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
+                                                    <button onclick="DeleteData(<?php echo $value['Est_inv_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
                                                 </td>
                                             </tr>
                                         </div>
@@ -43,8 +43,8 @@
                 </div>
 
                 <div class="">
-                    <button data-target="#modalRol" class="btn btn-primary" data-toggle="modal">
-                        <i class="material-icons left">library_add</i><br>Agregar Nuevo Rol</button>
+                    <button data-target="#modalEstadoInventario" class="btn btn-primary" data-toggle="modal">
+                        <i class="material-icons left">library_add</i><br>Agregar Nuevo Estado </button>
                 </div>
             </div>
         </div>

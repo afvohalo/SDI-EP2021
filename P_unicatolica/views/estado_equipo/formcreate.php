@@ -1,6 +1,6 @@
 <div id="modalEstadoEquipo" class="modal" tabindex="-1" role="dialog">
     <div class="modal-content">
-        <h4 class="center">Nuevo Tipo De estado</h4>
+        <h4 class="center">Nuevo Estado De equipo</h4>
         <form id="form_estadoEquipo">
                 <div class="input-field">
                     <input type="text" name="name" required>

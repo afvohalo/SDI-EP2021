@@ -2,7 +2,7 @@
 
 <div id="modalEstadoEquipoEdit" class="modal">
     <div class="modal-content">
-        <h4 class="center">Editar Tipo Documento</h4>
+        <h4 class="center">Editar Estado De equipo</h4>
 
             <div id="form_edit">
 
