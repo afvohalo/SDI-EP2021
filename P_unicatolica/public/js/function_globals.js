@@ -18,7 +18,7 @@ function ReadyChangeJquery(GetData,IdentificatorDiv){
 	} )
 	.done(function(data) {
 		$(IdentificatorDiv).html(data);
-		$('select').formSelect();
+		//$('select').formSelect();
 		 //$('.collapsible').collapsible();
 		/*$('#myTable').DataTable({
 			destroy: true,
@@ -95,6 +95,8 @@ function Validate_Form(x_function_ready,formulario){
 		}
 	});
 	$(`${formulario} select`).each(function(index, item){
+		console.log(item.name);
+		console.log(item.length);
 		console.log(item.value.length);
 		if (item.value.length === 0 ) {
 			toastr.error('Error',`Campo vacio ${item.name} `)
