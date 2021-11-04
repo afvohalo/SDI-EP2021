@@ -19,7 +19,7 @@
                                         <th>Guaya</th>
                                         <th>Candado</th>
                                         <th>Estado</th>
-                                        <th>Sala</th>
+                                        <th>Ubicacion (Sala)</th>
                                         <th class="notexportar">Acciones</th>
                                     </tr>
                                 </thead>
