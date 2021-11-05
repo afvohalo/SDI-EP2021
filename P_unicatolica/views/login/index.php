@@ -118,25 +118,25 @@
 
 <body class="text-center">
 
-    <form class="form-signin">
+    <form class="form-signin" method="post">
         <img class="mb-4" src="../public/img/logowhite.png" alt="" width="300" height="100">
         <h5 class="h5 mb-3 font-weight-normal text-white">INCIAR SESION</h5>
         <div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="Correo Electronico">
+						<input type="email" name="email" class="form-control" placeholder="Correo Electronico">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" id="password" class="form-control" placeholder="Contraseña">
+						<input type="password" name="password" id="password" class="form-control" placeholder="Contraseña">
 						<button style="width: 80px;" class="btn btn-primary" type="button" onclick="mostrarContrasena()"><i class="fas fa-eye"></i></button>
 					</div>
 					<div class="form-group">
-						<input onclick="ValidacionLogin();" form="FormLogin" type="submit" value="INGRESAR" class="btn btn-primary btn-lg btn-block">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
 					</div>
         <p class="mt-5 mb-3 text-white">&copy; Sistemas Melendez</p>
     </form>
