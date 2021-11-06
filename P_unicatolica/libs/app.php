@@ -1,5 +1,5 @@
-
 <?php
+session_start();
 
 if (isset($_POST['Acc'])) {
     $d = $_GET['url'] . " " . $_POST['Acc'] . " " . $_POST['Ctr'];
@@ -87,25 +87,45 @@ function IsCleanUrl()
     return $url;
 }
 
-$exist = empty($_GET['url']) ? false : true;
+//confirma si la sesion esta abierta o no
+if (isset($_SESSION['rol']) && isset($_SESSION['nombre']) && isset($_SESSION['apellido'])) {
 
-if (isset($_POST['Acc']) && isset($_POST['Ctr'])) {
-    //genera un directorio con el $_post[ctr] y llama la funcion iloadView que esta arriva
-    $ctr               = $_POST['Ctr'];
-    $archivoController = 'controllers/' . $ctr . '.php';
-    //echo "<script type='text/javascript'>console.log($archivoController);</script>";
-    IsLoadView($archivoController, 'LoadObjectAction');
+    if (isset($_POST['cerrarSesion'])) {
+        unset($_SESSION['rol'], $_SESSION['nombre'], $_SESSION['apellido'], $_SESSION['idUsuario'], $_SESSION['correo']);
+        session_destroy();
+        header("Location: ../P_unicatolica");
+    }
+    //CONPRUEBA SI LA URL ESTA VACIA false si lo esta : true si no lo esta
+    $exist = empty($_GET['url']) ? false : true;
 
-} else if ($exist) {
-    //genera un directoria con la url y llama la  funcion lsloadview que esta arriba
-    $url               = IsCleanUrl();
-    $archivoController = 'controllers/' . $url[0] . '.php';
-    IsLoadView($archivoController, 'LoadView', $url);
+    if (isset($_POST['Acc']) && isset($_POST['Ctr'])) {
+        //genera un directorio con el $_post[ctr] y llama la funcion iloadView que esta arriva
+        $ctr               = $_POST['Ctr'];
+        $archivoController = 'controllers/' . $ctr . '.php';
+        IsLoadView($archivoController, 'LoadObjectAction');
 
+    } else if ($exist) {
+        //genera un directoria con la url y llama la  funcion lsloadview que esta arriba
+        $url               = IsCleanUrl();
+        $archivoController = 'controllers/' . $url[0] . '.php';
+        IsLoadView($archivoController, 'LoadView', $url);
+
+    } else {
+        //dirige al main
+        $archivoController = 'controllers/main.php';
+        IsLoadView($archivoController, 'LoadIndex');
+
+    }
 } else {
-    //dirige al main
-    $archivoController = 'controllers/main.php';
-    IsLoadView($archivoController, 'LoadIndex');
-}
+    //confimacion de datos para entrar
+    $archivoController = 'controllers/login.php';
+    require $archivoController;
+    $Inicio = new Login();
+    $Inicio->cargarModel('login');
 
+    if (isset($_POST['email']) && isset($_POST['password'])) {
+        $Inicio->validate($_POST['email'], $_POST['password']);
+    }
+}
+// session_destroy();
 ?>

@@ -7,7 +7,7 @@
             parent::__construct();
             /* $this->view->render('main/index'); */
             /* echo "<p>Nuevo Controlador Main</p>"; */
-            
+            $this->index();
         }
 
         public function index(){            
