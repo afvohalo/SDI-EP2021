@@ -1,11 +1,5 @@
 <?php
 session_start();
-
-if (isset($_POST['Acc'])) {
-    $d = $_GET['url'] . " " . $_POST['Acc'] . " " . $_POST['Ctr'];
-    //echo "<script type='text/javascript'>console.log($d);</script>";
-} else {/*echo "lol";*/}
-
 require_once 'controllers/errorPage.php';
 
 function IsLoadView($archivoController, $WhatAction, $url = null)

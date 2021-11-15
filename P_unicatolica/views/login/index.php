@@ -119,21 +119,21 @@
 <body class="text-center">
 
     <form class="form-signin" method="post">
-        <img class="mb-4" src="../public/img/logowhite.png" alt="" width="300" height="100">
+        <img class="mb-4" src="public/img/logowhite.png" alt="" width="300" height="100">
         <h5 class="h5 mb-3 font-weight-normal text-white">INCIAR SESION</h5>
         <div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="email" name="email" class="form-control" placeholder="Correo Electronico">
+						<input type="email" name="email" id="email" class="form-control" class="validate" placeholder="Correo Electronico">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" name="password" id="password" class="form-control" placeholder="Contraseña">
-						<button style="width: 80px;" class="btn btn-primary" type="button" onclick="mostrarContrasena()"><i class="fas fa-eye"></i></button>
+						<input type="password" name="password" id="password" class="validate" class="form-control" placeholder="Contraseña">
+						<button style="width: 70px;" class="btn btn-primary" type="button" onclick="mostrarContrasena()"><i class="fas fa-eye"></i></button>
 					</div>
 					<div class="form-group">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
