@@ -17,8 +17,6 @@
         }
         public function validate($email,$password){
 
-            
-            $password = md5($password);
 
                 $Validacion=$this->model->validarLogin($email,$password);
                 
