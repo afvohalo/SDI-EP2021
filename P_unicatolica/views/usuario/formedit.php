@@ -38,7 +38,7 @@
             <button type="submit" class="btn waves-effect" onclick="UpdateData(<?php echo $this->d[0]['Usu_id'] ?>); return false;"><i class="material-icons left">save</i>Editar</button>
         </div>
         <div class="buttoncitos">
-            <button class="modal-close btn waves-effect buttonsApp"><i class="material-icons left">cancel</i>Cerrar</button>
+            <button class="modal-close btn waves-effect buttonsApp" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons left">cancel</i>Cerrar</button>
         </div>
     </div>
 </div>

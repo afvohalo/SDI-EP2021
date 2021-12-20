@@ -38,7 +38,7 @@
 >>>>>>> isaac-1.3:P_unicatolica/views/estado_inventario/formedit.php
         </div>
         <div class="buttoncitos">
-            <button class="modal-close btn waves-effect buttonsApp"><i class="material-icons left">cancel</i>Cerrar</button>
+            <button class="modal-close btn waves-effect buttonsApp" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons left">cancel</i>Cerrar</button>
         </div>
     </div>
 </div>
