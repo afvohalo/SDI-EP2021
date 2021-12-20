@@ -39,7 +39,7 @@ foreach ($this->d as $value) {
                                         <td><?php echo $value['Tblestado_equipos_Est_equipos_id'] ?></td>
                                         <td><?php echo $value['Tblsalas_sal_id'] ?></td>
                                         <td>
-                                            <button data-target="#modalEquiposedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Equ_id'] ?>)"><i  class="material-icons">edit</i></button>
+                                            <button data-target="#modalEquipoedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Equ_id'] ?>)"><i  class="material-icons">edit</i></button>
 
                                             <button onclick="DeleteData(<?php echo $value['Equ_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
                                         </td>
