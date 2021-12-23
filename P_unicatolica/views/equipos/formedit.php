@@ -58,9 +58,7 @@
             <label for="candado"> El equipo tiene candado?: </label>
             
         </div>
-    </div> 
-    <div class="">
-
+     
         <div class="input-field col s8">
                         <select name="estadoequipos">
                             <option value="">Seleccione...</option>
@@ -94,7 +92,7 @@
             </div>
     </div>    
 </form>
-<div class="">
+<div class="row">
     <div class="buttoncenter">
         <div class="buttoncitos">
             <button type="submit" class="btn waves-effect" onclick="UpdateData(<?php echo $this->d[0]['Equ_id'] ?>); return false;"><i class="material-icons left">save</i>Editar</button>
