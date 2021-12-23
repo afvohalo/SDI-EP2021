@@ -1,5 +1,5 @@
   
-<form id="form_salas_edit">
+<form id="form_equipos_edit">
     <div class="row">
         <div class="col s2"></div>
         <div class="input-field col s8 ">
