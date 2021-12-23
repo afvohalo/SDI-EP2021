@@ -73,7 +73,7 @@
                         <label for="estadoequipos">
                             Estado del equipo
                         </label>
-                </div>
+        </div>
 
         <div class="input-field col s8">
                         <select name="salaequipos">
@@ -95,10 +95,10 @@
 <div class="row">
     <div class="buttoncenter">
         <div class="buttoncitos">
-            <button type="submit" class="btn waves-effect" onclick="UpdateData(<?php echo $this->d[0]['Equ_id'] ?>); return false;"><i class="material-icons left">save</i>Editar</button>
+            <button type="submit" class="btn waves-effect" onclick="UpdateData(<?php echo $this->d->data[0]['Equ_id']; ?>); return false;"><i class="material-icons left">save</i>Editar</button>
         </div>
         <div class="buttoncitos">
-            <button class="modal-close btn waves-effect buttonsApp" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons left">cancel</i>Cerrar</button>
+            <button class="modal-close btn waves-effect buttonsApp"><i class="material-icons left">cancel</i>Cerrar</button>
         </div>
     </div>
-</div>
+
