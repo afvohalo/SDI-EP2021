@@ -68,7 +68,7 @@ class Equipos extends Controller
         $candadoequipos     = $_POST['formularioequipos'][5];
         $estadoequipos      = $_POST['formularioequipos'][6];
         $salaequipos      	= $_POST['formularioequipos'][7];
-        $this->model->save(['nombreequipos' => $nameequipos,'detalleequipos' => $detalleequipos, 'tecladoequipos' => $tecladoequipos, 'mouseequipos' => $mouseequipos, 'guayaequipos' => $guayaequipos, 'candadoequipos' => $guayaequipos, 'estadoequipos' => 
+        $this->model->save(['nombreequipos' => $nameequipos,'detalleequipos' => $detalleequipos, 'tecladoequipos' => $tecladoequipos, 'mouseequipos' => $mouseequipos, 'guayaequipos' => $candadoequipos, 'candadoequipos' => $guayaequipos, 'estadoequipos' => 
         	$estadoequipos, 'salaequipos' => $salaequipos]);
         $this->RefreshDataTable();
 
@@ -92,9 +92,15 @@ class Equipos extends Controller
 
         $id  = $_POST['id'];
         $res = $this->model->getId($id);
-        $this->setData($res);
+        $SelectEstadoEquipos = $this->model->consultaDatos('tblestado_equipos');
+        $SelectSalaEquipos   = $this->model->consultaDatos('tblsalas');
 
-        $this->view->render('equipos/formedit', $this->getData());
+        $Data = (object) [
+            'select_estadoequipos' => $SelectEstadoEquipos,
+            'select_salaequipos'   => $SelectSalaEquipos,
+            'data' => $res,
+        ];
+        $this->view->render('equipos/formedit', $Data);
         /* print_r($this->getData()); */
     }
 
