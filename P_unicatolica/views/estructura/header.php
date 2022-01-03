@@ -92,7 +92,11 @@
                     </div>
                 </li>
                 <li class="nav-item my-2 ml-2 btninicio">
-                    <b><a class="nav-link text-black" href="login/index"><i class="bi bi-door-open-fill"></i> Salir</a></b>
+                    <form method="post">
+                        <input type="hidden" name="cerrarSesion">
+                            <button><i class="bi bi-door-open-fill">Salir</i>
+                            </button>
+                    </form>
                 </li>
 
 
