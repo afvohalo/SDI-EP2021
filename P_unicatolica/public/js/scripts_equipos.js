@@ -43,12 +43,14 @@ function UpdateData(id){
 	Validate_Form(()=>{
 		Message_Confirm(()=>{
 		var data = new FormData($('#form_equipos_edit')[0]);
+		
 		var DatosequiposEdit ={
 			'Ctr':'equipos',
 			'Acc':'editequipos',
 			'id':id,
 			'formularioequiposEdit':ProcessData(data)
 		}
+		console.log(DatosequiposEdit);
 		ReadyChangeJquery(DatosequiposEdit,'#table_data')
 	})
 },'#form_equipos_edit')

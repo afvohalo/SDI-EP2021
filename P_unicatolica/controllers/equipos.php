@@ -51,7 +51,7 @@ class Equipos extends Controller
             'select_estadoequipos' => $SelectEstadoEquipos,
             'select_salaequipos'   => $SelectSalaEquipos,
         ];
-        //$this->ShowConsole($res);
+        
         $this->view->render('equipos/formcreate',  $Data);
     }
 
@@ -68,7 +68,7 @@ class Equipos extends Controller
         $candadoequipos     = $_POST['formularioequipos'][5];
         $estadoequipos      = $_POST['formularioequipos'][6];
         $salaequipos      	= $_POST['formularioequipos'][7];
-        $this->model->save(['nombreequipos' => $nameequipos,'detalleequipos' => $detalleequipos, 'tecladoequipos' => $tecladoequipos, 'mouseequipos' => $mouseequipos, 'guayaequipos' => $guayaequipos, 'candadoequipos' => $guayaequipos, 'estadoequipos' => 
+        $this->model->save(['nombreequipos' => $nameequipos,'detalleequipos' => $detalleequipos, 'tecladoequipos' => $tecladoequipos, 'mouseequipos' => $mouseequipos, 'guayaequipos' => $candadoequipos, 'candadoequipos' => $guayaequipos, 'estadoequipos' => 
         	$estadoequipos, 'salaequipos' => $salaequipos]);
         $this->RefreshDataTable();
 
@@ -92,9 +92,15 @@ class Equipos extends Controller
 
         $id  = $_POST['id'];
         $res = $this->model->getId($id);
-        $this->setData($res);
+        $SelectEstadoEquipos = $this->model->consultaDatos('tblestado_equipos');
+        $SelectSalaEquipos   = $this->model->consultaDatos('tblsalas');
 
-        $this->view->render('equipos/formedit', $this->getData());
+        $Data = (object) [
+            'select_estadoequipos' => $SelectEstadoEquipos,
+            'select_salaequipos'   => $SelectSalaEquipos,
+            'data' => $res,
+        ];
+        $this->view->render('equipos/formedit', $Data);
         /* print_r($this->getData()); */
     }
 
@@ -106,14 +112,15 @@ class Equipos extends Controller
         $idequipos        	= $_POST['id'];
         $nameequipos      	= $_POST['formularioequiposEdit'][0];
         $detalleequipos  	= $_POST['formularioequiposEdit'][1];
-        $mouseequipos       = $_POST['formularioequiposEdit'][2];
-        $guayaequipos       = $_POST['formularioequiposEdit'][3];
-        $candadoequipos     = $_POST['formularioequiposEdit'][4];
-        $estadoequipos      = $_POST['formularioequiposEdit'][5];
-        $salaequipos       	= $_POST['formularioequiposEdit'][6];
+        $tecladoequipos     = $_POST['formularioequiposEdit'][2];
+        $mouseequipos       = $_POST['formularioequiposEdit'][3];
+        $guayaequipos       = $_POST['formularioequiposEdit'][4];
+        $candadoequipos     = $_POST['formularioequiposEdit'][5];
+        $estadoequipos      = $_POST['formularioequiposEdit'][6];
+        $salaequipos       	= $_POST['formularioequiposEdit'][7];
 
 
-        $this->model->update($idequipos, $nameequipos, $detalleequipos, $mouseequipos, $guayaequipos, $candadoequipos, $estadoequipos, 
+        $this->model->update($idequipos, $nameequipos, $detalleequipos, $tecladoequipos, $mouseequipos, $guayaequipos, $candadoequipos, $estadoequipos, 
         					 $salaequipos);
         $this->RefreshDataTable();
 

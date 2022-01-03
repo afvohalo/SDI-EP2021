@@ -34,7 +34,7 @@ foreach ($this->d as $value) {
                                         <td><?php echo $value['Equ_nombre'] ?></td>
                                         <td><?php echo $value['Equ_teclado'] ?></td>
                                         <td><?php echo $value['Equ_mouse'] ?></td>
-                                        <td><?php echo $value['Equ_guaya'] ?></td>
+                                        <td><?php echo $value['Equ_gualla'] ?></td>
                                         <td><?php echo $value['Equ_candado'] ?></td>
                                         <td><?php echo $value['Tblestado_equipos_Est_equipos_id'] ?></td>
                                         <td><?php echo $value['Tblsalas_sal_id'] ?></td>

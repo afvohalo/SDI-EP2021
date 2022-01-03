@@ -72,7 +72,7 @@ class equiposModel extends Model implements IModel
         try {
 
             $query = $this->prepare('UPDATE tblequipos SET Equ_nombre =:nombre, Equ_detalles =:detalles, Equ_teclado =:teclado,
-                                     Equ_mouse =:mouse, Equ_guaya =:guaya, Equ_candado =:candado, Tblestado_equipos_Est_equipos_id =:estado,
+                                     Equ_mouse =:mouse, Equ_gualla =:guaya, Equ_candado =:candado, Tblestado_equipos_Est_equipos_id =:estado,
                                      Tblsalas_sal_id =:sala WHERE Equ_id=:id');
             $query->execute([
                 'id'            => $id,
