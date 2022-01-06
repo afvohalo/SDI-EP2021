@@ -28,6 +28,16 @@
             <label for="VB"> VideoBeam en la sala?: </label>
             
         </div>
+
+        <div class="input-field col s8 ">
+            <input type="radio" name="Telón" value="1"<?php echo $this->d[0]['Sal_telon'] =="1" ? "checked" : ""; ?>>
+                <label class="active" for="Telón"> Si </label>
+
+            <input type="radio" name="Telón" value="0" <?php echo $this->d[0]['Sal_telon'] =="0" ? "checked" : ""; ?>>
+                <label class="active" for="Telón"> No </label>
+            <label for="VB"> Telón en la sala?: </label>
+            
+        </div>
     </div>
 
 </form>
@@ -37,7 +47,7 @@
             <button type="submit" class="btn waves-effect" onclick="UpdateData(<?php echo $this->d[0]['Sal_id'] ?>); return false;"><i class="material-icons left">save</i>Editar</button>
         </div>
         <div class="buttoncitos">
-            <button class="modal-close btn waves-effect buttonsApp" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons left">cancel</i>Cerrar</button>
+            <button class="modal-close btn waves-effect buttonsApp"><i class="material-icons left">cancel</i>Cerrar</button>
         </div>
     </div>
 </div>

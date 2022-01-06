@@ -49,8 +49,8 @@ class Salas extends Controller
         $namesalas     = $_POST['formularioSalas'][0];
         $cantidadsalas = $_POST['formularioSalas'][1];
         $vbsalas       = $_POST['formularioSalas'][2];
-        $this->model->save(['NombreSalas' => $namesalas,
-            'CantidadSalas'                   => $cantidadsalas, 'VbSalas' => $vbsalas]);
+        $tlsalas       = $_POST['formularioSalas'][3];
+        $this->model->save(['NombreSalas' => $namesalas,'CantidadSalas'                   => $cantidadsalas,'VbSalas' => $vbsalas, 'TlSalas' => $tlsalas]);
         $this->RefreshDataTable();
 
     }
@@ -88,7 +88,8 @@ class Salas extends Controller
         $namesalas      = $_POST['formularioSalasEdit'][0];
         $cantidadsalas  = $_POST['formularioSalasEdit'][1];
         $VbSalas        = $_POST['formularioSalasEdit'][2];
-        $this->model->update($idsalas, $namesalas, $cantidadsalas, $VbSalas);
+        $TlSalas        = $_POST['formularioSalasEdit'][3];
+        $this->model->update($idsalas, $namesalas, $cantidadsalas, $VbSalas, $TlSalas);
         $this->RefreshDataTable();
 
     }

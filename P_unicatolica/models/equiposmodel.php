@@ -15,7 +15,7 @@ class equiposModel extends Model implements IModel
         var_dump($data);
 
         try {
-            $sql = 'INSERT INTO tblequipos(Equ_nombre,Equ_detalles,Equ_teclado,Equ_mouse,Equ_gualla,Equ_candado,Tblestado_equipos_Est_equipos_id,Tblsalas_sal_id) VALUES
+            $sql = 'INSERT INTO tblequipos(Equ_nombre,Equ_detalles,Equ_teclado,Equ_mouse,Equ_guaya,Equ_candado,Tblestado_equipos_Est_equipos_id,Tblsalas_sal_id) VALUES
             ("' . $data['nombreequipos'] . '","' . $data['detalleequipos'] . '","' . $data['tecladoequipos'] . '","' . $data['mouseequipos'] . '","' . $data['guayaequipos'] . '","' . $data['candadoequipos'] .'","' . $data['estadoequipos'] . '","' . $data['salaequipos'] .'")';
             echo $sql;
             $query = $this->prepare($sql);
@@ -72,7 +72,7 @@ class equiposModel extends Model implements IModel
         try {
 
             $query = $this->prepare('UPDATE tblequipos SET Equ_nombre =:nombre, Equ_detalles =:detalles, Equ_teclado =:teclado,
-                                     Equ_mouse =:mouse, Equ_gualla =:guaya, Equ_candado =:candado, Tblestado_equipos_Est_equipos_id =:estado,
+                                     Equ_mouse =:mouse, Equ_guaya =:guaya, Equ_candado =:candado, Tblestado_equipos_Est_equipos_id =:estado,
                                      Tblsalas_sal_id =:sala WHERE Equ_id=:id');
             $query->execute([
                 'id'            => $id,

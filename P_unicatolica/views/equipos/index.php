@@ -5,7 +5,7 @@
         <h4 class="center">Editar Equipo</h4>
 
             <div id="form_edit">
-    
+
             </div>
 
     </div>

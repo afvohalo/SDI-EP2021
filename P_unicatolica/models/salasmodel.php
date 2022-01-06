@@ -15,8 +15,8 @@ class salasModel extends Model implements IModel
         var_dump($data);
 
         try {
-            $sql = 'INSERT INTO tblsalas(Sal_nombre,Sal_cantidad_equipo,Sal_videobeam) VALUES
-            ("' . $data['NombreSalas'] . '","' . $data['CantidadSalas'] . '","' . $data['VbSalas'] . '")';
+            $sql = 'INSERT INTO tblsalas(Sal_nombre,Sal_cantidad_equipo,Sal_videobeam, Sal_telon) VALUES
+            ("' . $data['NombreSalas'] . '","' . $data['CantidadSalas'] . '","' . $data['VbSalas'] . '","' . $data['TlSalas'] . '")';
             echo $sql;
             $query = $this->prepare($sql);
             //Preparando la consulta
@@ -67,16 +67,17 @@ class salasModel extends Model implements IModel
         }
     }
 
-    public function update($id, $name, $cantidad, $VB)
+    public function update($id, $name, $cantidad, $VB, $TL)
     {
         try {
 
-            $query = $this->prepare('UPDATE tblsalas SET Sal_nombre =:name, Sal_cantidad_equipo =:cantidad, Sal_videobeam =:VB WHERE Sal_id=:id');
+            $query = $this->prepare('UPDATE tblsalas SET Sal_nombre =:name, Sal_cantidad_equipo =:cantidad, Sal_videobeam =:VB, Sal_telon =:TL WHERE Sal_id=:id');
             $query->execute([
                 'id'       => $id,
                 'name'     => $name,
                 'cantidad' => $cantidad,
                 'VB'       => $VB,
+                'TL'       => $TL,
             ]);
 
         } catch (PDOException $e) {

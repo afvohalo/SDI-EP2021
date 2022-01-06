@@ -68,8 +68,7 @@ class Equipos extends Controller
         $candadoequipos     = $_POST['formularioequipos'][5];
         $estadoequipos      = $_POST['formularioequipos'][6];
         $salaequipos      	= $_POST['formularioequipos'][7];
-        $this->model->save(['nombreequipos' => $nameequipos,'detalleequipos' => $detalleequipos, 'tecladoequipos' => $tecladoequipos, 'mouseequipos' => $mouseequipos, 'guayaequipos' => $candadoequipos, 'candadoequipos' => $guayaequipos, 'estadoequipos' => 
-        	$estadoequipos, 'salaequipos' => $salaequipos]);
+        $this->model->save(['nombreequipos' => $nameequipos,'detalleequipos' => $detalleequipos, 'tecladoequipos' => $tecladoequipos, 'mouseequipos' => $mouseequipos, 'guayaequipos' => $guayaequipos, 'candadoequipos' => $candadoequipos, 'estadoequipos' => $estadoequipos, 'salaequipos' => $salaequipos]);
         $this->RefreshDataTable();
 
     }

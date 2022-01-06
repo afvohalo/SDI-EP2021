@@ -40,10 +40,10 @@
         </div>
 
         <div class="input-field col s8 ">
-            <input type="radio" name="guaya" value="1"<?php echo $this->d->data[0]['Equ_gualla'] =="1" ? "checked" : ""; ?>>
+            <input type="radio" name="guaya" value="1"<?php echo $this->d->data[0]['Equ_guaya'] =="1" ? "checked" : ""; ?>>
                 <label class="active" for="guaya"> Si </label>
 
-            <input type="radio" name="guaya" value="0" <?php echo $this->d->data[0]['Equ_gualla'] =="0" ? "checked" : ""; ?>>
+            <input type="radio" name="guaya" value="0" <?php echo $this->d->data[0]['Equ_guaya'] =="0" ? "checked" : ""; ?>>
                 <label class="active" for="guaya"> No </label>
             <label for="guaya"> El equipo tiene guaya?: </label>
             
