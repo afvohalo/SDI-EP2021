@@ -67,7 +67,7 @@ class Rol extends Controller
     public function oneRol()
     {
 
-        echo "<p>Guardando datos satisfactoriamente</p>";
+       // echo "<p>Datos cargados satisfactoriamente</p>";
         
         $id  = $_POST['id'];
         $res = $this->model->getId($id);

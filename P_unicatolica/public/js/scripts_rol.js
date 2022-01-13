@@ -20,7 +20,6 @@ function OneData(id){
 		'Acc':'oneRol',
 		'id':id
 	}
-	console.log(OneIdRol);
 	ReadyChangeJquery(OneIdRol,"#form_edit")
 }	
 
