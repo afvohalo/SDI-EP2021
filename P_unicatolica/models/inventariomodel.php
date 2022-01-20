@@ -1,6 +1,6 @@
 <?php
 
-class invetarioModel extends Model implements IModel
+class inventarioModel extends Model implements IModel
 {
 
     public function __construct()
