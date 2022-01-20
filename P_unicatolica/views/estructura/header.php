@@ -91,10 +91,10 @@
                         
                     </div>
                 </li>
-                <li class="nav-item my-2 ml-2 btninicio">
+                <li class=" my-2 ml-2 ">
                     <form method="post">
                         <input type="hidden" name="cerrarSesion">
-                            <button><i class="bi bi-door-open-fill">Salir</i>
+                            <button><i class="bi bi-door-open-fill">Cerrar session</i>
                             </button>
                     </form>
                 </li>
