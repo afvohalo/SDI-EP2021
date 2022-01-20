@@ -28,7 +28,7 @@ class invetarioModel extends Model implements IModel
             $query->execute(); // Aca mandamos a ejecutar la consulta pasando por ultimo los values :value
 
         } catch (PDOException $e) {
-            $this->showError('save', 'salas', $e);
+            $this->showError('save', 'inventaro', $e);
         }
 
     }
@@ -40,7 +40,7 @@ class invetarioModel extends Model implements IModel
             $query->execute();
             return $query->fetchAll();
         } catch (PDOException $e) {
-            $this->showError('getAll', 'salas', $e);
+            $this->showError('getAll', 'inventaro', $e);
         }
     }
 
@@ -53,7 +53,7 @@ class invetarioModel extends Model implements IModel
             $query->execute($id);
 
         } catch (PDOException $e) {
-            $this->showError('delete', 'salas', $e);
+            $this->showError('delete', 'inventaro', $e);
         }
 
     }
@@ -68,7 +68,7 @@ class invetarioModel extends Model implements IModel
             return $query->fetchAll();
 
         } catch (PDOException $e) {
-            $this->showError('getId', 'salas', $e);
+            $this->showError('getId', 'inventaro', $e);
         }
     }
 
@@ -85,7 +85,7 @@ class invetarioModel extends Model implements IModel
             ]);
 
         } catch (PDOException $e) {
-            $this->showError('update', 'salas', $e);
+            $this->showError('update', 'inventaro', $e);
         }
     }
 

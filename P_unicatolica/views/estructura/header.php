@@ -81,6 +81,7 @@
                         <b><i class="bi bi-gear-fill"></i> Panel de control</b>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="inventario"><i class="bi bi-display"></i>inventario</a> 
                         <a class="dropdown-item" href="equipos"><i class="bi bi-display"></i>equipos</a>   
                         <a class="dropdown-item" href="estado"><i class="bi bi-bookmark-check-fill"></i> Estado</a>
                         <a class="dropdown-item" href="estado_equipo"><i class="bi bi-display"></i> Estado equipo</a>
