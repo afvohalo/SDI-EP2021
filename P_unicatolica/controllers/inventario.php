@@ -17,6 +17,7 @@ class Inventario extends Controller
 
         $this->view->render('inventario/index');
         $this->RefreshDataTable();
+        $this->renderViewFormInventario();
         $this->view->render('inventario/formcreate');
 
         //$this->view->render('estructura/ajustes_nav'); //NAV_AJUSTES
@@ -39,6 +40,17 @@ class Inventario extends Controller
         //var_export($res);
         $this->setData($res);
         $this->view->render('inventario/table', $this->getData());
+    }
+
+        public function renderViewFormInventario()
+    {
+        $SelectEstadoInventario   = $this->model->consultaDatos('tblestado_inventario');
+
+        $Data = (object) [
+            'select_estadoinventario' => $SelectEstadoInventario,
+        ];
+        
+        $this->view->render('inventario/formcreate',  $Data);
     }
 
     public function registrarinventario()
@@ -76,9 +88,15 @@ class Inventario extends Controller
 
         $id  = $_POST['id'];
         $res = $this->model->getId($id);
-        $this->setData($res);
 
-        $this->view->render('inventario/formedit', $this->getData());
+        $SelectSalaEquipos   = $this->model->consultaDatos('tblsalas');
+
+        $Data = (object) [
+            'select_estadoinventario' => $SelectEstadoInventario,
+            'data' => $res,
+        ];
+
+        $this->view->render('inventario/formedit', $Data());
         /* print_r($this->getData()); */
     }
 

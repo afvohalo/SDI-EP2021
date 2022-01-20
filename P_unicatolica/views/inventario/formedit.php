@@ -19,12 +19,20 @@
 
         <div class="col s2"></div>
 
-        <div class="input-field col s8 ">
-            <input type="radio" name="VB" value="1"<?php echo $this->d[0]['Tblestado_inventario__Est_inv_id'] =="1" ? "checked" : ""; ?>>
-                <label class="active" for="VB"> Si </label>
+        <div class="input-field col s8">
+                        <select name="estadoinventario">
+                            <option value="">Seleccione...</option>
 
-            <label for="VB"> Estado del articulo </label>
-            
+                            <?php foreach ($this->d->select_estadoinventario as $value) {
+                             if($value['Est_inv_id'] == $this->d->data[0]['Tblestado_inventario__Est_inv_id']){?>
+                             <option value="<?php echo $value['Est_inv_id']; ?>"selected><?php echo $value['Est_inv_nombre']; ?></option><?php }
+                            else {?>
+                             <option value="<?php echo $value['Est_inv_id']; ?>"><?php echo $value['Est_inv_nombre']; ?></option>
+                             <?php } }?>
+                        </select>
+                        <label for="estadoequipos">
+                            Estado del articulo
+                        </label>
         </div>
     </form>
 <div class="row">

@@ -19,11 +19,18 @@
                 </div>
 
                 <div class="input-field">
-                    <input type="text" name="cantidad" required>
-                    <label class="active" for="cantidad">
-                        Estado del articulo
-                    </label>
-                </div>                
+                        <select name="estadoIventario">
+                            <option value="">Seleccione...</option>
+
+                            <?php foreach ($this->d->select_estadoinventario as $value) {
+                            ?> <option value="<?php echo $value['Est_inv_id']; ?>"><?php echo $value['Est_inv_nombre']; ?></option>
+
+                            <?php } ?>
+                        </select>
+                        <label for="estadoinventario">
+                            Estado del articulo
+                        </label>
+                </div>               
 
             </div>
         </form>
