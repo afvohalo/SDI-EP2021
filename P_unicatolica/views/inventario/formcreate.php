@@ -5,22 +5,22 @@
           
                 
                 <div class="input-field">
-                    <input type="text" name="name" required>
-                    <label  for="name">
+                    <input type="text"  name="name" required>
+                    <label class="active" for="name">
                         Nombre del articulo
                     </label>
                 </div>
                 
                 <div class="input-field">
-                    <input type="text" name="cantidad" required>
-                    <label  for="cantidad">
+                    <input type="number"  name="cantidad" required>
+                    <label class="active" for="cantidad">
                         Cantidad del articulo
                     </label>
                 </div>
 
                 <div class="input-field">
                         <select name="estadoIventario">
-                            <option value="100">Seleccione...</option>
+                            <option value="">Seleccione...</option>
 
                             <?php foreach ($this->d->select_estadoinventario as $value) {
                             ?> <option value="<?php echo $value['Est_inv_id']; ?>"><?php echo $value['Est_inv_nombre']; ?></option>

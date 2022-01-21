@@ -65,7 +65,7 @@ class Inventario extends Controller
         $estadoinventario   
         = $_POST['formularioInventario'][2];
         
-        $this->model->save(['NombreInv' => $namesalas,'CantidadInv'=> $cantidadsalas,'EstadoInv' => $estadoinventario]);
+        $this->model->save(['NombreInv' => $nameinventario,'CantidadInv'=> $cantidadinventario,'EstadoInv' => $estadoinventario]);
         $this->RefreshDataTable();
 
     }

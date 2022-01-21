@@ -12,16 +12,16 @@ class inventarioModel extends Model implements IModel
 
     public function save($data)
     {
-        var_dump($data);
+        //var_dump($data);
 
         try {
             $sql = 'INSERT INTO tblinventario(
                     Inv_nombre,Inv_cantidad ,
-                    Tblestado_inventario__Est_inv_id, 
+                    Tblestado_inventario__Est_inv_id 
                 ) VALUES
             ("' . $data['NombreInv'] . '",
-                "' . $data['CantidadInv'] . '",
-                "' . $data['EstadoInv'] . '")';
+                ' . $data['CantidadInv'] . ',
+                ' . $data['EstadoInv'] . ')';
             echo $sql;
             $query = $this->prepare($sql);
             //Preparando la consulta
