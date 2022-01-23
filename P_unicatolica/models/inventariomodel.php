@@ -76,10 +76,10 @@ class inventarioModel extends Model implements IModel
     {
         try {
 
-            $query = $this->prepare('UPDATE tblinventario SET Inv_nombre =:name, Inv_cantidad =:cantidad, Tblestado_inventario__Est_inv_id =:estado, WHERE Inv_id=:id');
+            $query = $this->prepare('UPDATE tblinventario SET Inv_nombre =:nombre, Inv_cantidad =:cantidad, Tblestado_inventario__Est_inv_id =:estado, WHERE Inv_id=:id');
             $query->execute([
                 'id'       => $id,
-                'name'     => $name,
+                'nombre'     => $name,
                 'cantidad' => $cantidad,
                 'estado'       => $estado,
             ]);

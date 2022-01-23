@@ -39,12 +39,14 @@ function UpdateData(id){
 	Validate_Form(()=>{
 		Message_Confirm(()=>{
 		var data = new FormData($('#form_inventario_edit')[0]);
+		
 		var DatosInventarioEdit ={
 			'Ctr':'Inventario',
 			'Acc':'editinventario',
 			'id':id,
 			'formularioInventarioEdit':ProcessData(data)
 		}
+		console.log(DatosInventarioEdit);
 		ReadyChangeJquery(DatosInventarioEdit,'#table_data')
 	})
 },'#form_inventario_edit')

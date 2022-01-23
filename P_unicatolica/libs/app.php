@@ -13,6 +13,7 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
     //verifica si el directorio existe
     if (file_exists($archivoController)) {
         //llama al archivo que se necesita en la carpta controllers para poder instanciarlos despues
+
         require_once $archivoController;
 
         if ($WhatAction == 'LoadObjectAction') {
@@ -20,6 +21,7 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
 
             $ctr = $_POST['Ctr'];
             $acc = $_POST['Acc'];
+           
             //crear un nuevo controlador y carga el modelo
             $controller = new $ctr;
              //verifica y quita el caracter "_"

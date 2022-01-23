@@ -96,8 +96,8 @@ class Inventario extends Controller
             'select_estadoinventario' => $SelectEstadoInventario,
             'data' => $res,
         ];
-        
-        $this->view->render('inventario/formedit', $Data());
+
+        $this->view->render('inventario/formedit', $Data);
         /* print_r($this->getData()); */
     }
 
@@ -108,11 +108,12 @@ class Inventario extends Controller
 
         $idInventario        = $_POST['id'];
         $nameinventario     
-        = $_POST['formularioInventario'][0];
+        = $_POST['formularioInventarioEdit'][0];
         $cantidadinventario 
-        = $_POST['formularioInventario'][1];
+        = $_POST['formularioInventarioEdit'][1];
         $estadoinventario   
-        = $_POST['formularioInventario'][2];
+        = $_POST['formularioInventarioEdit'][2];
+        echo " ".$nameinventario." ".$cantidadinventario." ".$estadoinventario;
         $this->model->update($idInventario, $nameinventario, $cantidadinventario, $estadoinventario);
         $this->RefreshDataTable();
 
