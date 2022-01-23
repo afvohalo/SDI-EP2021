@@ -88,14 +88,15 @@ class Inventario extends Controller
 
         $id  = $_POST['id'];
         $res = $this->model->getId($id);
+        
 
-        $SelectSalaEquipos   = $this->model->consultaDatos('tblsalas');
+        $SelectEstadoInventario = $this->model->consultaDatos('tblestado_inventario');
 
         $Data = (object) [
             'select_estadoinventario' => $SelectEstadoInventario,
             'data' => $res,
         ];
-
+        
         $this->view->render('inventario/formedit', $Data());
         /* print_r($this->getData()); */
     }
@@ -105,7 +106,7 @@ class Inventario extends Controller
 
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
 
-        $idIventario        = $_POST['id'];
+        $idInventario        = $_POST['id'];
         $nameinventario     
         = $_POST['formularioInventario'][0];
         $cantidadinventario 

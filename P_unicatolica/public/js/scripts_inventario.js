@@ -16,7 +16,7 @@ function SaveData() {
 function OneData(id){
 	var OneIdInventario ={
 		'Ctr':'Inventario',
-		'Acc':'OneInventario',
+		'Acc':'Oneinventario',
 		'id':id
 	}
 	console.log(OneIdInventario);
@@ -28,7 +28,7 @@ function DeleteData(id){
 	Message_Confirm(()=>{
 		var InventarioDelete ={
 			"Ctr":"Inventario",
-			"Acc":"deleteInventario",
+			"Acc":"deleteinventario",
 			"id":id,
 		}
 		ReadyChangeJquery(InventarioDelete,"#table_data")
@@ -41,7 +41,7 @@ function UpdateData(id){
 		var data = new FormData($('#form_inventario_edit')[0]);
 		var DatosInventarioEdit ={
 			'Ctr':'Inventario',
-			'Acc':'editInventario',
+			'Acc':'editinventario',
 			'id':id,
 			'formularioInventarioEdit':ProcessData(data)
 		}

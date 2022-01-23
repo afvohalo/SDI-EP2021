@@ -18,7 +18,7 @@
         </div>
 
         <div class="col s2"></div>
-
+        
         <div class="input-field col s8">
                         <select name="estadoinventario">
                             <option value="">Seleccione...</option>
@@ -30,7 +30,7 @@
                              <option value="<?php echo $value['Est_inv_id']; ?>"><?php echo $value['Est_inv_nombre']; ?></option>
                              <?php } }?>
                         </select>
-                        <label for="estadoequipos">
+                        <label for="estadoinventario">
                             Estado del articulo
                         </label>
         </div>

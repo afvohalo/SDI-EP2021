@@ -29,11 +29,11 @@ function IsLoadView($archivoController, $WhatAction, $url = null)
 
                 $controller->cargarModel($ctr);
                 $controller->{$acc}();
-
+                
             } else {
                 $controller->cargarModel($ctr);
                 $controller->{$acc}();
-
+                
             }
         }
 

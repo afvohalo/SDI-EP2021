@@ -49,7 +49,7 @@ class inventarioModel extends Model implements IModel
 
         try {
 
-            $query = $this->prepare('DELETE FROM tbinventario WHERE Sal_id=:id');
+            $query = $this->prepare('DELETE FROM tbinventario WHERE Inv_id=:id');
             $query->execute($id);
 
         } catch (PDOException $e) {
@@ -62,7 +62,7 @@ class inventarioModel extends Model implements IModel
     {
         try {
 
-            $query = $this->prepare('SELECT * FROM tblinventario WHERE Sal_id=:id');
+            $query = $this->prepare('SELECT * FROM tblinventario WHERE Inv_id=:id');
             $query->execute(['id' => $id]);
 
             return $query->fetchAll();
@@ -76,12 +76,12 @@ class inventarioModel extends Model implements IModel
     {
         try {
 
-            $query = $this->prepare('UPDATE tblinventario SET Inv_nombre =:name, Inv_cantidad =:cantidad, Tblestado_inventario__Est_inv_id =:estado, WHERE Sal_id=:id');
+            $query = $this->prepare('UPDATE tblinventario SET Inv_nombre =:name, Inv_cantidad =:cantidad, Tblestado_inventario__Est_inv_id =:estado, WHERE Inv_id=:id');
             $query->execute([
                 'id'       => $id,
                 'name'     => $name,
                 'cantidad' => $cantidad,
-                'estado'       => $VB,
+                'estado'       => $estado,
             ]);
 
         } catch (PDOException $e) {

@@ -30,10 +30,9 @@
                                             <tr>
                                                 <td><?php echo $value['Inv_nombre'] ?></td>
                                                 <td><?php echo $value['Inv_cantidad'] ?></td>
-
                                                 <td><?php echo $value['Tblestado_inventario__Est_inv_id'] ?></td>
                                                 <td>
-                                                    <button data-target="#modalSalasedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Inv_id'] ?>)"><i class="material-icons">edit</i></button>
+                                                    <button data-target="#modalInventarioedit" class="btn btn-warning" data-toggle="modal" onclick="OneData(<?php echo $value['Inv_id'] ?>)"><i class="material-icons">edit</i></button>
 
 
                                                     <button onclick="DeleteData(<?php echo $value['Inv_id'] ?>)" class="btn btn-danger"><i class="material-icons">delete</i></button>
