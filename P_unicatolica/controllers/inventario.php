@@ -65,7 +65,7 @@ class Inventario extends Controller
         $estadoinventario   
         = $_POST['formularioInventario'][2];
         
-        $this->model->save(['NombreInv' => $nameinventario,'CantidadInv'=> $cantidadinventario,'EstadoInv' => $estadoinventario]);
+        $consulta=$this->model->save(['NombreInv' => $nameinventario,'CantidadInv'=> $cantidadinventario,'EstadoInv' => $estadoinventario]);
         $this->RefreshDataTable();
 
     }
@@ -107,13 +107,13 @@ class Inventario extends Controller
         /* echo "<p>Guardando datos satisfactoriamente</p>"; */
 
         $idInventario        = $_POST['id'];
+        echo $idInventario;
         $nameinventario     
         = $_POST['formularioInventarioEdit'][0];
         $cantidadinventario 
         = $_POST['formularioInventarioEdit'][1];
         $estadoinventario   
         = $_POST['formularioInventarioEdit'][2];
-        echo " ".$nameinventario." ".$cantidadinventario." ".$estadoinventario;
         $this->model->update($idInventario, $nameinventario, $cantidadinventario, $estadoinventario);
         $this->RefreshDataTable();
 
