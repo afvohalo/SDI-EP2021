@@ -31,6 +31,7 @@ function DeleteData(id){
 			"Acc":"deleteRol",
 			"id":id,
 		}
+		console.log(RolDelete);
 		ReadyChangeJquery(RolDelete,"#table_data")
 	})
 }

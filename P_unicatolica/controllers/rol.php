@@ -36,7 +36,7 @@ class Rol extends Controller
     public function RefreshDataTable()
     {
         $res = $this->model->getAll();
-        //var_export($res);
+        //var_dump($res);
         $this->setData($res);
         $this->view->render('rol/table', $this->getData());
     }

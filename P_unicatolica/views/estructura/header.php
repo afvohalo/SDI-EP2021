@@ -89,8 +89,7 @@
                         <a class="dropdown-item" href="estado_inventario"><i class="bi bi-card-checklist"></i> Estado inventario</a>
                         <a class="dropdown-item" href="rol"><i class="bi bi-person-lines-fill"></i> Rol</a>
                         <a class="dropdown-item" href="tipodocumento"><i class="bi bi-credit-card-2-front-fill"></i> Tipo de documento</a>
-                        <a class="dropdown-item" href="tipomovimiento"><i class="bi bi-arrow-left-right"></i> Tipo de movimiento</a>
-                        
+                        <a class="dropdown-item" href="tipomovimiento"><i class="bi bi-arrow-left-right"></i> Tipo de movimiento</a>                       
                     </div>
                 </li>
                 <li class=" my-2 ml-2 ">

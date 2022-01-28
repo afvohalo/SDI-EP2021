@@ -1,18 +1,26 @@
 <div id="modalRol" class="modal" tabindex="-1" role="dialog">
+   <div class="modal-dialog" role="document">     
     <div class="modal-content">
-        <h4 class="center">Nuevo Rol</h4>
+    <div class="modal-header">
+        <h5 class="modal-title">Nuevo Rol</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>  
+    </div>  
+    <div class="modal-content">
         <form id="form_rol">
-          
-                
-                <div class="input-field">
+        <div class="row">
+        <div class="col-md-2"></div>         
+                <div class="input-field col s8">
                     <input type="text" name="name" required>
                     <label class="active" for="name">
                         Nuevo Rol
                     </label>
                 </div>
                 
-            </div>
+            </div> 
         </form>
+    </div> 
         <div class="row">
                 <div class="buttoncenter">
                     <div class="buttoncitos">
@@ -24,4 +32,5 @@
                 </div>
             </div>
     </div>
+   </div>
 </div>
